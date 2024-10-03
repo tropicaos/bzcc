@@ -1,0 +1,19 @@
+# Home content configuration file
+##
+### here you can find all content for home page
+
+### Started
+started:
+  title: "Laureano"
+  typed:
+    - "Videomaker por profissão."
+    - "Roteirista por masoquismo."
+    - "Ator."
+    - "Game Designer."
+    - "Performer."
+    - "Pseudo Webdev."
+    - "INTP."
+    - "Parahybano."
+    - "Filho de Vanuza."
+    - "Neurodivergente."
+    - "Humanista secular hedonista."

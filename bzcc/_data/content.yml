@@ -1,0 +1,155 @@
+# Sections content configuration file
+## 
+### use navigation.yml file to re-order, delete or add section of each card
+### here you can find all content in all pre-build sections
+
+### About [ about ]
+about:
+  title: "Sobre mim"
+  image: "assets/img/man1.jpg"
+  text: "
+        <p>
+          <strong>Olá, sou Laureano!</strong><br>Produtor audiovisual da Paraíba e estudante de Rádio, TV e Web na UFPB. Dedico-me principalmente à produção de peças publicitárias, videoclipes e documentários. Meu trabalho autoral já foi apresentado em festivais como CineCongo, Comunicurtas e Mostra Sesc de Cinema, além de ter meu trabalho voluntário exibido na TV aberta, no Jornal da Band. Comercialmente prestei serviços audiovisuais para o portal Administradores.com, pro setor de Marketing do Armazém Paraíba e fui pós-produtor na Colores Filmes, produtora audiovisual pessoense. Fora da produção audiovisual de ponta a ponta, também sou comunicólogo e ofereço serviços de comunicação estratégica, gestão de operações e game design.
+        </p>
+        "
+  list:
+    - label: "Nome"
+      value: "Laureano Bezerramos"
+
+    - label: "Oferece"
+      value: "Conteúdo Criativo"
+
+    - label: "Especialidade"
+      value: "Audiovisual"
+
+    - label: "Baseado no"
+      value: "Brasil"
+
+    - label: "Residência"
+      value: "Paraíba"
+
+    - label: "E-mail"
+      value: "laureano@bezeramos.cc"
+
+  download:
+    text: "Baixar Currículo"
+    link: "https://drive.google.com/drive/folders/1SCM85HjeGIA1ppHsB4mN38kLdyvVrPRY"
+
+### Resume [ resume ]
+resume:
+  experience:
+    title: "Experiência"
+    items:
+      - year: "2017 - 2022"
+        name: "Administradores.com"
+        text: "Produção, filmagem, logging, edição, montagem, finalização e motion graphics tanto p/ formatos do canal do Youtube, quanto para cursos, palestras, workshops e programas variados p/ a plataforma de streaming Administradores Premium."
+
+      - year: "2020 - 2022"
+        name: "Armazém Paraíba"
+        text: "Produzindo conteúdos audiovisuais institucionais, videoaulas de treinamento e programas variados para a TV Corporativa quando na célula de Endomarketing no setor de Relações Humanas; roteirista, cinegrafista, editor e finalizador de peças publicitárias para mídias online e TV quando na célula de Audiovisual no setor de Marketing e Publicidade."
+        
+      - year: "2023 - 2024"
+        name: "Colores Filmes"
+        text: "Logging, montagem, edição, finalização, correção de cor e colorimetria, motion graphics e tudo o que tiver a ver com pós-produção. De quebra, também contribuí com ferramentas de produtividade e gestão de tarefas que foram implementadas em vários fluxos de trabalho na produtora."
+        
+  education:
+    title: "Educação"
+    items:
+      - year: "2012 - 2014"
+        name: "LICENCIATURA | TEATRO - UFPB"
+        text: "O Curso oferece uma formação interdisciplinar, integrando as atividades de ensino às atividades de pesquisa e extensão com conhecimentos das áreas das Humanidades, além de conhecimentos específicos das Artes Cênicas."
+
+      - year: "2015 - 202?"
+        name: "GRADUAÇÃO | RÁDIO, TV E WEB - UFPB"
+        text: "No curso de Radio, TV e WEB, os estudantes se familiarizam com ambientes como estúdios de gravação de áudio e de vídeo; e com equipamentos como câmeras, microfones e ilhas de edição audiovisual."
+
+      - year: "2021 - 202?"
+        name: "CST | FILMMAKING - UNINASSAU"
+        text: "O curso abrange todas as funções dentro das etapas da produção audiovisual, passando pelo processo de pré-produção, técnicas de planejamento e roteiro, aprofundando-se nas funções e processos da realização no set de filmagem, envolvendo também as dinâmicas da edição e montagem fílmica na pós-produção."
+
+### Skills [ skills ]
+skills:
+  columns:
+    - type: "default" #skills progress type - default, dotted, circles, list
+      title: "FERRAMENTAS"
+      items:
+        - label: "Adobe Premiere"
+          value: "90" #0-100 progress in %
+
+        - label: "Adobe After Effects"
+          value: "80" #0-100 progress in %
+
+        - label: "Adobe Photoshop"
+          value: "75" #0-100 progress in %
+
+        - label: "Roteiro"
+          value: "90" #0-100 progress in %
+
+    - type: "list" #skills progress type - default, dotted, circles, list
+      title: "FRONTS DE ATUAÇÃO"
+      items:
+        - label: "Audiovisual do roteiro a distribuição"
+          value: "" #0-100 progress in %
+
+        - label: "Elaboração e gestão de projetos"
+          value: "" #0-100 progress in %
+
+        - label: "Game Design e documentação"
+          value: "" #0-100 progress in %
+
+        - label: "Planejamento e programação de mídia"
+          value: "" #0-100 progress in %
+
+        - label: "Comunicação interna e estratégica"
+          value: "" #0-100 progress in %
+
+        - label: "Soluções em endomarketing e inbound marketing"
+          value: "" #0-100 progress in %
+
+        - label: "Administração e produção para Youtube"
+          value: "" #0-100 progress in %
+
+        - label: "Gestão de marcas e self-branding"
+          value: "" #0-100 progress in %
+
+### Clients [ clients ]
+clients:
+  title: "SERVIÇOS PRESTADOS"
+  items:
+    - url: "https://lp.administradores.com.br/assine/"
+      image: "assets/img/clients/client_1.jpg"
+
+    - url: "https://www.youtube.com/channel/UCEonmw7XYjPpk9pun00UrZw"
+      image: "assets/img/clients/client_3.jpg"
+
+    - url: "https://www.instagram.com/laureano.mkp"
+      image: "assets/img/clients/client_2.jpg"
+
+    - url: "https://www.google.com"
+      image: "assets/img/clients/client_1.png"
+
+    - url: "https://www.google.com"
+      image: "assets/img/clients/client_2.png"
+
+    - url: "https://www.google.com"
+      image: "assets/img/clients/client_3.png"
+
+### Contact Info [ contacts-info ]
+contacts_info:
+  title: "Bora conversar?"
+  list:
+    - label: "Fone"
+      icon: "android-phone-portrait"
+      value: "<a href='wa.me/5583996306750'>+55 (83) 99630-6750"
+
+    - label: "Email"
+      icon:  "email"
+      value: "<a href='mailto:bezerramoscc@gmail.com'>laureano@bezerramos.cc</a>"
+
+    - label: "Loc"
+      icon: "ios-location"
+      value: "João Pessoa, Parahyba - Brasil."
+
+### Contact Form [ contacts-form ]
+contacts_form:
+  title: "Use aqui pra solicitar um orçamento. Ou só mandar um oi! :)"

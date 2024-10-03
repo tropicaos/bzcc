@@ -1,0 +1,27 @@
+# UI default string configuration file
+## 
+### use ui-text.yml file to quick change all default strings
+
+ui_text:
+  home:           "Home"
+  blog:           "Blog"
+  archive:        "Arquivo"
+  blog_post:      "Blog Post"
+  by:             "Por"
+  share:          "Compartilhar"
+  share_on:       "Compartilhar"
+  tags:           "Etiquetas"
+  prev:           "Anterior"
+  next:           "Próximo"
+  comments:       "Comentários"
+  full_name:      "Nome completo"
+  email_address:  "Email"
+  your_message:   "Sua mensagem"
+  send_message:   "Enviar Mensagem"
+  view_project:   "Ver projeto"
+  new:            "novo"
+  search:         "Pesquisar ..."
+  recent_posts:   "Posts Recentes "
+  latest_posts:   "Últimos Posts"
+  categories:     "Categorias"
+  

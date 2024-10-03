@@ -1,0 +1,24 @@
+# Footer configuration file
+##
+### param "social" - Social Links, icon class name you can find here https://ionicons.com/v2/
+### param "copy" - Copyright text
+
+main:
+  social:
+    - title: "Twitch"
+      icon: "social-twitch"
+      url: "https://twitch.tv/canalpoligonal/"
+    - title: "Instagram"
+      icon: "social-instagram-outline"
+      url: "https://instagram.com/bezerramos"
+    - title: "Youtube"
+      icon: "social-youtube"
+      url: "https://www.youtube.com/@canalpoligonal"
+    - title: "GitHub"
+      icon: "social-github"
+      url: "https://github.com/tropicaos"
+    - title: "Linkedin"
+      icon: "social-linkedin"
+      url: "https://www.linkedin.com/in/bezerramos/"
+  
+  copy: "bezerramos.cc. Alguns direitos reservados (CC 4.0)."

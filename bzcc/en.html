@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  {%- seo -%}
+
+  <!-- Load Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+
+  <!-- Load CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/ionicons.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/animate.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/syntax.css' | relative_url }}" />
+
+  {% assign settings = site.data.settings['settings'] %}
+
+  <!-- Template RTL -->
+  {% if settings.rtl == 1 %}
+  <link rel="stylesheet" href="{{ 'assets/css/rtl.css' | relative_url }}" />
+  {% endif %}
+
+  <!-- Template Colors -->
+  {% if settings.quick_colors != '' %}
+  <link rel="stylesheet" href="{{ 'assets/css/template-colors/' | append: settings.quick_colors | append: '.css' | relative_url }}" />
+  {% endif %}
+
+  <!-- Template Dark -->
+  {% if settings.dark_ui == 1 %}
+  <link rel="stylesheet" href="{{ 'assets/css/template-dark/dark.css' | relative_url }}" />
+  {% endif %}
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ 'assets/images/favicons/favicon.ico' | relative_url }}">
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  {%- include custom-head.html -%}
+	
+</head>
+
+<body>	
+	
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width">
+			<div class="vertical-center">
+				<div class="pre-inner">
+					<div class="load typing-load"><p>loading...</p></div>
+					<span class="typed-load"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Container -->
+	<div class="container">
+		
+		<!-- Header -->
+		<header class="fixed left-0 top-[30px] w-full z-[100] text-right bg-white opacity-100 visible">
+			<div class="head-top px-[65px] pt-[30px] pb-[15px]">
+				<a href="#" class="menu-btn"><span></span></a>
+				<div class="top-menu">
+					<ul class="anchor_nav">
+						<li class="active ml-[50px] inline-block align-top"><a href="#section-home" class="lnk block mt-[12px]">Home</a></li>
+						<li class="ml-[50px] inline-block align-top"><a href="#section-resume" class="lnk block mt-[12px]">Resume</a></li>
+						<!--<li class="ml-[50px] inline-block align-top"><a href="#section-portfolio" class="lnk block mt-[12px]">Portfolio</a></li>
+						<li class="ml-[50px] inline-block align-top"><a href="#section-blog" class="lnk block mt-[12px]">Blog</a></li>-->
+						<li class="ml-[50px] inline-block align-top"><a href="#section-contacts" class="btn mt-0">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Wrapper -->
+		<div class="wrapper">
+		
+			<!-- Started -->
+			<div class="section started relative z-[97] opacity-100 visible text-center p-0 m-0" id="section-home">
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content inline-block align-middle text-center relative">
+							<div class="h-title text-[68px] font-roboto text-[#141414] font-bold uppercase tracking-[0.04em] mx-0 mt-[10px] mb-[5px] glitch-effect" data-text="I'm Laureano">I'm <span>Laureano</span></div>
+							<div class="h-subtitle text-[13px] typing-subtitle">
+								<p>Videomaker.</p>
+								<p>Screenwriter.</p>
+								<p>Actor.</p>
+								<p>Game Designer.</p>
+								<p>Performer.</p>
+								<p>Pseudo Webdev.</p>
+								<p>INTP.</p>
+								<p>Parahybano.</p>
+								<p>Son of Vanuza.</p>
+								<p>Neurodivergent.</p>
+								<p>Secular humanist hedonist.</p>
+							</div>
+							<span class="typed-subtitle text-[13px]"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- About -->
+			<div class="section about relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible" id="section-resume">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">About Me</div>
+					</div>
+					<div class="image float-left">
+						<img class="w-full h-full rounded-[100px] inline-block" src="assets/img/man1.jpg" alt="" />
+					</div>
+					<div class="desc ml-[130px]">
+						<p>
+							Hello! I am Laureano, an audiovisual producer from Paraíba, Brazil, and a student of Radio, TV, and Web at UFPB. 
+							I mainly focus on producing commercials, music videos, and documentaries. My original work has been presented at festivals such as CineCongo, Comunicurtas, and Mostra Sesc de Cinema, 
+							and my volunteer work has been aired on open TV, on Jornal da Band. Commercially, I have provided audiovisual services for the Administradores.com portal, the Marketing sector of Armazém Paraíba, 
+							and I was a post-producer at Colores Filmes, an audiovisual production company in João Pessoa. 
+							
+							Besides end-to-end audiovisual production, I am also a communicator and offer services in strategic communication, operations management, and game design.
+						</p>
+						<div class="info-list mb-[42px]">
+							<ul>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">Name:</strong> Laureano Bezerramos</li>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">Offers:</strong> Creative Content</li>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">Specialty:</strong> Audiovisual</li>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">Based in:</strong> Brazil</li>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">Residence: </strong> Parahyba</li>
+								<li class="inline-block align-top w-[32%] mt-[12px] mb-0 mx-0"><strong class="font-normal text-extra-color">E-mail:</strong> bezerramoscc@gmail.com</li>
+							</ul>
+						</div>
+						<div class="bts"><a href="https://drive.google.com/drive/folders/1SCM85HjeGIA1ppHsB4mN38kLdyvVrPRY?usp=drive_link" class="btn fill" data-text="Download CV">Download CV</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<!-- Resume -->
+			<div class="section resume relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="cols">
+						<div class="col col-md">
+							<div class="title relative mb-[40px]">
+								<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Experience</div>
+							</div>
+							<div class="resume-items">
+								<div class="resume-item active relative px-[30px] pt-0 pb-[60px]">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2017 - 2022</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">Administradores.com</div>
+									<p class="!m-0">
+										Production, filming, logging, editing, assembly, finalization, and motion graphics for both YouTube channel formats and for courses, lectures, workshops, and various programs for the Administradores Premium streaming platform.
+									</p>
+								</div>
+								<div class="resume-item active relative px-[30px] pt-0 pb-[60px]">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2011 - 2012</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">Armazém Paraíba</div>
+									<p class="!m-0">
+										Producing institutional audiovisual content, training video lessons, and various programs for Corporate TV while in the Endomarketing cell in the Human Relations sector; screenwriter, cameraman, editor, and finalizer of commercials for online media and TV while in the Audiovisual cell in the Marketing and Advertising sector.
+									</p>
+								</div>
+								<div class="resume-item active relative px-[30px] pt-0">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2009 - 2010</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">Colores Filmes</div>
+									<p class="!m-0">
+										Logging, assembly, editing, finalization, color correction and grading, motion graphics, and everything related to post-production. Additionally, I contributed productivity and task management tools that were implemented in various workflows at the production company.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md">
+							<div class="title relative mb-[40px]">
+								<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Education</div>
+							</div>
+							<div class="resume-items">
+								<div class="resume-item active relative px-[30px] pt-0 pb-[60px]">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2012 - 2014</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">BACHELOR'S DEGREE | THEATER - UFPB</div>
+									<p class="!m-0">
+										The course offers an interdisciplinary education, integrating teaching activities with research and extension activities, encompassing knowledge from the Humanities, as well as specific knowledge in Performing Arts.
+									</p>
+								</div>
+								<div class="resume-item active relative px-[30px] pt-0 pb-[60px]">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2015 - 202?</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">UNDERGRADUATE DEGREE | RADIO, TV, AND WEB - UFPB</div>
+									<p class="!m-0">
+										In the Radio, TV, and Web course, students become familiar with environments such as audio and video recording studios, and with equipment like cameras, microphones, and audiovisual editing suites.
+									</p>
+								</div>
+								<div class="resume-item active relative px-[30px] pt-0">
+									<div class="date relative top-[-10px] mx-0 mt-0 mb-[5px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">2003 - 2005</div>
+									<div class="name font-medium text-[#141414] mx-0 mt-0 mb-[15px]">ASSOCIATE DEGREE | FILMMAKING - UNINASSAU
+									</div>
+									<p class="!m-0">
+										The course covers all roles within the stages of audiovisual production, from pre-production processes, planning techniques, and scriptwriting, delving into the functions and processes of on-set production, and also involving the dynamics of editing and film assembly in post-production.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Skills -->
+			<div class="section skills relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Tools</div>
+					</div>
+					<div class="skills">
+						<ul class="m-0 p-0 list-none">
+							<li class="px-0 pt-0 pb-[30px]"> 
+								<div class="name text-[13px] text-[#363636] font-normal relative mx-0 mt-0 mb-[9px]">Adobe Premiere</div>
+								<div class="progress block h-[3px] relative w-full bg-[#ddd]">
+									<div class="percentage left-0 top-0 absolute h-[3px] w-[0%] bg-extra-color" style="width:85%;">
+										<span class="percent absolute top-[-27px] right-0 text-[13px] text-[#363636] font-normal">85%</span>
+									</div>
+								</div>
+							</li>
+							<li class="px-0 pt-0 pb-[30px]"> 
+								<div class="name text-[13px] text-[#363636] font-normal relative mx-0 mt-0 mb-[9px]">Adobe After Effects</div>
+								<div class="progress block h-[3px] relative w-full bg-[#ddd]">
+									<div class="percentage left-0 top-0 absolute h-[3px] w-[0%] bg-extra-color" style="width:75%;">
+										<span class="percent absolute top-[-27px] right-0 text-[13px] text-[#363636] font-normal">75%</span>
+									</div>
+								</div>
+							</li>
+							<li class="px-0 pt-0 pb-[30px]"> 
+								<div class="name text-[13px] text-[#363636] font-normal relative mx-0 mt-0 mb-[9px]">Adobe Photoshop</div>
+								<div class="progress block h-[3px] relative w-full bg-[#ddd]">
+									<div class="percentage left-0 top-0 absolute h-[3px] w-[0%] bg-extra-color" style="width:70%;">
+										<span class="percent absolute top-[-27px] right-0 text-[13px] text-[#363636] font-normal">70%</span>
+									</div>
+								</div>
+							</li>
+							<li class="px-0 pt-0">
+								<div class="name text-[13px] text-[#363636] font-normal relative mx-0 mt-0 mb-[9px]">Screenplay</div>
+								<div class="progress block h-[3px] relative w-full bg-[#ddd]">
+									<div class="percentage left-0 top-0 absolute h-[3px] w-[0%] bg-extra-color" style="width:90%;">
+										<span class="percent absolute top-[-27px] right-0 text-[13px] text-[#363636] font-normal">90%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Skills -->
+			<div class="section skills relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Language Skills</div>
+					</div>
+					<div class="skills dotted">
+						<ul class="mx-[-30px] list-none text-[0]">
+							<li class="relative pb-[30px] px-[30px] w-1/2 inline-block align-top"> 
+								<div class="name text-[#363636] text-[13px] font-normal relative mx-0 mt-0 mb-[9px]">Brazilian</div>
+								<div class="progress h-[14px] !bg-transparent block relative w-full">
+									<div class="percentage relative overflow-hidden top-0 h-[14px] !bg-transparent z-[2] left-0" style="width: 100%;">
+										<span class="percent">90%</span>
+									</div>
+								</div>
+							</li>
+							<li class="relative pb-[30px] px-[30px] w-1/2 inline-block align-top">
+								<div class="name text-[#363636] text-[13px] font-normal relative mx-0 mt-0 mb-[9px]">English</div>
+								<div class="progress h-[14px] !bg-transparent block relative w-full">
+									<div class="percentage relative overflow-hidden top-0 h-[14px] !bg-transparent z-[2] left-0" style="width: 70%;">
+										<span class="percent">70%</span>
+									</div>
+								</div>
+							</li>
+							<li class="relative pb-[30px] px-[30px] w-1/2 inline-block align-top">
+								<div class="name text-[#363636] text-[13px] font-normal relative mx-0 mt-0 mb-[9px]">Spanish</div>
+								<div class="progress h-[14px] !bg-transparent block relative w-full">
+									<div class="percentage relative overflow-hidden top-0 h-[14px] !bg-transparent z-[2] left-0" style="width: 35%;">
+										<span class="percent">55%</span>
+									</div>
+								</div>
+							</li>
+							<li class="relative px-[30px] w-1/2 inline-block align-top">
+								<div class="name text-[#363636] text-[13px] font-normal relative mx-0 mt-0 mb-[9px]">Nerdy</div>
+								<div class="progress h-[14px] !bg-transparent block relative w-full">
+									<div class="percentage relative overflow-hidden top-0 h-[14px] !bg-transparent z-[2] left-0" style="width: 100%;">
+										<span class="percent">85%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Skills -->
+			<!--
+			<div class="section skills relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Coding Skills</div>
+					</div>
+					<div class="skills circles">
+						<ul class="list-none p-0 mx-0 mb-0 mt-[-30px]">
+							<li class="mt-[30px] pb-[40px] inline-block align-top w-[20%] relative "> 
+								<div class="name absolute top-[115px] left-0 w-[90px] text-center font-normal text-[13px] mb-[9px] text-[#363636]">WordPress</div>
+								<div class="progress p90 m-0 relative text-[90px] w-[90px] h-[90px] rounded-[90px] bg-[#ddd] block">
+									<div class="percentage" style="width: 90%;">
+										<span class="percent">90%</span>
+									</div>
+									<span class="absolute left-0 top-0 w-full h-full leading-[90px] text-[17px] text-center whitespace-nowrap z-[2]">90%</span>
+								</div>
+							</li>
+							<li class="mt-[30px] pb-[40px] inline-block align-top w-[20%] relative "> 
+								<div class="name absolute top-[115px] left-0 w-[90px] text-center font-normal text-[13px] mb-[9px] text-[#363636]">PHP / MYSQL</div>
+								<div class="progress p75 m-0 relative text-[90px] w-[90px] h-[90px] rounded-[90px] bg-[#ddd] block">
+									<div class="percentage" style="width: 75%;">
+										<span class="percent">75%</span>
+									</div>
+									<span class="absolute left-0 top-0 w-full h-full leading-[90px] text-[17px] text-center whitespace-nowrap z-[2]">75%</span>
+								</div>
+							</li>
+							<li class="mt-[30px] pb-[40px] inline-block align-top w-[20%] relative "> 
+								<div class="name absolute top-[115px] left-0 w-[90px] text-center font-normal text-[13px] mb-[9px] text-[#363636]">JavaScript</div>
+								<div class="progress p85 m-0 relative text-[90px] w-[90px] h-[90px] rounded-[90px] bg-[#ddd] block">
+									<div class="percentage" style="width: 85%;">
+										<span class="percent">85%</span>
+									</div>
+									<span class="absolute left-0 top-0 w-full h-full leading-[90px] text-[17px] text-center whitespace-nowrap z-[2]">85%</span>
+								</div>
+							</li>
+							<li class="mt-[30px] pb-[40px] inline-block align-top w-[20%] relative "> 
+								<div class="name absolute top-[115px] left-0 w-[90px] text-center font-normal text-[13px] mb-[9px] text-[#363636]">HTML / CSS</div>
+								<div class="progress p95 m-0 relative text-[90px] w-[90px] h-[90px] rounded-[90px] bg-[#ddd] block">
+									<div class="percentage" style="width: 95%;">
+										<span class="percent">95%</span>
+									</div>
+									<span class="absolute left-0 top-0 w-full h-full leading-[90px] text-[17px] text-center whitespace-nowrap z-[2]">95%</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+			<!-- Skills -->
+			
+			<div class="section skills relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Knowledge</div>
+					</div>
+					<div class="skills list">
+						<ul class="p-0 list-none text-[0] my-0 mx-[-30px]">
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Audiovisual from script to distribution</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Project development and management</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Game design and documentation</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Media planning and programming</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Internal and strategic communication</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Solutions in endomarketing and inbound marketing</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Administration and production for YouTube</div>
+							</li>
+							<li class="relative pt-0  pb-[10px] px-[30px] inline-block align-top w-1/2"> 
+								<div class="name pl-[23px] relative text-[13px] font-normal mt-0 mx-0 mb-[9px] text-[#363636]">Brand management and self-branding</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 
+			<!-- Service -->
+			<!-- 
+			<div class="section service relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Knowledge</div>
+					</div>
+					<div class="service-items">
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-social-html5 block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Front-end</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-ipad block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Mobile Application</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-ios-search-strong block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Investigation</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-code block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Programming</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-help-buoy block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Premium Support</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-social-chrome block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]">Web Development</div>
+							<p class="!mb-0">Morbi nulla arcu, pellentesque sed egestas in.</p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			
+			<!-- Clients --><!-- 
+			<div class="section clients relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Clients</div>
+					</div>
+					<div class="box-items relative overflow-hidden ml-[-3%]">
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_1.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_2.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_3.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_1.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_2.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.google.com">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_3.png" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div> -->
+
+			<!-- Works -->
+			 <!--
+			<div class="section works relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible" id="section-portfolio">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Recent Works</div>
+					</div>
+					<div class="filter-menu">
+						<div class="filters mb-[30px]">
+							<div class="btn-group inline-block align-top">
+								<label data-text="All" class="glitch-effect inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".box-item" />All
+								</label>
+							</div>
+							<div class="btn-group inline-block align-top">
+								<label data-text="Video" class="inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".f-video" />Video
+								</label>
+							</div>
+							<div class="btn-group inline-block align-top">
+								<label data-text="Music" class="inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".f-music" />Music
+								</label>
+							</div>
+							<div class="btn-group inline-block align-top">
+								<label data-text="Links" class="inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".f-links" />Links
+								</label>
+							</div>
+							<div class="btn-group inline-block align-top">
+								<label data-text="Image" class="inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".f-image" />Image
+								</label>
+							</div>
+							<div class="btn-group inline-block align-top">
+								<label data-text="Gallery" class="inline-block align-top mr-[25px] text-[13px] text-[#363636] cursor-pointer relative pb-0">
+									<input class="!hidden" type="radio" name="fl_radio" value=".f-gallery" />Gallery
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-items portfolio-items relative overflow-hidden ml-[-3%]">	
+
+						<div class="box-item f-gallery w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="#gallery-1" class="has-popup-gallery block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work1.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-images text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+								<div id="gallery-1" class="mfp-hide">
+									<a class="block text-[0]" href="assets/images/works/work1.jpg"></a>
+									<a class="block text-[0]" href="assets/images/works/work2.jpg"></a>
+									<a class="block text-[0]" href="assets/images/works/work3.jpg"></a>
+									<a class="block text-[0]" href="assets/images/works/work4.jpg"></a>
+								</div>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Gallery</div>
+								<a href="#gallery-1" class="name has-popup-gallery h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Canvas Tote Bag</a>
+							</div>
+						</div>
+
+						<div class="box-item f-video w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="https://youtu.be/S4L8T2kFFck" class="has-popup-video block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work2.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-videocamera text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Video</div>
+								<a href="https://youtu.be/S4L8T2kFFck" class="name has-popup-video h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Coffee Cup In Hand</a>
+							</div>
+						</div>
+
+						<div class="box-item f-links w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="https://themeforest.net/user/marketify" class="has-popup-link block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work8.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Links</div>
+								<a href="https://themeforest.net/user/marketify" class="name has-popup-link h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Love & Care Ceramic</a>
+							</div>
+						</div>
+
+						<div class="box-item f-image w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="assets/images/works/work4.jpg" class="has-popup-image block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work4.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-image text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Image</div>
+								<a href="assets/images/works/work4.jpg" class="name has-popup-image h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Shopping gift bag</a>
+							</div>
+						</div>
+
+						<div class="box-item f-music w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="has-popup-music block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work6.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-music-note text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Music</div>
+								<a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="name has-popup-music h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Marta Veludo Poster</a>
+							</div>
+						</div>
+
+						<div class="box-item f-image w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a href="assets/images/works/work3.jpg" class="has-popup-image block text-[0]">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work3.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-image text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="category mt-0 mx-0 mb-[10px] inline-block text-[11px] text-[#363636] uppercase tracking-[0.04em]">Image</div>
+								<a href="assets/images/works/work3.jpg" class="name has-popup-image h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Mockup Cream</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div> -->
+
+			<!-- Blog --><!--
+			<div class="section blog relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible" id="section-blog">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Latest Posts</div>
+					</div>
+					<div class="box-items relative overflow-hidden ml-[-3%]">
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work1.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work2.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work3.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work4.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work5.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" href="blog_inner.html">
+									<img class="w-full h-auto relative top-0" src="assets/images/works/work7.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-ios-book-outline text-white text-[28px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc relative pt-[15px] pb-[5px] px-[45px]">
+								<div class="date mt-0 mx-0 mb-[10px] inline-block py-0 px-[5px] h-[20px] leading-[18px] font-medium text-[11px] text-extra-color border-solid border-extra-color border">02 Feb 2023</div>
+								<a href="blog_inner.html" class="name h-[40px] block text-[#363636] text-[13px] font-bold uppercase">Designing the perfect notification UX</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div> -->
+			<!-- Clients -->
+			<div class="section clients relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative mb-[40px]">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Distinguished clients
+
+
+
+
+
+						</div>
+					</div>
+					<div class="box-items relative overflow-hidden ml-[-3%]">
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://lp.administradores.com.br/assine/">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_1.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.youtube.com/channel/UCEonmw7XYjPpk9pun00UrZw">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_3.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="box-item w-[30.333333%] mt-0 mr-0 mb-[3%] ml-[3%] relative overflow-hidden text-center">
+							<div class="image relative">
+								<a class="block text-[0]" target="_blank" href="https://www.instagram.com/laureano.mkp">
+									<img class="w-full h-auto relative top-0" src="assets/images/clients/client_2.jpg" alt="" />
+									<span class="info text-center w-full h-full block absolute left-0 top-0 opacity-0 p-[18px]">
+										<span class="centrize w-full max-w-full bg-extra-color">
+											<span class="vertical-center">
+												<span class="ion ion-link text-white text-[38px] inline-block"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- Contacts Info -->
+			<div class="section contacts relative z-[97] px-[80px] pt-0 pb-[150px] opacity-100 visible">
+				<div class="content relative">
+					<div class="title relative">
+						<div class="title_inner inline-block align-middle text-center relative leading-[18px] text-[13px] text-[#141414] uppercase tracking-[0.04em]">Contato</div>
+					</div>
+					<div class="service-items">
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0 text-left">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-android-phone-portrait block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]"><a href="https://wa.me/5583991647494">+55 83 99164-7494</a></div>
+							<p class="!mt-[20px] !mb-0">
+							</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0 text-left">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-email block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]"><a href="mailto:bezerramoscc@gmail.com">laureano@bezerramos.cc</a></div>
+							<p class="!mt-[20px] !mb-0">
+							</p>
+						</div>
+						<div class="service-item inline-block align-top w-[28%] mt-[50px] mr-[4%] mb-0 ml-0 text-left">
+							<div class="icon float-left w-[36px] text-center text-[30px] text-extra-color"><span class="ion ion-ios-location block"></span></div>
+							<div class="name font-medium text-[13px] text-[#141414] mt-[6px] mr-0 mb-0 ml-[46px]"><a href="https://maps.app.goo.gl/si285mFTeNaSdmQn9">Parahyba, Brasil.</a></div>
+							<p class="!mt-[20px] !mb-0">
+							</p>
+						</div>
+					</div>
+					<center>
+					<div class="contact_form mt-[30px]">
+					<button class="btn fill" onclick="$('#cform').submit(); return false;"  data-tf-popup="Az1yJb1u" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Bezerramos Contato" data-tf-auto-close data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#C7009C;color:#fff;font-size:20px;border-radius:0px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Entre em contato</button>
+					<script src="//embed.typeform.com/next/embed.js"></script>
+					</div></center>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- Footer -->
+		<footer class="fixed bottom-[25px] left-0 px-[60px] pt-[15px] pb-[30px] w-full bg-white z-[100] opacity-100 visible">
+			<div class="soc float-right">
+				<a class="inline-block align-middle ml-[12px]" target="_blank" href="https://twitter.com/bezerramos/"><span class="ion ion-social-twitter text-[17px] text-[#363636]"></span></a>
+				<a class="inline-block align-middle ml-[12px]" target="_blank" href="https://www.instagram.com/bezerramos/"><span class="ion ion-social-instagram-outline text-[17px] text-[#363636]"></span></a>
+				<a class="inline-block align-middle ml-[12px]" target="_blank" href="https://github.com/tropicaos"><span class="ion ion-social-github text-[17px] text-[#363636]"></span></a>
+				<a class="inline-block align-middle ml-[12px]" target="_blank" href="https://twitch.tv/tropicaos/"><span class="ion ion-social-twitch text-[17px] text-[#363636]"></span></a>
+			</div>
+			<div class="copy float-left pt-[2px] text-[11px] text-[#999]"> <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank"> bezerramos.cc. Some Rights Reserved. (CC 4.0). </a></div>
+			<div class="clr"></div>
+		</footer>
+		
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+		
+	</div>
+	
+	<!-- jQuery Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.validate.js"></script>
+	<script src="assets/js/typed.js"></script>
+	<script src="assets/js/magnific-popup.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/onepagenav.js"></script>
+	
+	<!-- Main Scripts -->
+	<script src="assets/js/glitche-scripts.js"></script>
+	
+</body>
+</html>
