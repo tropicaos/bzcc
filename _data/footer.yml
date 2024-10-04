@@ -5,15 +5,15 @@
 
 main:
   social:
+    - title: "Youtube"
+      icon: "social-youtube"
+      url: "https://www.youtube.com/@canalpoligonal"
     - title: "Twitch"
       icon: "social-twitch"
       url: "https://twitch.tv/canalpoligonal/"
     - title: "Instagram"
       icon: "social-instagram-outline"
       url: "https://instagram.com/bezerramos"
-    - title: "Youtube"
-      icon: "social-youtube"
-      url: "https://www.youtube.com/@canalpoligonal"
     - title: "GitHub"
       icon: "social-github"
       url: "https://github.com/tropicaos"
