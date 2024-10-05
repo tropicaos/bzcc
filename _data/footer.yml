@@ -5,6 +5,9 @@
 
 main:
   social:
+    - title: "Instagram"
+      icon: "social-instagram-outline"
+      url: "https://instagram.com/bezerramos"
     - title: "Youtube"
       icon: "social-youtube"
       url: "https://www.youtube.com/@canalpoligonal"
@@ -12,8 +15,8 @@ main:
       icon: "social-twitch"
       url: "https://twitch.tv/canalpoligonal/"
     - title: "Instagram"
-      icon: "social-instagram-outline"
-      url: "https://instagram.com/bezerramos"
+      icon: "social-instagram"
+      url: "https://instagram.com/canalpoligonal"
     - title: "GitHub"
       icon: "social-github"
       url: "https://github.com/tropicaos"
