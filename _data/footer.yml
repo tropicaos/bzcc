@@ -5,9 +5,6 @@
 
 main:
   social:
-    - title: "Instagram"
-      icon: "social-instagram-outline"
-      url: "https://instagram.com/bezerramos"
     - title: "Youtube"
       icon: "social-youtube"
       url: "https://www.youtube.com/@canalpoligonal"
@@ -17,11 +14,17 @@ main:
     - title: "Instagram"
       icon: "social-instagram"
       url: "https://instagram.com/canalpoligonal"
+    - title: "Itch.io"
+      icon: "pricetag"
+      url: "https://poligonal.itch.io"
     - title: "GitHub"
       icon: "social-github"
       url: "https://github.com/tropicaos"
     - title: "Linkedin"
       icon: "social-linkedin"
       url: "https://www.linkedin.com/in/bezerramos/"
+    - title: "Instagram"
+      icon: "social-instagram-outline"
+      url: "https://instagram.com/bezerramos"
   
   copy: "bezerramos.cc. Alguns direitos reservados (CC 4.0)."
