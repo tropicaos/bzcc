@@ -1,8 +1,8 @@
 ---
 title: Love & Care Ceramic Bottles
-category: Link
-category_slug: f-link
-type: link
+category: Content
+category_slug: f-content
+type: content
 image: assets/img/works/work3.jpg
 link: https://bslthemes.com/
 ---

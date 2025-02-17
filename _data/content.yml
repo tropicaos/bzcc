@@ -125,15 +125,6 @@ clients:
     - url: "https://www.instagram.com/laureano.mkp"
       image: "assets/img/clients/client_2.jpg"
 
-    - url: "https://www.google.com"
-      image: "assets/img/clients/client_1.png"
-
-    - url: "https://www.google.com"
-      image: "assets/img/clients/client_2.png"
-
-    - url: "https://www.google.com"
-      image: "assets/img/clients/client_3.png"
-
 ### Contact Info [ contacts-info ]
 contacts_info:
   title: "Bora conversar?"

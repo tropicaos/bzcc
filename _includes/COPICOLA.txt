@@ -1,0 +1,22 @@
+spotifytrack: 0tINxILFQZRWeEQN6UOv3W
+{% include spotifytrack.html id=page.spotifytrack %}
+
+spotifyplaylist: 0MMS0CWIcIF02UCBmac4EU
+{% include spotifyplaylist.html id=page.spotifyplaylist %}
+
+youtubeId: videoseries?list=PLgFWXTZM16pDin9oI1VPTtMpw_3IptBBH
+{% include youtubePlayer.html id=page.youtubeId %}
+
+vimeoId: 230738870
+{% include vimeoPlayer.html id=page.vimeoId %}
+
+subtítulo
+<h4><p style="text-align:center"><strong>SUBTÍTULO</strong></p></h4>
+
+{% include image.html
+            img="/images/uploads/NOMEDAIMAGEM.jpg"
+            title="Nara Souza"
+            caption="Nara Souza - @nnarahh"
+%}
+
+{:target="_blank"}

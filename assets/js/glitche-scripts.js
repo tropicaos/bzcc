@@ -262,6 +262,47 @@ $(function () {
 
         return false;
     });
+
+	/*
+    Documentos/Writing popup
+*/
+$('.has-popup-writing').magnificPopup({
+    type: 'inline',
+    overflowY: 'auto',
+    closeBtnInside: true,
+    mainClass: 'mfp-fade',
+    callbacks: {
+        open: function() {
+            $('.ion').addClass('ion-document-text'); // Ícone de documento
+        }
+    }
+});
+
+/*
+    Games popup
+*/
+$('.has-popup-game').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    iframe: {
+        patterns: {
+            itch_io: {
+                index: 'itch.io/',
+                id: 'itch.io/',
+                src: 'https://%id%?autoplay=true'
+            }
+        }
+    },
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+    mainClass: 'mfp-fade',
+    callbacks: {
+        open: function() {
+            $('.ion').addClass('ion-joystick'); // Ícone de jogo
+        }
+    }
+});
 	
 	/* Resize function */
 	$(window).resize(function() {
