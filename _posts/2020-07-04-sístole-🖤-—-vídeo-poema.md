@@ -1,6 +1,6 @@
 ---
 layout: post
-image: 'assets/images/uploads/SISTOLEVIDEOPOEMAcapa.jpg'
+image: 'assets/images/uploads/SISTOLEVIDEOPOEMACAPA.jpg'
 title: SÍSTOLE 🖤 — Vídeo poema
 date: 2018-03-20T18:30:39.054Z
 tags: Audiovisual Argumento Lírico Poemia
