@@ -1,6 +1,6 @@
 ---
 layout: post
-image: 'assets/images/uploads/UFPBACONTECECAPA.JPG'
+image: 'assets/images/uploads/UFPBACONTECECAPA.jpg'
 title: UFPB Acontece 📺📰
 date: 2017-08-10T19:59:27.027Z
 tags: Trampos Jornalismo

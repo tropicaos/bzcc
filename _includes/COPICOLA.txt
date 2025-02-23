@@ -1,3 +1,14 @@
+---
+layout: post
+image: 'assets/images/uploads/AliceCAPA.jpg'
+title: "Alice \U0001F58B️"
+date: 2022-MM-DD 10:18:00
+tags: Textos Suspense Argumento Terror
+permalink: /Alice
+published: true
+spotifyplaylist: 1WrgTARbUGYgcyr5WmHth7
+---
+
 spotifytrack: 0tINxILFQZRWeEQN6UOv3W
 {% include spotifytrack.html id=page.spotifytrack %}
 
