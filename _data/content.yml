@@ -129,18 +129,9 @@ clients:
 contacts_info:
   title: "Bora conversar?"
   list:
-    - label: "Fone"
-      icon: "android-phone-portrait"
+    - label: ""
+      icon: ""
       value: "<a href='wa.me/5583996306750'>+55 (83) 99630-6750"
-
-    - label: "Email"
-      icon:  "email"
+    - label: ""
+      icon:  ""
       value: "<a href='mailto:bezerramoscc@gmail.com'>laureano@bezerramos.cc</a>"
-
-    - label: "Loc"
-      icon: "ios-location"
-      value: "João Pessoa, Parahyba - Brasil."
-
-### Contact Form [ contacts-form ]
-contacts_form:
-  title: "Use aqui pra solicitar um orçamento. Ou só mandar um oi! :)"

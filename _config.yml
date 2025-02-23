@@ -2,7 +2,7 @@
 # basic settings
 title: "Bezerramos"
 email: "bezerramoscc@gmail.com"
-description: "| Conteúdo Criativo"
+description: "Conteúdo Criativo"
 author: "Lau"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

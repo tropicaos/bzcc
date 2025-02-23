@@ -6,7 +6,6 @@ date: 2022-MM-DD 10:18:00
 tags: Textos Suspense Argumento Terror
 permalink: /Alice
 published: true
-spotifyplaylist: 1WrgTARbUGYgcyr5WmHth7
 ---
 
 spotifytrack: 0tINxILFQZRWeEQN6UOv3W
@@ -25,7 +24,7 @@ subtítulo
 <h4><p style="text-align:center"><strong>SUBTÍTULO</strong></p></h4>
 
 {% include image.html
-            img="/images/uploads/NOMEDAIMAGEM.jpg"
+            img="assets/images/uploads/NOMEDAIMAGEM.jpg"
             title="Nara Souza"
             caption="Nara Souza - @nnarahh"
 %}
