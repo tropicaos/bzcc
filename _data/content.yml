@@ -131,7 +131,7 @@ contacts_info:
   list:
     - label: ""
       icon: ""
-      value: "<a href='wa.me/5583996306750'>+55 (83) 99630-6750"
+      value: "<a href='https://wa.me/5583996306750'>+55 (83) 99630-6750"
     - label: ""
       icon:  ""
       value: "<a href='mailto:bezerramoscc@gmail.com'>laureano@bezerramos.cc</a>"
