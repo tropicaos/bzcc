@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "pt-br" }}">
   
   {%- include head.html -%}
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <body class="{% if page.layout == 'home' %} home{% endif %}{% if page.layout == 'post' %} blog{% endif %}">
 
     <!-- Container -->

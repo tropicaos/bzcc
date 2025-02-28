@@ -24,8 +24,9 @@ $(function () {
 	
 	/* Preloader */
 	$(window).on('load', function() {
-		$('body').addClass('loaded'); // Mantenha se necessário para outros estilos
-		
+		$('body').addClass('loaded');
+		$('body').removeClass('scroll_hidden');
+	
 		/* Typed subtitle */
 		$('.typed-subtitle').typed({
 			stringsElement: $('.typing-subtitle'),
