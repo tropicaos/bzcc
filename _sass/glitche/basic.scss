@@ -34,8 +34,8 @@ body {
 	letter-spacing: $default-letter-spacing;
 	font-weight: 400;
 	header, footer, .section {
-		opacity: 1;
-		visibility: visible;
+		opacity: 0;
+		visibility: hidden;
 	}
 	&.loaded {
 		header, footer, .section {
