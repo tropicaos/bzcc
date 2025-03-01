@@ -40,19 +40,6 @@ $(function () {
 		}
 	});
 	
-	function loadPage(url) {
-		$('body').addClass('loading');
-		fetch(url)
-			.then(response => response.text())
-			.then(html => {
-				$('#content').html(html);
-			})
-			.catch(error => console.error(error))
-			.finally(() => {
-				$('body').removeClass('loading'); // Garante a remoção da classe
-			});
-	}
-	
 	/*Fade-out animation between load pages*/
 	$('header .top-menu, .typed-bread').on('click', 'a', function(){
 		var link = $(this).attr('href');
