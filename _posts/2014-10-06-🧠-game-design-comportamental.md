@@ -25,7 +25,7 @@ O que será mostrado aqui não é um projeto para jogos perfeitos, mas a apresen
 A tradução concreta de “O que estamos dizendo aos nossos jogadores?” é “Quais são as contingências?” Contingência é uma ou várias regras que controlam quando as recompensas deverão ser entregues. A anedota sobre essa descoberta (passada a mim por um de seus estudantes) é que um dia B. F. Skinner ficou com pouca comida para alimentar os ratos que participavam de suas experiências e para evitar o risco de ter que parar de trabalhar no dia, ao invés de dar comida sempre que os ratos puxavam a alavanca, ele começou a fazê-lo só na décima vez. Testando vários regimes diferentes de recompensa, ele descobriu que havia produzido diferentes padrões de resposta. Disso nasceu uma nova área da psicologia , com inúmeras e fortes aplicações ao game design.
 
 As contingências nos jogos são mais complexas, mas a analogia com os ratos é bem clara. Por exemplo, jogadores em um RPG ganham XP para subir níveis ou coletar itens bônus para ganhar vidas extras. Num jogo arcade, power-ups podem aparecer em intervalos aleatórios ou apenas quando certas condições forem encontradas. Como em toda contingência, existem ações por parte do participante que dão as recompensas sob circunstâncias específicas. Isso não é o mesmo que dizer que os jogadores são como ratos, mas que essas regras gerais se aplicam a ambos.
-___
+
 >
 *Alguns termos comuns na psicologia comportamental que se encaixam nas considerações de Game Design:*
 >
@@ -34,7 +34,7 @@ ___
 **Contingência**: Uma ou várias regras que controlam quando os reforços são dados. Também chamado de “Esquema de Reforço”. Exemplo: um nível a cada 1.000 XP, um nível bônus que só está disponível se você matar um certo inimigo.
 >
 **Resposta**: Uma ação do jogador que pode completar a contingência. Pode ser matando um monstro, visitando uma área do jogo ou usando uma habilidade especial.
-___
+
 
 #### **Razões e Intervalos**
 
@@ -88,13 +88,10 @@ A moral aqui é que reduzir o nível de reforço é uma coisa muito punitiva par
 
 O caso especial final que vale a pena mencionar é chamado de “evitação”, contingências onde os participantes trabalham para evitar que coisas aconteçam. Um exemplo simples de laboratório envolve um rato em uma gaiola com uma pequena alavanca. De vez em quando um pequeno choque é dado pelo chão de metal da gaiola. No entanto, se o rato puxar a alavanca, o choque não acontecerá em 30 segundos. O rato rapidamente aprende a puxar a alavanca em um ritmo lento e contínuo, que previne o choque.
 
-![imagem de capa - fundo sóbrio de um mar calmo em preto e branco](assets/images/uploads/carlosmassa.jpg)
-"O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
-
 {% include image.html
             img="assets/images/uploads/carlosmassa.jpg"
             title="rati1"
-            caption="Esse simples experimento ilustra o princípio da evitação."
+            caption="Esse simples experimento ilustra o princípio da evitação. O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
 %}
 
 O melhor exemplo disso que conheço é em Ultima Online, onde os jogadores que tem castelos ou casas precisam visitará-las regularmente ou elas começarão a decair. Como o exemplo do laboratório acima, você tem participantes que estão trabalhando para evitar que coisas aconteçam e manter o status quo. Isso é uma estratégia relativamente barata do ponto de vista dos desenvolvedores de games, já que eles não precisam disponibilizar novos brinquedos e recompensas para os jogadores.
@@ -113,9 +110,11 @@ Traduzindo para a linguagem que venho usando, como fazer os jogadores manterem u
 
 Uma resposta curta é garantir que sempre, sempre haja um motivo para o jogador continuar jogando. Os esquemas variáveis que falei antes produzem uma probabilidade constante de recompensa, o que dá ao jogador um motivo para fazer o próximo objetivo. O que um desenvolvedor quer de seus jogadores é uma “dinâmica comportamental”, uma tendência a continuar fazendo o que estão fazendo mesmo nas partes que não há uma recompensa imediata. Um esquema que produz muita dinâmica é o esquema de evitação, onde os jogadores trabalham para prevenir que coisas ruins aconteçam. Até quando não está ocorrendo nada o jogador pode conseguir algo positivo para adiar uma consequência negativa.
 
-!["O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."](assets/images/uploads/tuntstunts.jpg)
-"O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
-
+{% include image.html
+            img="assets/images/uploads/tuntstunts.jpg"
+            title="TUNTSTUNTS"
+            caption="O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
+%}
 
 #### **Como fazer os jogadores pararem.**
 

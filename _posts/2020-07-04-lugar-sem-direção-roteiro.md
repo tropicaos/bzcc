@@ -1,6 +1,6 @@
 ---
 image: 'assets/images/uploads/lugarsemdirecaolsdroteiroCAPA.jpg'
-title: Lugar Sem Direção | Roteiro
+title: Lugar Sem Direção 🍬 Roteiro
 date: 2017-11-13T17:17:35.373Z
 tags: Textos Roteiro
 permalink: "/LugarSemDirecao-Roteiro"

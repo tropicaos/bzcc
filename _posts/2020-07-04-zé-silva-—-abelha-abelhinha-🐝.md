@@ -9,13 +9,12 @@ permalink: /ZeSilvaAbelhaAbelhinha
 published: true
 ---
 ![](assets/images/uploads/abelhaabelhinha02.jpg)
-Comentei aqui que sempre tô colando nos amigos que merecem todo o sucesso do mundo.
+Comentei que sempre tô colando nos amigos que merecem todo o sucesso do mundo.
 
 Esse trabalho não foi diferente.
 
 > **ASSISTA ABELHA, ABELHINHA ABAIXO**:
-TODO
-<br/>
+{% include vimeoPlayer.html id=page.vimeoId %}
 
 Já admirava Zé por sua militância pela assistência estudantil na UFPB e depois por ser um grande parceiro de luta quando rolou o Ocupa MinC em 2016. Mas quando ele confabulou comigo que tinha músicas inéditas meu cérebro quase explodiu.
 

@@ -1,17 +1,17 @@
 ---
 layout: post
 image: 'assets/images/uploads/lugarsemdirecaolsdCAPA.jpg'
-title: Lugar Sem Direção — Los Cabras Gigantes
+title: Lugar Sem Direção 🍬 - Los Cabras Gigantes
 date: 2018-02-09T17:52:08.094Z
 tags: Audiovisual Videoclipe Comédia Lombra
 permalink: /LugarSemDirecao-LosCabrasGigantes
 published: true
+vimeoId: 254650419
 ---
 CONHEÇA A IDEIA ORIGINAL NO [**ROTEIRO DO CLIPE**](/LugarSemDirecao-Roteiro)
 
-ASSISTA ABAIXO:
-<iframe src="https://player.vimeo.com/video/254650419?h=34b983830f" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/254650419">Lugar Sem Dire&ccedil;&atilde;o - Los Cabras Gigantes</a> from <a href="https://vimeo.com/bezerramos">Laureano.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+> ASSISTA ABAIXO:
+{% include vimeoPlayer.html id=page.vimeoId %}
 
 Disponível também no [**Youtube**](https://www.youtube.com/watch?v=VYZuXpBoAP8){:target="_blank"} e [**Facebook**](https://www.facebook.com/Macalango/videos/1889599741104648/?notif_id=1518190202096202&notif_t=scheduled_post_published){:target="_blank"}
 
@@ -43,7 +43,7 @@ Matheus Longo\
 Maria Júlia\
 Perazzo Júnior\
 Thalles Formiga\
-Vanessa Tavares
+Vanessa Tavares\
 
 #### EQUIPE
 

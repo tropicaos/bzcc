@@ -20,6 +20,6 @@ E pra fazer aquele trabalho completo, além do videoclipe que você pode ver [**
 
 Flores, mato e água, nada que combine melhor com o verão pessoense!
 
-> [**VEJA FLORES BALDIAS NO MEIO DO MATO NO FLICKR**](https://flic.kr/s/aHsksydHHg)
+> [**VEJA FLORES BALDIAS NO MEIO DO MATO NO FLICKR**](https://flic.kr/s/aHsksydHHg){:target="_blank"}
 
 ![Guitarrista e vocalista atravessam uma ponte de bambu sobre o rio Jaguaribe. Guitarrista segura uma Jaca.](assets/images/uploads/floresvadias03.jpg)

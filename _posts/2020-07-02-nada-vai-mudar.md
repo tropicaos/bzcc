@@ -10,6 +10,12 @@ spotifytrack: 131F3d3InZE2fqzTHptIgQ
 published: true
 ---
 
+{% include image.html
+            img="assets/images/uploads/mentimosparanosmesmos.jpg"
+            title="veranobusao"
+            caption="No ônibus ela sorri."
+%}
+
 Engolfados de uma luxúria ébria contida há anos, os dois desabam na cama e veem seus reflexos no teto. Ela tonta. Ele com o maxilar travando por causa dos comprimidos, suando frio, se controlando pra não transparecer pr’ela.
 
 Quando o dia amanhece a realidade volta a girar as engrenagens do mundo. No ônibus ela sorri. Selam um beijo com gosto de “não sei quando haverá outro desses” e deslocam-se opostamente.
@@ -66,6 +72,8 @@ Ele dá uma risada por entre os dentes ainda trincados:
 
 — Esses comprimidos são fodas…
 
+---
+
 ##### *09/2013*
 
->{% include spotifytrack.html id=page.spotifytrack %}
+{% include spotifytrack.html id=page.spotifytrack %}

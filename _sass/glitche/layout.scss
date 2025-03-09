@@ -201,7 +201,8 @@ header {
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: $extra-letter-spacing;
-			margin: 10px 0 15px 0;
+			margin: 10px 0 20px 0;
+			line-height: 1;
 
 			@media (max-width: 1060px) {
 				&.blog_title {

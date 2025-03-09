@@ -6,6 +6,7 @@ date: 2017-08-10T10:03:11.681Z
 tags: Audiovisual Gastronomia Publicidade
 permalink: /wafflehousejpa
 published: true
+vimeoId: 230738870
 ---
 ![Recheio da Waffle sendo preparado: Kiwi cortado e a banana no professo. Na mesma tábua de cortar morangos e um Kiwi inteiro esperam sua vez](assets/images/uploads/waffle01.jpg)
 
@@ -14,7 +15,8 @@ Eu [**SEEEEMPRE**](/LugarSemDirecao-LosCabrasGigantes) tô [**colando**](/Flores
 E quando Felipe - um colega do início da minha adolescência - brotou como proprietário de uma casa de Waffles fiquei agoniado pra aparecer por lá e experimentar aquelas delícias belgas.
 
 > **VEJA WAFFLE HOUSE abaixo**:
-TODO
+{% include vimeoPlayer.html id=page.vimeoId %}
+
 
 <br/>
 Quando finalmente coloquei as mãos na minha câmera o primeiro teste já estava pronto na minha cabeça: visitar Felipe e sua esposa Kendi, colher informações sobre seu empreendimento, capturar o processo de montagem da Waffle completa e, claro, me empanturrar com as delícias da casa.

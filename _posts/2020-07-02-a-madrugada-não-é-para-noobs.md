@@ -8,7 +8,13 @@ tags: Conto Suspense
 permalink: /AMadrugadaNaoEParaNoobs
 published: true
 ---
-<h4><p style="text-align:center">Maconha, medo e assassinato nas ruas de Jaguaribe.</p></h4>
+<p style="text-align:center"><h4>Maconha, medo e assassinato nas ruas de Jaguaribe.</h4></p>
+
+{% include image.html
+            img="assets/images/uploads/madrugadanoobs01.jpg"
+            title=""
+            caption=""
+%}
 
 Fecho o portão atrás de mim. Olho para os dois lados. Penduro a coisa nos lábios e caminho pelas ruas escuras. Os problemas me invadem a mente mas entre um trago e outro se esvaem momentaneamente. A noite é fria do jeito que gosto.
 

@@ -8,9 +8,11 @@ permalink: /TicTacTic
 published: true
 ---
 
->CONHEÇA O [**ROTEIRO ORIGINAL**](/LACUNA-Roteiro) BASEADO NESTA OBRA.
-
----
+{% include image.html
+            img="assets/images/uploads/tictictaaaa.jpg"
+            title=""
+            caption=""
+%}
 
 Levou a grande caneca listrada à boca. Bebeu um, dois, três, quatro longos goles e, quando a tirou da frente da face, seu campo visual se encheu de uma Gabriela recém chegada. A porta ainda estava aberta.
 

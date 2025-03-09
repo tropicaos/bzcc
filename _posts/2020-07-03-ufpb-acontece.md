@@ -9,10 +9,10 @@ published: true
 youtubeId: videoseries?list=PLgFWXTZM16pDin9oI1VPTtMpw_3IptBBH
 ---
 
-Pela primeira vez como um profissional de edição cai de cabeça na rotina de uma TV Universitária e consegui extrair o melhor que há nela.
+Pela primeira vez como um profissional de edição caí de cabeça na rotina de uma TV Universitária e consegui extrair o melhor que há nela.
 
 > ASSISTA ABAIXO:
-TODO
+{% include youtubePlayer.html id=page.youtubeId %}
 
 Usando o Adobe Premiere CS5 editei o principal formato jornalístico do canal chamado UFPB Acontece, que demandava uma produção diária e consequentemente ágil e precisa.
 

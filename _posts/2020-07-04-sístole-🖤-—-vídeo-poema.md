@@ -3,20 +3,17 @@ layout: post
 image: 'assets/images/uploads/SISTOLEVIDEOPOEMACAPA.jpg'
 title: SÍSTOLE 🖤 — Vídeo poema
 date: 2018-03-20T18:30:39.054Z
-tags: Audiovisual Argumento Lírico Poemia
+tags: Audiovisual Lírico Poemia
 permalink: /SISTOLEvideopoema
 published: true
 vimeoId: 251818155
 ---
 
-><h4><p style="text-align:center"><strong>Sou o que nunca serei. Se sou Não sei.
-</strong></p></h4>
+>[**Conheça a obra original clicando aqui**](/SISTOLE)
 
->[**CONHEÇA A OBRA ORIGINAL**](/SISTOLE)
+### ***🌿 Seleção VIII CINECONGO Festival Audiovisual 🌿***
 
----
+### ***🌿 Seleção Festival Curta Taquari 2016 🌿***
 
-Selecionado no ***VIII CINECONGO Festival Audiovisual*** e no ***Festival Curta Taquari 2016***
-
->ASSISTA ABAIXO:
-TODO
+> Assista abaixo:
+{% include vimeoPlayer.html id=page.vimeoId %}
