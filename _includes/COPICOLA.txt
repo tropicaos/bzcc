@@ -6,6 +6,7 @@ date: 2022-MM-DD 10:18:00
 tags: Textos Suspense Argumento Terror
 permalink: /Alice
 published: true
+theme: pink # (opcional) nome do tema visual definido em _data/themes.yml
 ---
 
 spotifytrack: 0tINxILFQZRWeEQN6UOv3W
@@ -31,3 +32,19 @@ subtítulo
 %}
 
 {:target="_blank"}
+
+
+Exemplo de Tema em (_data/themes.yml)
+pink:
+  primary: "#ff69b4"         # Cor de destaque (links, botões, efeitos)
+  text: "#330033"            # Cor principal do texto
+  font: "'Courier Prime', monospace"  # Fonte personalizada para o conteúdo
+  border: "#ff1493"          # Cor para bordas decorativas (linhas, caixas, etc.)
+  background: "#fff0f5"      # Cor de fundo padrão da página (caso não use imagem)
+  image: "/assets/images/bg-pink.jpg" # (opcional) imagem de fundo
+  header: "rgba(255, 255, 255, 0.6)"   # Cor de fundo do header com transparência
+  footer: "rgba(0, 0, 0, 0.6)"         # Cor de fundo do footer com transparência
+
+
+Controle de fundo e cores Globais (_sass/glitche/settings.scss)
+

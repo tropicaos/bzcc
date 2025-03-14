@@ -78,6 +78,10 @@ body {
 	}
 }
 
+.h-title {
+	color: var(--title-color, var(--primary-color));
+}
+
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -110,7 +114,7 @@ footer {
 	position: relative;
 	margin: 30px;
 	overflow: hidden;
-	background: transparent;
+	background: var(--background-color, #000);
 	@media (max-width: 840px) {
 		margin: 15px;
 	}

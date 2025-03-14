@@ -22,39 +22,30 @@
   {% endif %}
 
   <!-- Estilo via tema (data/themes/*.yml) -->
-  {% if page.theme %}
-    {% assign theme = site.data.themes[page.theme] %}
+  {% assign selected_theme = page.theme | default: 'default' %}
+
+  {% if selected_theme != 'default' %}
+    {% assign theme = site.data.themes[selected_theme] %}
     {% if theme %}
-    <style>
-      :root {
-        --primary-color: {{ theme.primary }};
-        --background-color: {{ theme.background }};
-        --text-color: {{ theme.text }};
-        --font-family: {{ theme.font }};
-        --border-color: {{ theme.border }};
-        {% if theme.image %}
-          --background-image: url('{{ theme.image }}');
-        {% endif %}
-        {% if theme.header %}
-          --header-bg-color: {{ theme.header }};
-        {% endif %}
-        {% if theme.footer %}
-          --footer-bg-color: {{ theme.footer }};
-        {% endif %}
-      }
-    </style>
+      <style>
+        :root {
+          --primary-color: {{ theme.primary }};
+          --background-color: {{ theme.background }};
+          --text-color: {{ theme.text }};
+          --font-family: {{ theme.font }};
+          --border-color: {{ theme.border }};
+          {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
+          {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
+          {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
+          {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
+          {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
+          {% if theme.header %} --header-bg-color: {{ theme.header }}; {% endif %}
+          {% if theme.footer %} --footer-bg-color: {{ theme.footer }}; {% endif %}
+        }
+      </style>
     {% endif %}
   {% endif %}
 
-  <!-- Estilo inline direto pelo front matter da página (opcional) -->
-  {% if page.header_color or page.footer_color %}
-  <style>
-    :root {
-      {% if page.header_color %} --header-bg-color: {{ page.header_color }}; {% endif %}
-      {% if page.footer_color %} --footer-bg-color: {{ page.footer_color }}; {% endif %}
-    }
-  </style>
-  {% endif %}
 </head>
 
 <body class="

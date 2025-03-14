@@ -400,4 +400,14 @@ $(function () {
 	  resultsContainer: document.getElementById('results-container'),
 	  json: '/search.json'
 	});
+
+
+	document.addEventListener("scroll", function () {
+		let scrollTop = window.scrollY;
+		let heroImage = document.querySelector(".hero-image.parallax");
+	  
+		if (heroImage) {
+		  heroImage.style.transform = `translateY(${scrollTop * 0.3}px)`;
+		}
+	  });
 });
