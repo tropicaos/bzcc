@@ -145,7 +145,7 @@ header {
 			}
 			&:hover {
 				&:before, &:after, span {
-					background: $active-color;
+					background: var(--active-color);
 				}
 			}
 			@media (max-width: 840px) {
@@ -174,12 +174,12 @@ header {
 					}
 					&.active {
 						a {
-							color: $active-color;
+							color: var(--active-color);
 						}
 						.btn {
 							color: $bg;
-							background: $active-color;
-							border: 1px solid $active-color;
+							background: var(--active-color);
+							border: 1px solid var(--active-color);
 						}
 					}
 				}
@@ -221,7 +221,7 @@ header {
 				text-transform: uppercase;
 				letter-spacing: $extra-letter-spacing;
 				@include transition(all 0.3s ease 0s);
-				@include box-shadow(inset 0 -6px 0px $extra-active-color);
+				@include box-shadow(inset 0 -6px 0px var(--extra-active-color));
 			}
 		}
 	}
@@ -286,7 +286,7 @@ header {
 
 	.mouse_btn {
 		font-size: 24px;
-		color: $active-color;
+		color: var(--active-color);
 		text-align: center;
 		position: absolute;
 		width: 20px;
@@ -358,7 +358,7 @@ header {
 			}
 			strong {
 				font-weight: 400;
-				color: $active-color;
+				color: var(--active-color);
 			}
 		}
 	}
@@ -391,7 +391,7 @@ header {
 			top: 0;
 			width: 1px;
 			height: 100%;
-			background: $active-color;
+			background: var(--active-color);
 		}
 		&:first-child {
 			padding-top: 0;
@@ -413,8 +413,8 @@ header {
 			line-height: 18px;
 			font-weight: 500;
 			font-size: $extra-small-size;
-			color: $active-color;
-			border: 1px solid $active-color;
+			color: var(--active-color);
+			border: 1px solid var(--active-color);
 			&:before {
 				content: '';
 				width: 29px;
@@ -422,7 +422,7 @@ header {
 				position: absolute;
 				left: -30px;
 				top: 9px;
-				background: $active-color;
+				background: var(--active-color);
 			}
 		}
 		.name {
@@ -463,7 +463,7 @@ header {
 					position: absolute;
 					height: 3px;
 					width: 0%;
-					background: $active-color;
+					background: var(--active-color);
 					@include transition(all 0.3s ease 0s);
 					.percent {
 						position: absolute;
@@ -522,7 +522,7 @@ header {
 			width: 36px;
 			text-align: center;
 			font-size: 30px;
-			color: $active-color;
+			color: var(--active-color);
 			@media (max-width: 400px) {
 				float: none;
 				display: inline-block;
@@ -566,7 +566,7 @@ header {
 			position: relative;
 			padding-bottom: 0;
 			&.glitch-effect {
-				color: $active-color;
+				color: var(--active-color);
 			}
 			@media (max-width: 580px) {
 				padding-bottom: 15px;
@@ -608,7 +608,7 @@ header {
 			}
 			.desc {
 				.name {
-					color: $active-color;
+					color: var(--active-color);
 				}
 			}
 		}
@@ -637,7 +637,7 @@ header {
 				@include transition(all 0.3s ease 0s);
 				@include transform(scale(0.5,0.5));
 				.centrize {
-					background: $active-color;
+					background: var(--active-color);
 				}
 				.ion {
 					color: $white-color;
@@ -675,8 +675,8 @@ header {
 	line-height: 18px;
 	font-weight: 500;
 	font-size: $extra-small-size;
-	color: $active-color;
-	border: 1px solid $active-color;
+	color: var(--active-color);
+	border: 1px solid var(--active-color);
 }
 
 .category {
@@ -686,7 +686,7 @@ header {
 	color: $default-color;
 	text-transform: uppercase;
 	letter-spacing: $extra-letter-spacing;
-	@include box-shadow(inset 0 -6px 0px $extra-active-color);
+	@include box-shadow(inset 0 -6px 0px var(--extra-active-color));
 }
 
 /* 10. Contacts */
@@ -742,7 +742,7 @@ header {
 
 	p {
 		a {
-			color: $active-color;
+			color: var(--active-color);
 
 			&:hover {
 				text-decoration: underline;
@@ -758,7 +758,7 @@ header {
 		color: $extra-color;
 		font-style: italic;
 		font-weight: 300;
-		border-left: 2px solid $active-color;
+		border-left: 2px solid var(--active-color);
 
 		code {
 			padding: 2px;
@@ -800,7 +800,7 @@ header {
 				top: 8px;
 				width: 4px;
 				height: 4px;
-				background: $active-color;
+				background: var(--active-color);
 				border-radius: 4px;
 				-webkit-border-radius: 4px;
 			}
@@ -836,7 +836,7 @@ header {
 	}
 	.cat-links {
 		a {
-			color: $active-color;
+			color: var(--active-color);
 
 			&:hover {
 				text-decoration: underline;
@@ -863,8 +863,8 @@ header {
 			line-height: 18px;
 			font-weight: 500;
 			font-size: $extra-small-size;
-			color: $active-color;
-			border: 1px solid $active-color;
+			color: var(--active-color);
+			border: 1px solid var(--active-color);
 		}
 	}
 	.author {
@@ -1012,7 +1012,7 @@ footer {
 			}
 			&:hover {
 				.ion {
-					color: $active-color;
+					color: var(--active-color);
 				}
 			}
 		}
@@ -1126,7 +1126,7 @@ footer {
 }
 
 .skills.dotted ul li .progress .da span {
-  background: $active-color!important;
+  background: var(--active-color)!important;
 }
 
 .section.works .filters .btn-group {
@@ -1237,7 +1237,7 @@ a.btn, .btn {
   top: 3px;
   display: inline-block;
   font-family: $icons-font;
-  color: $active-color;
+  color: var(--active-color);
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1272,7 +1272,7 @@ a.btn, .btn {
   position: absolute;
   height: 3px;
   width: 0%;
-  background: $active-color;
+  background: var(--active-color);
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -1322,7 +1322,7 @@ a.btn, .btn {
 }
 
 .skills.dotted ul li .progress .da span {
-  background: $active-color;
+  background: var(--active-color);
 }
 
 .skills.circles .progress.p51 .slice, 
@@ -1433,7 +1433,7 @@ a.btn, .btn {
   width: 0.82em;
   height: 0.82em;
   clip: rect(0em, 0.5em, 1em, 0em);
-  border: 0.09em solid $active-color;
+  border: 0.09em solid var(--active-color);
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-transform: rotate(0deg);

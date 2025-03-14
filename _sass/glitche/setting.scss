@@ -77,6 +77,8 @@
 	
 		/* Cores principais */
 		--primary-color: #{$active-color};
+		--active-color: #{$active-color};
+		--extra-active-color: #{$extra-active-color};
 	
 		/* Header/Footer */
 		--header-bg-color: #{$header-bg-color};

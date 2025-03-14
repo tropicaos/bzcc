@@ -29,11 +29,6 @@
     {% if theme %}
       <style>
         :root {
-          --primary-color: {{ theme.primary }};
-          --background-color: {{ theme.background }};
-          --text-color: {{ theme.text }};
-          --font-family: {{ theme.font }};
-          --border-color: {{ theme.border }};
           {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
           {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
           {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
@@ -41,6 +36,8 @@
           {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
           {% if theme.header %} --header-bg-color: {{ theme.header }}; {% endif %}
           {% if theme.footer %} --footer-bg-color: {{ theme.footer }}; {% endif %}
+          {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
+          {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
         }
       </style>
     {% endif %}

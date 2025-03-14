@@ -42,6 +42,7 @@ body {
     }
 }
 
+
 @media (max-width: 768px) {
 	body.home {
 	  background: var(--background-mobile);
@@ -121,7 +122,7 @@ footer {
 	.line {
 		content: '';
 		position: fixed;
-		background: var(--border-color, var(--primary-color, $active-color));
+		background: var(--border-color, var(--primary-color, var(--active-color)));
 		z-index: 105;
 		&.top {
 			left: 0;
@@ -251,14 +252,14 @@ strong {
 
 /* 5. Links */
 a { 
-	color: var(--primary-color, $active-color);
+	color: var(--primary-color, var(--active-color));
 	text-decoration: none;
 	opacity: 1;
 	outline: none;
   
 	&:hover {
 	  text-decoration: none;
-	  color: var(--primary-color, $active-color); // ou outro var como --hover-color
+	  color: var(--primary-color, var(--active-color)); // ou outro var como --hover-color
 	}
   }
 
@@ -280,13 +281,13 @@ a.btn, .btn {
 	@include transition(all 0.3s ease 0s);
 	&.fill {
 		color: $extra-color;
-		background: $active-color;
-		border: 1px solid $active-color;
+		background: var(--active-color);
+		border: 1px solid var(--active-color);
 	}
 	&:hover {
 		color: $extra-color;
-		background: $active-color;
-		border: 1px solid $active-color;
+		background: var(--active-color);
+		border: 1px solid var(--active-color);
 	}
 }
 
@@ -300,11 +301,11 @@ a.btn, .btn {
 	left:0;
 	text-align: center;
 	.load {
-		color: $active-color;
+		color: var(--active-color);
 		font-size: $small-size;
 	}
 	.typed-load, .typed-cursor {
-		color: $active-color;
+		color: var(--active-color);
 		font-size: $small-size;
 	}
 	display: flex;
@@ -668,12 +669,12 @@ p {
 	}
 	.glitch-effect:after, .glitch-effect-white:after {
 		left: 2px;
-		text-shadow: -1px 0 $active-color;
+		text-shadow: -1px 0 var(--active-color);
 		animation: glitch-1 2s infinite linear alternate-reverse;
 	}
 	.glitch-effect:before, .glitch-effect-white:before {
 		left: -2px;
-		text-shadow: 2px 0 $active-color;
+		text-shadow: 2px 0 var(--active-color);
 		animation: glitch-2 2s infinite linear alternate-reverse;
 	}
 }
@@ -880,14 +881,14 @@ p {
 
 .sidebar_btn:hover {
 	//color: $white-color;
-	//background: $active-color;
-	//border: 1px solid $active-color;
+	//background: var(--active-color);
+	//border: 1px solid var(--active-color);
 
 	span {
-		background: $active-color;
+		background: var(--active-color);
 
 		&:before, &:after {
-			background: $active-color;
+			background: var(--active-color);
 		}
 	}
 }
@@ -984,7 +985,7 @@ p {
 }
 
 .content-sidebar .widget ul li a:hover {
-	color: $active-color;
+	color: var(--active-color);
 }
 
 .content-sidebar #results-container {
@@ -1037,10 +1038,10 @@ p {
 }
 
 .content-sidebar span.screen-reader-text span {
-	box-shadow: inset 0 -6px 0px $extra-active-color;
-	-moz-box-shadow: inset 0 -6px 0px $extra-active-color;
-	-webkit-box-shadow: inset 0 -6px 0px $extra-active-color;
-	-khtml-box-shadow: inset 0 -6px 0px $extra-active-color;
+	box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-moz-box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-webkit-box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-khtml-box-shadow: inset 0 -6px 0px var(--extra-active-color);
 }
 
 .search-form input.search-field {
@@ -1082,10 +1083,10 @@ p {
 .content-sidebar h2.widget-title span {
 	position: relative;
 	left: -5px;
-	box-shadow: inset 0 -6px 0px $extra-active-color;
-	-moz-box-shadow: inset 0 -6px 0px $extra-active-color;
-	-webkit-box-shadow: inset 0 -6px 0px $extra-active-color;
-	-khtml-box-shadow: inset 0 -6px 0px $extra-active-color;
+	box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-moz-box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-webkit-box-shadow: inset 0 -6px 0px var(--extra-active-color);
+	-khtml-box-shadow: inset 0 -6px 0px var(--extra-active-color);
 }
 
 .content-sidebar .close {
@@ -1155,8 +1156,8 @@ p {
 	padding: 0 5px;
 	font-weight: 500;
 	font-size: $extra-small-size;
-	color: $active-color;
-	border: 1px solid $active-color;
+	color: var(--active-color);
+	border: 1px solid var(--active-color);
 }
 
 .content-sidebar .screen-reader-text {

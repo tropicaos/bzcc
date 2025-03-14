@@ -6,6 +6,8 @@ default:
   font: "'Courier Prime', monospace"
   header: "rgba(255, 0 0, 0.8)"
   footer: "rgba(0, 0, 0, 0.8)"
+  active: "#ff1493"
+  extra_active: "#ff69b4"
 
 temas&condicoes:
   primary: "#005e46"
@@ -26,6 +28,8 @@ alice:
   image: "assets/images/uploads/AliceBG.jpg"
   header: "rgba(0, 0, 0, 0)"
   footer: "rgba(0, 0, 0, 0)"
+  active: "#4A3724" 
+  extra_active: "#4A3724"
 
 pink:
   primary: "#ff69b4"
@@ -36,6 +40,8 @@ pink:
   image: "/assets/images/background.jpg"
   header: "rgba(0, 0, 0, 0.6)"
   footer: "rgba(0, 0, 0, 0.6)"
+  active: "#ff69b4" 
+  extra_active: "#ff69b4"
 
 cyberpunk:
   primary: "#39ff14"
