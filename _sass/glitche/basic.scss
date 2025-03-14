@@ -25,15 +25,31 @@ html {
 	margin-right: 0!important;
 }
 
+body.home {
+	background-color: var(--background-color, #000);
+	background-image: var(--background-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+  }
+
+@media (max-width: 768px) {
+	body.home {
+	  background: #000 url('/assets/images/background.jpg') no-repeat center top scroll;
+	  background-size: cover;
+	}
+}
+
 body {
     margin: 0;
 	padding: 0;
 	border: none;
-	font-family: $default-font;
+	font-family: var(--font-family, $default-font);
 	font-size: $default-size;
 	line-height: $line-height;
-	color: $default-color;
-	background: $white-color;
+	color: var(--text-color, #ffffff);
+	background: var(--background-color, #000000);
 	letter-spacing: $default-letter-spacing;
 	font-weight: 400;
 	header, footer, .section {
@@ -61,18 +77,24 @@ body {
 }
 
 /* 2. Container */
+.container,
+header,
+footer {
+  background: transparent !important;
+}
+
 .container {
 	position: relative;
 	margin: 30px;
 	overflow: hidden;
-	background: $bg;
+	background: transparent;
 	@media (max-width: 840px) {
 		margin: 15px;
 	}
 	.line {
 		content: '';
 		position: fixed;
-		background: $active-color;
+		background: var(--border-color, var(--primary-color, $active-color));
 		z-index: 105;
 		&.top {
 			left: 0;
@@ -114,6 +136,10 @@ body {
 		}
 	}
 }
+
+body:not(.home) {
+	background: var(--background-color, #000000);
+  }
 
 .wrapper {
 	overflow: hidden;
@@ -161,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $default-font;
 	margin: 0;
 	margin-bottom: 30px;
-	color: $dark-color;
+	color: var(--text-color, $dark-color);
 }
 
 h1 {
@@ -201,15 +227,16 @@ strong {
 
 /* 5. Links */
 a { 
-	color: $default-color;
+	color: var(--primary-color, $active-color);
 	text-decoration: none;
 	opacity: 1;
 	outline: none;
+  
 	&:hover {
-		text-decoration: none;
-		color: $active-color;
+	  text-decoration: none;
+	  color: var(--primary-color, $active-color); // ou outro var como --hover-color
 	}
-}
+  }
 
 /* 6. Buttons */
 a.btn, .btn {
@@ -256,6 +283,9 @@ a.btn, .btn {
 		color: $active-color;
 		font-size: $small-size;
 	}
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* 8. Forms */
@@ -606,11 +636,11 @@ p {
 		top: 0;
 		left: 0;
 		width: 100%;
-		background: $white-color;
+		background: transparent !important;
 		clip: rect(0, 0, 0, 0);
 	}
 	.glitch-effect-white:before, .glitch-effect-white:after {
-		background: $active-color;
+		background-color: transparent;
 	}
 	.glitch-effect:after, .glitch-effect-white:after {
 		left: 2px;

@@ -1,14 +1,27 @@
+/**
+*	Glitche - CV/Resume/Portfolio Template (HTML)
+*	Version: 1.3
+*	Author: beshleyua
+*	Author URL: http://themeforest.net/user/beshleyua
+*	Copyright © Cvio by beshleyua. All Rights Reserved.
+**/
 
 $(function () {
 	'use strict';
-	
-	window.onpageshow = function(event) {if (event.persisted) {window.location.reload() }};
+
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+			setTimeout(() => {
+				window.location.reload();
+			}, 100);
+		}
+	};
 
 	/* Set full height in blocks */
 	var width = $(window).width();
 	var height = $(window).height();
 	$('.section.started').css({'height': height-60});
-	
+
 	/* Typed preload text */
 	$('.typed-load').typed({
 		stringsElement: $('.typing-load'),
@@ -17,27 +30,30 @@ $(function () {
 	
 	/* Preloader */
 	$(window).on('load', function() {
-		$('body').addClass('loaded');
-		$('body').removeClass('scroll_hidden');
-	
-		/* Typed subtitle */
-		$('.typed-subtitle').typed({
-			stringsElement: $('.typing-subtitle'),
-			loop: true
+		$(".preloader .pre-inner").fadeOut(800, function(){
+			$('.preloader').fadeOut();
+			$('body').addClass('loaded');
+			$('body').removeClass('scroll_hidden');
+			
+			/* Typed subtitle */
+			$('.typed-subtitle').typed({
+				stringsElement: $('.typing-subtitle'),
+				loop: true
+			});
+			
+			/* Typed breadcrumbs */
+			$('.typed-bread').typed({
+				stringsElement: $('.typing-bread'),
+				showCursor: false
+			});
+
+			/* One Page Nav */
+			var url_hash = location.hash;
+			var sectionElem = $(url_hash);
+			if(url_hash.indexOf('#section-') == 0 && sectionElem.length){
+				$('body, html').animate({scrollTop: $(url_hash).offset().top - 70}, 400);
+			}
 		});
-		
-		/* Typed breadcrumbs */
-		$('.typed-bread').typed({
-			stringsElement: $('.typing-bread'),
-			showCursor: false
-		});
-	
-		/* One Page Nav */
-		var url_hash = location.hash;
-		var sectionElem = $(url_hash);
-		if(url_hash.indexOf('#section-') == 0 && sectionElem.length){
-			$('body, html').animate({scrollTop: $(url_hash).offset().top - 70}, 400);
-		}
 	});
 	
 	/*Fade-out animation between load pages*/
@@ -53,6 +69,7 @@ $(function () {
 				$('.menu-btn').trigger('click');
 			}
 		} else {
+			$('body').removeClass('loaded');
 			setTimeout(function() {
 				location.href = "" + link;
 			}, 500);
@@ -67,6 +84,7 @@ $(function () {
 			$('body').addClass('loaded');
 		} else {
 			$('header').addClass('active');
+			$('body').removeClass('loaded');
 		}
 		
 		return false;
@@ -249,48 +267,48 @@ $(function () {
         }).magnificPopup('open');
 
         return false;
-    });
-
-	/*
+	});
+	
+		/*
     Documentos/Writing popup
 */
-$('.has-popup-writing').magnificPopup({
-    type: 'inline',
-    overflowY: 'auto',
-    closeBtnInside: true,
-    mainClass: 'mfp-fade',
-    callbacks: {
-        open: function() {
-            $('.ion').addClass('ion-document-text'); // Ícone de documento
-        }
-    }
-});
-
-/*
-    Games popup
-*/
-$('.has-popup-game').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    iframe: {
-        patterns: {
-            itch_io: {
-                index: 'itch.io/',
-                id: 'itch.io/',
-                src: 'https://%id%?autoplay=true'
-            }
-        }
-    },
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-    mainClass: 'mfp-fade',
-    callbacks: {
-        open: function() {
-            $('.ion').addClass('ion-joystick'); // Ícone de jogo
-        }
-    }
-});
+	$('.has-popup-writing').magnificPopup({
+		type: 'inline',
+		overflowY: 'auto',
+		closeBtnInside: true,
+		mainClass: 'mfp-fade',
+		callbacks: {
+			open: function() {
+				$('.ion').addClass('ion-document-text'); // Ícone de documento
+			}
+		}
+	});
+	
+	/*
+		Games popup
+	*/
+	$('.has-popup-game').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		iframe: {
+			patterns: {
+				itch_io: {
+					index: 'itch.io/',
+					id: 'itch.io/',
+					src: 'https://%id%?autoplay=true'
+				}
+			}
+		},
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false,
+		mainClass: 'mfp-fade',
+		callbacks: {
+			open: function() {
+				$('.ion').addClass('ion-joystick'); // Ícone de jogo
+			}
+		}
+	});
 	
 	/* Resize function */
 	$(window).resize(function() {
