@@ -7,9 +7,8 @@ tags: Textos Argumento Conto Comédia Suspense Distopia Sci-fi HISTERIVERSO
 permalink: /Termos&Condicoes
 published: true
 spotifyplaylist: 0MMS0CWIcIF02UCBmac4EU
+theme: temas&condicoes
 ---
-
-![O poster principal de Termos e Condições & que simula a bandeira brasileira com uma foto esverdeada de prédios na Vila Buarque em São Paulo, um letreiro com o título da história centralizada numa faixa de angulação idêntica ao da bandeira brasileira, porém com fundo preto e letras amarelas e um letreiro superior centralizado que evitencia o autor: UM ARGUMENTO BEZERRAMOS.CC. Um jogo sombras subliminarmente fazem o losango e o círculo da bandeira e há váriás gotas de sangue pingadas em cima de tudo.](assets/images/uploads/termosecondicoesposter.jpg)
 
 >**CONSIDERE OUVIR ESSA TRILHA SUGERIDA EM PARALELO**
 
@@ -135,7 +134,8 @@ Do lado de fora, o mesmo motorista do _KRIEG_ espera tão ofegante que chega a s
 
 **Um luxuoso carro preto sai em disparada, serpenteando a selva de pedra megalopolitana que viola a linha do horizonte, prateada por um luar intenso.**
 
-![](assets/images/uploads/termosecondicoesbg.jpg)
+![O poster principal de Termos e Condições & que simula a bandeira brasileira com uma foto esverdeada de prédios na Vila Buarque em São Paulo, um letreiro com o título da história centralizada numa faixa de angulação idêntica ao da bandeira brasileira, porém com fundo preto e letras amarelas e um letreiro superior centralizado que evitencia o autor: UM ARGUMENTO BEZERRAMOS.CC. Um jogo sombras subliminarmente fazem o losango e o círculo da bandeira e há váriás gotas de sangue pingadas em cima de tudo.](assets/images/uploads/termosecondicoesposter.jpg)
+
 - - -
 _Feito com a colaboração de [Mônica Barros](https://www.instagram.com/monicag.barros/){:target="_blank"}, [Everton Agner](https://twitter.com/ertonnnn){:target="_blank"}, [Amanda Azevedo](https://twitter.com/MandaAzevedo/){:target="_blank"} e [Ju Carneiro](https://twitter.com/exaustasambah){:target="_blank"}_
 

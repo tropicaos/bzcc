@@ -6,7 +6,27 @@ default:
   font: "'Courier Prime', monospace"
   header: "rgba(255, 0 0, 0.8)"
   footer: "rgba(0, 0, 0, 0.8)"
-  
+
+temas&condicoes:
+  primary: "#005e46"
+  text: "#fff"
+  border: "#d2cf2a"
+  font: "'Courier Prime', monospace"
+  background: "#005e46"
+  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  header: "rgba(0, 0, 0, 1)"
+  footer: "rgba(0, 0, 0, 1)"
+
+alice:
+  primary: "#4A3724"
+  text: "#b0191a"
+  border: "#b0191a"
+  font: "'Courier Prime', monospace"
+  background: "#e8ba98"
+  image: "assets/images/uploads/AliceBG.jpg"
+  header: "rgba(0, 0, 0, 0)"
+  footer: "rgba(0, 0, 0, 0)"
+
 pink:
   primary: "#ff69b4"
   text: "#330033"
