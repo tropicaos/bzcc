@@ -1,0 +1,125 @@
+pink:
+  primary: "#ff69b4"
+  background: "#fff0f5"
+  text: "#330033"
+  border: "#ff1493"
+  font: "'Courier Prime', monospace"
+
+cyberpunk:
+  primary: "#39ff14"
+  background: "#0f0f0f"
+  text: "#e6e6e6"
+  border: "#ff00ff"
+  font: "'Courier Prime', monospace"
+
+dark-poetry:
+  primary: "#9d4edd"
+  background: "#121212"
+  text: "#f0e6f6"
+  border: "#5f0f40"
+  font: "'Courier Prime', monospace"
+
+paperkraft:
+  primary: "#c78c56"
+  background: "#f5f0e1"
+  text: "#3e2f1c"
+  border: "#a56b3f"
+  font: "'Changa One', cursive"
+
+retro:
+  primary: "#ff6347"
+  background: "#fffaf0"
+  text: "#3b3b3b"
+  border: "#ffa500"
+  font: "'Courier Prime', monospace"
+
+vaporwave:
+  primary: "#ff77ff"
+  background: "#d0f0ff"
+  text: "#6c3483"
+  border: "#00ffff"
+  font: "'Changa One', cursive"
+
+forest:
+  primary: "#2e8b57"
+  background: "#e0f2e9"
+  text: "#1c3d2e"
+  border: "#3cb371"
+  font: "'Courier Prime', monospace"
+
+mono-minimal:
+  primary: "#999999"
+  background: "#ffffff"
+  text: "#222222"
+  border: "#cccccc"
+  font: "'Courier Prime', monospace"
+  
+sunset:
+  primary: "#ff4500"
+  background: "#fff5e6"
+  text: "#331100"
+  border: "#ff6347"
+  font: "'Courier Prime', monospace"
+
+midnight:
+  primary: "#0abdc6"
+  background: "#0f0f0f"
+  text: "#d9faff"
+  border: "#005f73"
+  font: "'Courier Prime', monospace"
+
+pastel-dream:
+  primary: "#a29bfe"
+  background: "#fceefc"
+  text: "#5e548e"
+  border: "#dcd6f7"
+  font: "'Changa One', cursive"
+
+inkwell:
+  primary: "#1c1c1c"
+  background: "#f4f4f4"
+  text: "#0e0e0e"
+  border: "#333333"
+  font: "'Courier Prime', monospace"
+
+café-au-lait:
+  primary: "#7b4b2a"
+  background: "#f8f1e7"
+  text: "#3e2c23"
+  border: "#a8745b"
+  font: "'Changa One', cursive"
+
+golden-hour:
+  primary: "#fca311"
+  background: "#fffbf0"
+  text: "#252422"
+  border: "#ffba08"
+  font: "'Courier Prime', monospace"
+
+aqua-sky:
+  primary: "#00b4d8"
+  background: "#e0f7fa"
+  text: "#023e8a"
+  border: "#48cae4"
+  font: "'Courier Prime', monospace"
+
+bloody-mary:
+  primary: "#c1121f"
+  background: "#fff0f0"
+  text: "#1d0000"
+  border: "#780000"
+  font: "'Changa One', cursive"
+
+lilac-wind:
+  primary: "#b185db"
+  background: "#faf5ff"
+  text: "#3b2f63"
+  border: "#d6b4fc"
+  font: "'Changa One', cursive"
+
+stone-age:
+  primary: "#8d99ae"
+  background: "#edf2f4"
+  text: "#2b2d42"
+  border: "#6c757d"
+  font: "'Courier Prime', monospace"
