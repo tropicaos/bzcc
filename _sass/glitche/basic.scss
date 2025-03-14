@@ -26,20 +26,21 @@ html {
 }
 
 body.home {
-	background-color: var(--background-color, #000);
-	background-image: var(--background-image);
-	background-repeat: no-repeat;
+	background: var(--background);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-  }
+}
 
 @media (max-width: 768px) {
 	body.home {
-	  background: #000 url('/assets/images/background.jpg') no-repeat center top scroll;
+	  background: var(--background-mobile);
+	  background-repeat: no-repeat;
+	  background-position: center top;
+	  background-attachment: scroll;
 	  background-size: cover;
 	}
-}
+  }
 
 body {
     margin: 0;
@@ -77,10 +78,24 @@ body {
 }
 
 /* 2. Container */
-.container,
-header,
+header {
+	background-color: var(--header-bg-color, #{$header-bg-color});
+	color: var(--header-text-color, #{$header-text-color});
+	backdrop-filter: blur(var(--header-blur, #{$header-blur}));
+	-webkit-backdrop-filter: blur(var(--header-blur, #{$header-blur}));
+	background-clip: padding-box;
+	border: 1px solid rgba(255, 255, 255, 0.1); 
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+  
 footer {
-  background: transparent !important;
+	background-color: var(--footer-bg-color, #{$footer-bg-color});
+	color: var(--footer-text-color, #{$footer-text-color});
+	backdrop-filter: blur(var(--footer-blur, #{$footer-blur}));
+	-webkit-backdrop-filter: blur(var(--footer-blur, #{$footer-blur}));
+	background-clip: padding-box;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .container {

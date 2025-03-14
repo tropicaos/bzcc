@@ -23,7 +23,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	text-align: right;
-	background: $bg;
+	background-color: var(--header-bg-color, rgba(0, 0, 0, 0.6));
 	opacity: 1;
 	visibility: visible;
 	@include transition(all 0.6s ease 0s);
@@ -171,7 +171,7 @@ header {
 				position: relative;
 				line-height: 18px;
 				font-size: $default-size;
-				color: $dark-color;
+				color: var(--header-text-color, #fff);
 				text-transform: uppercase;
 				letter-spacing: $extra-letter-spacing;
 				@include transition(all 0.3s ease 0s);
@@ -197,7 +197,7 @@ header {
 		.h-title {
 			font-size: $title-size;
 			font-family: $default-font;
-			color: $dark-color;
+			color: var(--header-text-color, #fff);
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: $extra-letter-spacing;
@@ -381,7 +381,7 @@ header {
 		}
 		.name {
 			font-weight: 500;
-			color: $dark-color;
+			color: var(--header-text-color, #fff);
 			margin: 0 0 15px 0;
 		}
 		p {
@@ -489,7 +489,7 @@ header {
 		.name {
 			font-weight: 500;
 			font-size: $default-size;
-			color: $dark-color;
+			color: var(--header-text-color, #fff);
 			margin: 6px 0 0 46px;
 			@media (max-width: 400px) {
 				margin: 0 0 0 2px;
@@ -920,7 +920,7 @@ header {
 			margin-left: 100px;
 			.name {
 				font-size: $default-size;
-				color: $dark-color;
+				color: var(--header-text-color, #fff);
 				text-transform: uppercase;
 				font-weight: 500;
 				padding: 5px 0 0 0;
@@ -945,7 +945,7 @@ footer {
 	left: 0;
 	padding: 15px 60px 30px 60px;
 	width: 100%;
-	background: $bg;
+	background-color: var(--header-bg-color, rgba(0, 0, 0, 0.6));
 	z-index: 100;
 	opacity: 1;
 	visibility: visible;

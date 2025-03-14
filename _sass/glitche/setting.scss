@@ -1,70 +1,118 @@
 ﻿/* Setting */
 
-/* Colors */
-$bg: #000000;
-$default-color: #ffffff;
-$extra-color: #ffffff;
-$dark-color: #fff;
-$light-color: #ffffff;
-$white-color: #000;
-$active-color: #c7009c;
-$extra-active-color: #c7009c;
-$error-color: red;
+/* --------------------------------------------------
+   1. Cores Padrão (SASS)
+-------------------------------------------------- */
+   $bg: #000000;
+   $default-color: #ffffff;
+   $extra-color: #ffffff;
+   $dark-color: #ffffff;
+   $light-color: #ffffff;
+   $white-color: #000000;
+   $active-color: #c7009c;
+   $extra-active-color: #c7009c;
+   $error-color: red;
+   
+   
+/* --------------------------------------------------
+	2. Header e Footer (SASS)
+-------------------------------------------------- */
+   $header-bg-color: rgba(0, 0, 0, 0.8);
+   $footer-bg-color: rgba(0, 0, 0, 0.8);
+   $header-text-color: #ffffff;
+   $footer-text-color: #ffffff;
+   $header-blur: 6px;
+   $footer-blur: 6px;
+   
+/* --------------------------------------------------
+	3. Tipografia (SASS)
+-------------------------------------------------- */
+   $default-font: 'Courier Prime', monospace;
+   $icons-font: 'Ionicons';
+   
+   $large-size: 15px;
+   $default-size: 13px;
+   $small-size: 12px;
+   $extra-small-size: 11px;
+   $title-size: 68px;
+   $subtitle-size: 15px;
+   $h1-size: 26px;
+   $h2-size: 23px;
+   $h3-size: 20px;
+   $h4-size: 18px;
+   $h5-size: 16px;
+   $h6-size: 14px;
+   
+   $default-letter-spacing: 0;
+   $extra-letter-spacing: 0.04em;
+   $line-height: 23px;
+   
+/* --------------------------------------------------
+	4. Formulários
+-------------------------------------------------- */
+   $form-border: 1px solid $light-color;
+   $form-border-hover: 1px solid $active-color;
+   
+/* --------------------------------------------------
+	5. Variáveis CSS :root
+	(Valores padrão que podem ser sobrescritos via HTML)
+-------------------------------------------------- */
+	$bg-image-path: '/assets/images/background.jpg';
 
-/* Fonts */
-$default-font: 'Courier Prime', monospace;
-$icons-font: 'Ionicons';
-
-/* Fonts Size */
-$large-size: 15px;
-$default-size: 13px;
-$small-size: 12px;
-$extra-small-size: 11px;
-$title-size: 68px;
-$subtitle-size: 15px;
-$h1-size: 26px;
-$h2-size: 23px;
-$h3-size: 20px;
-$h4-size: 18px;
-$h5-size: 16px;
-$h6-size: 14px;
-
-/* Letter-Spacing */
-$default-letter-spacing: 0;
-$extra-letter-spacing: 0.04em;
-
-/* Line Height */
-$line-height: 23px;
-
-/* Forms */
-$form-border: 1px solid $light-color;
-$form-border-hover: 1px solid $active-color;
-
-/* Params */
-@mixin border-radius($radius) {
-	border-radius: $radius;
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-khtml-border-radius: $radius;
-}
-
-@mixin transition($param){
-	transition: $param;
-	-moz-transition: $param;
-	-webkit-transition: $param;
-	-o-transition: $param;
-}
-
-@mixin transform($param) {
-	transform: $param;
-	-webkit-transform: $param;
-	-moz-transform: $param;
-	-o-transform: $param;
-}
-
-@mixin box-shadow($param){
-	box-shadow: $param;
-	-moz-box-shadow: $param;
-	-webkit-box-shadow: $param;
-	-khtml-box-shadow: $param;
-}
+	:root {
+		/* Cor de fundo padrão */
+		--background-color: #{$bg};
+	
+		/* Imagem de fundo opcional */
+		--background-image: url(#{$bg-image-path});
+	
+		/* Combinação opcional (usada no CSS se quiser overlay com imagem) */
+		--background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--background-image);
+	
+		--background-mobile: var(--background);
+	
+		/* Texto */
+		--text-color: #{$default-color};
+	
+		/* Cores principais */
+		--primary-color: #{$active-color};
+	
+		/* Header/Footer */
+		--header-bg-color: #{$header-bg-color};
+		--footer-bg-color: #{$footer-bg-color};
+		--header-text-color: #{$header-text-color};
+		--footer-text-color: #{$footer-text-color};
+		--header-blur: #{$header-blur};
+		--footer-blur: #{$footer-blur};
+	}
+   
+/* --------------------------------------------------
+	6. Mixins
+-------------------------------------------------- */
+   @mixin border-radius($radius) {
+	   border-radius: $radius;
+	   -moz-border-radius: $radius;
+	   -webkit-border-radius: $radius;
+	   -khtml-border-radius: $radius;
+   }
+   
+   @mixin transition($param) {
+	   transition: $param;
+	   -moz-transition: $param;
+	   -webkit-transition: $param;
+	   -o-transition: $param;
+   }
+   
+   @mixin transform($param) {
+	   transform: $param;
+	   -webkit-transform: $param;
+	   -moz-transform: $param;
+	   -o-transform: $param;
+   }
+   
+   @mixin box-shadow($param) {
+	   box-shadow: $param;
+	   -moz-box-shadow: $param;
+	   -webkit-box-shadow: $param;
+	   -khtml-box-shadow: $param;
+   } 
