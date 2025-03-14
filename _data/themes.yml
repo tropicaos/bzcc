@@ -1,3 +1,12 @@
+default:
+  primary: "#c7009c"
+  background: "#00ff00"
+  text: "#ffffff"
+  border: "#c7009c"
+  font: "'Courier Prime', monospace"
+  header: "rgba(255, 0 0, 0.8)"
+  footer: "rgba(0, 0, 0, 0.8)"
+  
 pink:
   primary: "#ff69b4"
   text: "#330033"

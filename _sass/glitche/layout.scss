@@ -23,6 +23,12 @@ body.blog .wrapper {
 	padding: 0;
   }
 
+body.blog .content {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .post-hero {
 	position: relative;
 	width: 100vw;
@@ -49,18 +55,10 @@ body.blog .wrapper {
 .hero-image .overlay {
 	position: absolute;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.5);
+	//background: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 }
 
-.post-title-area {
-	position: relative;
-	z-index: 2;
-	color: var(--text-color);
-	max-width: 90%;
-	margin: 0 auto;
-	text-align: center;
-}
   
 
 /* 1. Header */
