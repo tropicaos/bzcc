@@ -64,11 +64,12 @@
 		--background-color: #{$bg};
 	
 		/* Imagem de fundo opcional */
-		--background-image: url(#{$bg-image-path});
-	
+		/* --background-image: url(#{$bg-image-path}); */
+		--background-image: none;
+
 		/* Combinação opcional (usada no CSS se quiser overlay com imagem) */
-		--background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--background-image);
-	
+		/* --background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--background-image); */
+		--background: var(--background-color);
 		--background-mobile: var(--background);
 	
 		/* Texto */

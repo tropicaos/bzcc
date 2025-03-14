@@ -1,9 +1,12 @@
 pink:
   primary: "#ff69b4"
-  background: "#fff0f5"
   text: "#330033"
   border: "#ff1493"
   font: "'Courier Prime', monospace"
+  # background: "#fff0f5"
+  image: "/assets/images/background.jpg"
+  header: "rgba(255, 255, 255, 0.6)"
+  footer: "rgba(0, 0, 0, 0.6)"
 
 cyberpunk:
   primary: "#39ff14"

@@ -70,3 +70,8 @@ sass:
   style: compressed
 
 markdown:  kramdown
+
+collections:
+  works:
+    output: true
+    permalink: /portfolio/:name/

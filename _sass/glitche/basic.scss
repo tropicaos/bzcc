@@ -25,11 +25,21 @@ html {
 	margin-right: 0!important;
 }
 
-body.home {
-	background: var(--background);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+body {
+    &.home {
+        background: var(--background-color, #000);
+    }
+
+    &:not(.home) {
+        background: var(--background-color, #000);
+    }
+
+    &.blog {
+        background: var(--background-image);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
 
 @media (max-width: 768px) {
@@ -84,7 +94,6 @@ header {
 	backdrop-filter: blur(var(--header-blur, #{$header-blur}));
 	-webkit-backdrop-filter: blur(var(--header-blur, #{$header-blur}));
 	background-clip: padding-box;
-	border: 1px solid rgba(255, 255, 255, 0.1); 
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   }
   
@@ -94,7 +103,6 @@ footer {
 	backdrop-filter: blur(var(--footer-blur, #{$footer-blur}));
 	-webkit-backdrop-filter: blur(var(--footer-blur, #{$footer-blur}));
 	background-clip: padding-box;
-	border: 1px solid rgba(255, 255, 255, 0.1);
 	box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -152,9 +160,6 @@ footer {
 	}
 }
 
-body:not(.home) {
-	background: var(--background-color, #000000);
-  }
 
 .wrapper {
 	overflow: hidden;

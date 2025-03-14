@@ -11,7 +11,9 @@
   {% if page.layout == "home" %}
   <style>
   :root {
-    --background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('/assets/images/background.jpg');
+    /* --background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('/assets/images/background.jpg'); */
+    --background-image: none;
+    --background: var(--background-color);
     --background-size: cover;
     --background-position: center;
     --background-color-fallback: #000; 
