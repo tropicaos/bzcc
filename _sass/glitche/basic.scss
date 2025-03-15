@@ -52,20 +52,18 @@ body.blog .post-navigation .nav-links a {
 	color: var(--text-color);
 }
 
-
-
 body::-webkit-scrollbar {
-	width: 12px;               /* width of the entire scrollbar */
+	width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-	background: var(--active-color);        /* color of the tracking area */
+	background: var(--active-color);
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--background-color);    /* color of the scroll thumb */
+	background-color: var(--background-color); 
 	border-radius: 20px;     
-	border: 3px solid var(--background-color);  /* creates padding around scroll thumb */
+	border: 3px solid var(--background-color); 
 }
 
 
