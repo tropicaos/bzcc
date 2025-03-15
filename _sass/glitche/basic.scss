@@ -42,6 +42,32 @@ body {
     }
 }
 
+body.blog hr {
+	background: var(--extra-active-color);
+	height: 2px;
+	border: 0;
+  }
+
+body.blog .post-navigation .nav-links a {
+	color: var(--text-color);
+}
+
+
+
+body::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--active-color);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--background-color);    /* color of the scroll thumb */
+	border-radius: 20px;     
+	border: 3px solid var(--background-color);  /* creates padding around scroll thumb */
+}
+
 
 @media (max-width: 768px) {
 	body.home {
