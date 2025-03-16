@@ -6,6 +6,7 @@ date: 2016-10-18T12:18:09.446Z
 category: Textos
 tags: Conto Suspense
 permalink: /AMadrugadaNaoEParaNoobs
+theme: madrugada
 published: true
 ---
 <p style="text-align:center"><h4>Maconha, medo e assassinato nas ruas de Jaguaribe.</h4></p>

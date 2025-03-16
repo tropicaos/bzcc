@@ -3,18 +3,20 @@ default:
   background: "#00ff00"
   text: "#ffffff"
   border: "#c7009c"
+  active: "#ff1493"
+  extra_active: "#ff69b4"
   font: "'Courier Prime', monospace"
   header: "rgba(255, 0 0, 0.8)"
   footer: "rgba(0, 0, 0, 0.8)"
-  active: "#ff1493"
-  extra_active: "#ff69b4"
 
 temas&condicoes:
-  primary: "#005e46"
+  primary: "#d2cf2a"
   text: "#fff"
   border: "#d2cf2a"
-  font: "'Courier Prime', monospace"
+  active: "#d2cf2a"
+  extra_active: "#d2cf2a"
   background: "#005e46"
+  font: "'Courier Prime', monospace"
   image: "assets/images/uploads/termosecondicoesbg.jpg"
   header: "rgba(0, 0, 0, 1)"
   footer: "rgba(0, 0, 0, 1)"
@@ -30,6 +32,17 @@ alice:
   footer: "rgba(0, 0, 0, 0)"
   active: "#4A3724" 
   extra_active: "#4A3724"
+
+madrugada:
+  primary: "#fff"
+  background: "#000"
+  text: "#fff"
+  border: "#fff"
+  active: "#96030f"
+  extra_active: "#fff"
+  font: "'Courier Prime', monospace"
+  header: "rgba(0, 0, 0, 1)"
+  footer: "rgba(0, 0, 0, 1)"
 
 pink:
   primary: "#ff69b4"
