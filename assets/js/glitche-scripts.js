@@ -410,4 +410,14 @@ $(function () {
 		  heroImage.style.transform = `translateY(${scrollTop * 0.3}px)`;
 		}
 	  });
+
+	  $('.has-popup-music').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		removalDelay: 300,
+		closeBtnInside: true,
+		fixedContentPos: true
+	  });
+	  
+	  
 });
