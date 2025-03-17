@@ -1,7 +1,7 @@
 ---
 layout: post
 image: 'assets/images/uploads/AliceCAPA.jpg'
-title: "Alice \U0001F58B️"
+title: "Alice"
 date: 2022-MM-DD 10:18:00
 tags: Textos Suspense Argumento Terror
 permalink: /Alice
@@ -32,7 +32,6 @@ subtítulo
 %}
 
 {:target="_blank"}
-
 
 Exemplo de Tema em (_data/themes.yml)
 pink:
