@@ -4,5 +4,5 @@ category: video
 category_slug: f-video
 type: video
 image: assets/img/works/heineken.jpg
-video: https://www.youtube.com/watch?v=DIGGo9dNBoE&list=PL2ex3uSZMa5CHRVGxGuuf2pJRhBBUIKnp
+video: https://www.youtube.com/embed/-IE3d_AkHrM?si=gM5VUXJFGrh-a_dL
 ---
