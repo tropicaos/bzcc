@@ -235,14 +235,16 @@ layout: default
 					<a href="#popup-{{ work.id | replace: '/', '-' }}" class="has-popup-media">
 						<img src="{{ work.image | relative_url }}" alt="{{ work.title }}" />
 						<span class="info">
-							<span class="centrize full-width">
-								{% if work.category_slug == 'f-game' %}
-									<span class="ion ion-ios-game-controller-b"></span>
-								{% elsif work.category_slug == 'f-writing' %}
-									<span class="ion ion-ios-compose-outline"></span>
-								{% else %}
-									<span class="ion ion-ios-plus-empty"></span>
-								{% endif %}
+							<span class="vertical-center"></span>
+								<span class="centrize full-width">
+									{% if work.category_slug == 'f-game' %}
+										<span class="ion ion-ios-game-controller-b"></span>
+									{% elsif work.category_slug == 'f-writing' %}
+										<span class="ion ion-ios-compose-outline"></span>
+									{% else %}
+										<span class="ion ion-ios-plus-empty"></span>
+									{% endif %}
+								</span>
 							</span>
 						</span>
 					</a>
