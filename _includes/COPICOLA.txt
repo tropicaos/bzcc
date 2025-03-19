@@ -1,3 +1,4 @@
+blogpost
 ---
 layout: post
 image: 'assets/images/uploads/AliceCAPA.jpg'
@@ -6,8 +7,21 @@ date: 2022-MM-DD 10:18:00
 tags: Textos Suspense Argumento Terror
 permalink: /Alice
 published: true
-theme: pink # (opcional) nome do tema visual definido em _data/themes.yml
+theme: _data/themes.yml
 ---
+
+works
+---
+title: "Rádio Porto do Capim"
+type: music
+category: "Audio"
+category_slug: f-audio
+image: /assets/img/works/radioportodocapim.jpg
+music: https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FJPsustentavel%2Fplaylists%2Fjps%2F
+music: https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC
+---
+
+
 
 spotifytrack: 0tINxILFQZRWeEQN6UOv3W
 {% include spotifytrack.html id=page.spotifytrack %}

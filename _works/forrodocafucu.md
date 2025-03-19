@@ -1,5 +1,5 @@
 ---
-title: "Forró do Cafuçu - 2023"
+title: "Forró do Cafuçu"
 category: video
 category_slug: f-video
 type: video
