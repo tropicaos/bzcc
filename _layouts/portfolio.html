@@ -233,22 +233,22 @@ layout: default
 			<div class="box-item {{ work.category_slug }}">
 				<div class="image">
 					<a href="#popup-{{ work.id | replace: '/', '-' }}" class="has-popup-media">
-						<img src="{{ work.image | relative_url }}" alt="{{ work.title }}" />
-						<span class="info">
-							<span class="vertical-center"></span>
-								<span class="centrize full-width">
-									{% if work.category_slug == 'f-game' %}
-										<span class="ion ion-ios-game-controller-b"></span>
-									{% elsif work.category_slug == 'f-writing' %}
-										<span class="ion ion-ios-compose-outline"></span>
-									{% else %}
-										<span class="ion ion-ios-plus-empty"></span>
-									{% endif %}
-								</span>
-							</span>
+					  <img src="{{ work.image | relative_url }}" alt="{{ work.title }}" />
+					  <span class="info">
+						<span class="centrize full-width">
+						  <span class="vertical-center">
+							{% if work.category_slug == 'f-game' %}
+							  <span class="ion ion-ios-game-controller-b"></span>
+							{% elsif work.category_slug == 'f-writing' %}
+							  <span class="ion ion-ios-compose-outline"></span>
+							{% else %}
+							  <span class="ion ion-ios-plus-empty"></span>
+							{% endif %}
+						  </span>
 						</span>
+					  </span>
 					</a>
-				</div>
+				  </div>
 				<div class="desc">
 					<div class="category">{{ work.category }}</div>
 					<a href="#popup-{{ work.id | replace: '/', '-' }}" class="name has-popup-media">{{ work.title }}</a>
