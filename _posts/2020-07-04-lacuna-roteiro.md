@@ -4,7 +4,7 @@ image: 'assets/images/uploads/lacunacapa.jpg'
 title: LACUNA Roteiro Original
 date: 2019-09-25T18:51:37.696Z
 tags: Textos Roteiro Drama Conto
-permalink: /LACUNA-Roteiro
+permalink: /LACUNA
 published: true
 ---
 
@@ -214,6 +214,8 @@ Se antes não te amava, agora eu te desprezo.
 *CUT TO BLACK*
 
 ### **FIM**
+
+<p><img src="assets/images/uploads/lacuna.jpg" alt="Marina e Júlio seminus, jogados no tapete da sala" /></p>
 
 ---
 

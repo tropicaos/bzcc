@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="image" href="/assets/images/background.jpg">
+  <title>{{ page.title | default: site.title }}</title>
+
+  {%- include head.html -%}
+
+  <!-- Estilo via tema (data/themes/*.yml) -->
+  {% assign selected_theme = page.theme | default: 'default' %}
+  {% if selected_theme != 'default' %}
+    {% assign theme = site.data.themes[selected_theme] %}
+    {% if theme %}
+      <style>
+        :root {
+          {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
+          {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
+          {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
+          {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
+          {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
+          {% if theme.header %} --header-bg-color: {{ theme.header }}; {% endif %}
+          {% if theme.footer %} --footer-bg-color: {{ theme.footer }}; {% endif %}
+          {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
+          {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
+        }
+      </style>
+    {% endif %}
+  {% endif %}
+</head>
+
+<body class="theme-saibamais">
+  {%- include preloader.html -%}
+
+  <div class="container">
+    {%- include header.html -%}
+
+    <div class="wrapper">
+      <!-- Cabeçalho Integrado -->
+      <div class="started">
+        <div class="centrize full-width">
+          <div class="vertical-center">
+            <div class="started-content">
+              <!-- Modifique esta linha -->
+              <div class="h-title glitch-effect" data-text="{{ page.title | upcase }}" style="color: #fff; font-size: 48px; font-weight: 700; text-align: center;">
+                {{ page.title | upcase }}
+              </div>
+              <div class="h-subtitle typing-bread" style="text-align: center; font-size: 16px; opacity: 0.8; margin-top: 15px;">
+                {% if page.subtitle == '' or page.subtitle == nil %}
+                <p><a href="{{ site.url }}" style="color: var(--primary-color);">{{ site.data.ui-text.ui_text.home | downcase }}</a> / <span style="text-transform: lowercase;">{{ page.title | downcase }}</span></p>
+                {% else %}
+                <p style="text-transform: lowercase;">{{ page.subtitle | downcase }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conteúdo dos Botões -->
+      <div class="saibamais-wrapper">
+        {{ content }}
+      </div>
+    
+    {%- include footer.html -%}
+
+    <!-- Linhas decorativas -->
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+    <div class="line left"></div>
+    <div class="line right"></div>
+  </div>
+
+  {%- include sidebar.html -%}
+  {%- include scripts.html -%}
+</body>
+</html>

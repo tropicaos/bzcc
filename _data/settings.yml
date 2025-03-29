@@ -12,6 +12,30 @@ settings:
 
 ### Portfolio Filters Settings
 portfolio:
+  order:
+    - administradores
+    - coloresfilmes
+    - armazemparaiba
+    - alice-argumento
+    - termos-e-condicoes-argumento
+    - madrugada-argumento
+    - mundocervejeiros01
+    - mundocervejeiros02
+    - vovo-na-rede-pmcg
+    - lugar-sem-direcao-lsd
+    - matapau
+    - seaofmonsters-oipm
+    - jogazera
+    - barra-de-vida
+    - jogacast
+    - forro-do-cafuçu
+    - lacuna-roteiro
+    - luger-sem-direcao-roteiro
+    - radio-porto-do-capim
+    - sístole-videopoema
+    - vento-vendaval-flores-baldias
+    - volsted-sintetica
+    - waffle-house-jpa
   filters:
     - name: "Tudo"
       slug: "box-item"
@@ -37,9 +61,9 @@ portfolio:
       slug: "f-audio"
       active: 1
 
-    - name: "Fotografias"
-      slug: "f-gallery"
-      active: 1
+    # - name: "Fotografias"
+    #  slug: "f-gallery"
+    #  active: 1
 
     - name: "Conteúdo"
       slug: "f-content"
