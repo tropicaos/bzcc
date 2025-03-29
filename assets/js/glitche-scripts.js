@@ -409,6 +409,20 @@ $(function () {
 		closeBtnInside: true,
 		fixedContentPos: true
 	  });
-	  
+
+	  $('.has-popup-media').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		removalDelay: 600, // Deve corresponder ao tempo da animação
+		callbacks: {
+		  beforeClose: function() {
+			this.content.addClass('dematerialize');
+		  },
+		  close: function() {
+			this.content.removeClass('dematerialize');
+		  }
+		}
+	  });
 	  
 });
+
