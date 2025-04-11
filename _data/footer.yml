@@ -14,5 +14,9 @@ main:
     - title: "Linkedin"
       icon: "social-linkedin"
       url: "https://www.linkedin.com/in/bezerramos/"
+    - title: "Saiba mais"
+      icon: "help-circled"
+      url: "/saibamais"
+
   
   copy: "bezerramos.cc. Alguns direitos reservados (CC 4.0)."

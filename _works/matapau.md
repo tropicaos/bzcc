@@ -5,5 +5,5 @@ category: "Games"
 category_slug: "f-game"
 type: "content"
 published: true            
-button_url: "https://meujogo.com"
+button_url: "/matapau"
 ---

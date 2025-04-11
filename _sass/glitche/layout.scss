@@ -69,7 +69,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	text-align: right;
-	background-color: var(--header-bg-color, rgba(0, 0, 0, 0.6));
+	background-color: var(--header-bg-color);
 	opacity: 1;
 	visibility: visible;
 	@include transition(all 0.6s ease 0s);
@@ -126,7 +126,7 @@ header {
 				left: 0;
 				width: 100%;
 				height: 2px;
-				background: $dark-color;
+				background: var(--text-color);
 				@include transition(all 0.3s ease 0s);
 			}
 			&:after {
@@ -139,7 +139,7 @@ header {
 				left: 0;
 				width: 100%;
 				height: 2px;
-				background: $dark-color;
+				background: var(--text-color);
 				margin-top: -1px;
 				@include transition(all 0.3s ease 0s);
 			}
@@ -217,7 +217,7 @@ header {
 				position: relative;
 				line-height: 18px;
 				font-size: $default-size;
-				color: var(--header-text-color, #fff);
+				color: var(--text-color);
 				text-transform: uppercase;
 				letter-spacing: $extra-letter-spacing;
 				@include transition(all 0.3s ease 0s);
@@ -233,6 +233,7 @@ header {
 	padding: 0;
 	margin: 0;
 	position: relative;
+	height: 100vh;
 
 	.started-content {
 		display: inline-block;
@@ -292,13 +293,20 @@ header {
 		width: 20px;
 		height: 40px;
 		left: 50%;
-		bottom: 80px;
+		bottom: 120px; /* Aumentado para evitar corte pelo footer */
 		margin-left: -10px;
+		z-index: 101; /* Acima do footer */
 		.ion {
 			position: relative;
 			top: 0px;
 			animation: mouse-anim 1s ease-out 0s infinite;
 		}
+	}
+	
+	@keyframes mouse-anim {
+		0% { top: 0px; }
+		50% { top: 5px; }
+		100% { top: 0px; }
 	}
 }
 
@@ -814,61 +822,75 @@ header {
 }
 
 .post-text-bottom {
-	padding: 25px 0 10px 0;
-
-	.share-btn {
-		position: relative;
+	padding: 25px 0 10px 0; 
+	.post-meta {
+	  display: block;
+	  margin: 0 0 20px 0;
+	  padding: 0;
+	  font-size: $small-size;
+	  color: var(--text-color);
+	  span {
+		margin-right: 10px;
+	  }
+	  span.date {
 		display: inline-block;
-		top: 1px;
-		margin-left: 7px;
-		margin-right: 7px;
-		font-size: 16px;
-	}
-	& > div, & > .social-share {
-		margin-right: 30px;
-		margin-bottom: 20px;
+		padding: 0 5px;
+		height: 20px;
+		line-height: 18px;
+		font-weight: 500;
+		font-size: $extra-small-size;
+		color: var(--active-color);
+		margin-right: 10px;
+	  }
+	  span.time {
 		display: inline-block;
-		vertical-align: middle;
-	}
-	& > .cat-links, & > .byline, & > .social-share {
-		font-size: $small-size;
-		color: $extra-color;
-	}
-	.cat-links {
-		a {
-			color: var(--active-color);
-
-			&:hover {
-				text-decoration: underline;
-			}
+		color: var(--active-color); 
+	  }
+	  span.byline {
+		display: inline;
+		margin-left: 10px;
+		.author {
+		  color: var(--text-color);
 		}
+	  }
+	}
+	.social-share {
+	  display: block;
+	  clear: left;
+	  margin: 0 0 20px 0;
+	  padding: 0;
+	  span {
+		color: var(--text-color);
+		margin-right: 10px;
+	  }
 	}
 	.tags-links {
-		display: block;
+	  display: block;
+	  clear: left;
+	  margin: 0;
+	  padding: 0;
+	  line-height: 18px;
+	  font-size: 0px;
+	  span {
+		display: inline-block;
+		font-size: $small-size;
+		color: var(--text-color);
+		margin-right: 10px;
+	  }
+	  a {
+		margin: 0 10px 10px 0;
+		display: inline-block;
+		padding: 0 5px;
+		height: 20px;
 		line-height: 18px;
-		font-size: 0px;
-		
-		span {
-			display: inline-block;
-			font-size: $small-size;
-			color: $extra-color;
-			margin-right: 10px;
-		}
-
-		a {
-			margin: 0 10px 10px 0;
-			display: inline-block;
-			padding: 0 5px;
-			height: 20px;
-			line-height: 18px;
-			font-weight: 500;
-			font-size: $extra-small-size;
-			color: var(--active-color);
-			border: 1px solid var(--active-color);
-		}
+		font-weight: 500;
+		font-size: $extra-small-size;
+		color: var(--active-color);
+		border: 1px solid var(--active-color);
+	  }
 	}
 	.author {
-		color: $default-color;
+		color: var(--text-color);
 	}
 }
 
@@ -966,7 +988,7 @@ header {
 			margin-left: 100px;
 			.name {
 				font-size: $default-size;
-				color: var(--header-text-color, #fff);
+				color: var(--text-color);
 				text-transform: uppercase;
 				font-weight: 500;
 				padding: 5px 0 0 0;
@@ -991,7 +1013,7 @@ footer {
 	left: 0;
 	padding: 15px 60px 30px 60px;
 	width: 100%;
-	background-color: var(--footer-bg-color, rgba(0, 0, 0, 0.6));
+	background-color: var(--footer-bg-color);;
 	z-index: 100;
 	opacity: 1;
 	visibility: visible;
@@ -1007,7 +1029,7 @@ footer {
 			margin-left: 12px;
 			.ion {
 				font-size: 17px;
-				color: $default-color;
+				color: var(--text-color);
 				@include transition(all 0.3s ease 0s);
 			}
 			&:hover {
@@ -1028,7 +1050,7 @@ footer {
 		float: left;
 		padding-top: 2px;
 		font-size: $extra-small-size;
-		color: $extra-color;
+		color: var(--text-color);
 		@media (max-width: 840px) {
 			display: none;
 		}
@@ -2316,3 +2338,37 @@ a.btn, .btn {
     width: 100%;
   }
 }
+
+.single-post-text figure.image-wrapper {
+    display: table;
+    width: auto;
+    max-width: 100%;
+}
+
+.single-post-text figure.image-wrapper.align-right {
+    float: right;
+}
+
+.single-post-text figure.image-wrapper.layout-full {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.post-hero.section.started {
+	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .hero-image.parallax {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+  }

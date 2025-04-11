@@ -4,7 +4,7 @@ category: "Trampos"
 category_slug: "f-work"
 type: content
 image: assets/img/works/administradores.jpg
-button_url: /JOGAZERA
+button_url: /PortalAdministradores
 ---
 
 Em 2017, eu já estava há dois anos em **Rádio e TV**, e minha vida tinha mudado de rumo completamente.  

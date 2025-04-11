@@ -38,10 +38,11 @@ subtítulo
 <h4><p style="text-align:center"><strong>SUBTÍTULO</strong></p></h4>
 
 {% include image.html
-            img="assets/images/uploads/flertes01.jpg"
-            title=""
-            caption=""
-            align="center" / "left"
+    img="assets/images/uploads/tatubola.jpg"
+    title="tatubola"
+    caption="Como em toda contingência, ações do participante sob circunstâncias específicas dão recompensas."
+    layout="inline" / full
+    align="left" / (if full DELET THIS)
 %}
 
 {:target="_blank"}
@@ -56,6 +57,5 @@ pink:
   image: "/assets/images/bg-pink.jpg" # (opcional) imagem de fundo
   header: "rgba(255, 255, 255, 0.6)"   # Cor de fundo do header com transparência
   footer: "rgba(0, 0, 0, 0.6)"         # Cor de fundo do footer com transparência
-
 
 Controle de fundo e cores Globais (_sass/glitche/settings.scss)

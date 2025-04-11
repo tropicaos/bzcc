@@ -22,7 +22,7 @@ O que será mostrado aqui não é um projeto para jogos perfeitos, mas a apresen
 
 #### **Contingências e Esquemas**
 
-A tradução concreta de “O que estamos dizendo aos nossos jogadores?” é “Quais são as contingências?” Contingência é uma ou várias regras que controlam quando as recompensas deverão ser entregues. A anedota sobre essa descoberta (passada a mim por um de seus estudantes) é que um dia B. F. Skinner ficou com pouca comida para alimentar os ratos que participavam de suas experiências e para evitar o risco de ter que parar de trabalhar no dia, ao invés de dar comida sempre que os ratos puxavam a alavanca, ele começou a fazê-lo só na décima vez. Testando vários regimes diferentes de recompensa, ele descobriu que havia produzido diferentes padrões de resposta. Disso nasceu uma nova área da psicologia , com inúmeras e fortes aplicações ao game design.
+A tradução concreta de “O que estamos dizendo aos nossos jogadores?” é “Quais são as contingências?” Contingência é uma ou várias regras que controlam quando as recompensas deverão ser entregues. A anedota sobre essa descoberta (passada a mim por um de seus estudantes) é que um dia B. F. Skinner ficou com pouca comida para alimentar os ratos que participavam de suas experiências e para evitar o risco de ter que parar de trabalhar no dia, ao invés de dar comida sempre que os ratos puxavam a alavanca, ele começou a fazê-lo só na décima vez. Testando vários regimes diferentes de recompensa, ele descobriu que havia produzido diferentes padrões de resposta. Disso nasceu uma nova área da psicologia, com inúmeras e fortes aplicações ao game design.
 
 As contingências nos jogos são mais complexas, mas a analogia com os ratos é bem clara. Por exemplo, jogadores em um RPG ganham XP para subir níveis ou coletar itens bônus para ganhar vidas extras. Num jogo arcade, power-ups podem aparecer em intervalos aleatórios ou apenas quando certas condições forem encontradas. Como em toda contingência, existem ações por parte do participante que dão as recompensas sob circunstâncias específicas. Isso não é o mesmo que dizer que os jogadores são como ratos, mas que essas regras gerais se aplicam a ambos.
 
@@ -48,6 +48,8 @@ A pausa mostrada no esquema de razão fixa pode ser um problema sério para os g
             img="assets/images/uploads/tatubola.jpg"
             title="tatubola"
             caption="Como em toda contingência, ações do participante sob circunstâncias específicas dão recompensas."
+            layout="inline"
+            align="right"
 %}
 
 Pelo lado positivo, durante uma pausa e outra, atividades menos gratificantes geralmente vem à tona. Por exemplo, se os jogadores souberem que demorará muito para chegarem no próximo nível, poderão tentar uma nova tática ou testar outros aspectos do jogo.
@@ -66,6 +68,8 @@ Jogadores normalmente respondem às contingências de intervalo fixo pausando um
             img="assets/images/uploads/dragoa.jpg"
             title="cuidadocumdragoa"
             caption="Matar um oponente para ganhar experiência e subir de nível é um exemplo de contingência de razão."
+            layout="inline"
+            align="left"
 %}
 
 Como na razão fixa, há uma pausa que pode causar problemas ao game designer. Diferente da anterior, não há um corte abrupto para a alta taxa de atividade. Ao invés disso, há um crescimento gradual conforme o tempo certo se aproxima. Mas a pausa continua, período cuja motivação é baixa.
@@ -92,6 +96,8 @@ O caso especial final que vale a pena mencionar é chamado de “evitação”, 
             img="assets/images/uploads/carlosmassa.jpg"
             title="rati1"
             caption="Esse simples experimento ilustra o princípio da evitação. O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
+            layout="inline"
+            align="left"
 %}
 
 O melhor exemplo disso que conheço é em Ultima Online, onde os jogadores que tem castelos ou casas precisam visitará-las regularmente ou elas começarão a decair. Como o exemplo do laboratório acima, você tem participantes que estão trabalhando para evitar que coisas aconteçam e manter o status quo. Isso é uma estratégia relativamente barata do ponto de vista dos desenvolvedores de games, já que eles não precisam disponibilizar novos brinquedos e recompensas para os jogadores.
@@ -114,6 +120,8 @@ Uma resposta curta é garantir que sempre, sempre haja um motivo para o jogador 
             img="assets/images/uploads/tuntstunts.jpg"
             title="TUNTSTUNTS"
             caption="O nível de atividade é a função breve em que o participante espera que a recompensa ocorrerá. Quanto mais certos eles estiverem que algo bom ou interessante acontecerá logo, mais eles vão jogar."
+            layout="inline"
+            align="left"
 %}
 
 #### **Como fazer os jogadores pararem.**
@@ -128,4 +136,11 @@ A outra situação que pode levar o jogador a parar de jogar é uma queda abrupt
 
 A aplicação das regras gerais para um caso específico é geralmente complicada, especialmente em situações onde há mais de uma contingência operando. A maioria dos experimentos em psicologia comportamental são desenvolvidos para iluminar um fenômeno em particular, como um raio x revelando os ossos de um braço. A pele, os músculos e outras coisas não são mostradas, então o quadro inteiro está incompleto. Mas mesmo só com os ossos, nós podemos ter uma noção de como o braço funciona, com suas limitações e flexibilidades. Os princípios behavioristas discutidos aqui devem ser entendidos como tendo benefícios e limitações semelhantes. Há várias outras coisas que influenciam os jogadores, mas os padrões básicos de consequências e recompensas formam um quadro que poderá servir para todo o resto. Entendendo os padrões fundamentais que subjazem como os jogadores respondem ao que pedimos deles podemos desenvolver jogos que trazem o tipo de jogador que queremos.
 
-![imagem de capa - fundo sóbrio de um mar calmo em preto e branco](assets/images/uploads/comportamental.jpg)
+{% include image.html
+            img="assets/images/uploads/comportamental.jpg"
+            title="comportamental"
+            alt-text="imagem de capa - fundo sóbrio de um mar calmo em preto e branco" 
+            caption=""
+            layout="inline"
+            align="left"
+%}

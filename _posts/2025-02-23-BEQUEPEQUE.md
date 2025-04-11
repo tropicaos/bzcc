@@ -1,10 +1,10 @@
 ---
 layout: post
-title: BEQUE PEQUE 000
+title: BEQUE PEQUE 🎒 - A ORIGEM 
 image: assets/images/uploads/NOABISMODOPANICOCAPA.jpg
 date: 2025-02-22T17:09:19.000Z
 tags: Games Game-design Diário-de-Bordo Mercado Mídia Indústria
-permalink: /DEVLOG000
+permalink: /BEQUEPEQUE000
 published: true
 ---
 ![](/assets/images/uploads/NOABISMODOPANICOCAPA.jpg")
@@ -19,10 +19,13 @@ Era um notebook semi destruído com aqueles mouse de [pitoco](assets/images/uplo
 
 ### Intimidade eu tenho.
 
+
 {% include image.html
             img="assets/images/uploads/MSSC.jpg"
             title="Master System Super Compact"
             caption="O Master System Super Compact era o joystick + console all in one que tinha quase meu peso. E vinha com uma antena (!?!)"
+            layout="inline"
+            align="full"
 %}
 
 2 - Meu amor pela mídia dos jogos só se amplificou conforme eu crescia e estudava artes, tanto clássicas quanto digitais. Após jogar tudo para o alto e abandonar Teatro para focar em Comunicação Social só ficou mais claro para mim o quanto essa mídia é poderosa e como ela estará muito mais enraizada daqui uns anos. A indústria brasileira existe há décadas e já passou da casa de [bilhão](https://www.ecommercebrasil.com.br/noticias/industria-de-jogos-eletronicos-um-setor-em-ascensao-no-brasil/) de reais movimentados mesmo sobrevivendo [até esse ano](https://overloadr.com.br/especiais/2017/05/conheca-todos-os-23-jogos-contemplados-no-edital-de-games-da-ancine/) sem qualquer tipo de política pública de fomento a produção; a imprensa já é autosuficiente e rentável o bastante para atrair o interesse desde [grandes sites gringos](http://br.ign.com/) até uma praga de _”"”youtubers””” ”"”gamers””“_; e o público que [amargou anos](https://www.redbull.com/br-pt/serie-paralelos-narra-pirataria-de-games-no-brasil) sem cuidados adequados, hoje lota game hubs dedicados de grandes empresas que fincaram suas bandeiras no Brasil como a _Blizzard_ e a _Ubisoft_ e gozam de serviços que democratizaram o acesso aos jogos eletrônicos como a _Nuuvem_ e a _Steam_. 
@@ -37,11 +40,10 @@ Era um notebook semi destruído com aqueles mouse de [pitoco](assets/images/uplo
 
 ### Noção do que fazer com o produto eu tenho.
 
-**![RodaGigante Gamestudio equipe](http://i.imgur.com/x2eIFWR.png)**
-
 {% include image.html
-            img="assets/images/uploads1000timmagovigi.jpg"
+            img="assets/images/uploads/1000timmagovigi.jpg"
             title="1000Tim, Mago, Vi, Gi"
+            alt-text="RodaGigante Gamestudio Equipe"
             caption="Miltinho, eu, Vi e Gi na GGJ 2016 capotando de cansaço. Foi intenso e delicioso."
 %}
 

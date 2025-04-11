@@ -2,12 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="preload" as="image" href="/assets/images/background.jpg">
   <title>{{ page.title | default: site.title }}</title>
 
   {%- include head.html -%}
 
-  <!-- Estilo padrão para a home -->
   {% if page.layout == "home" %}
   <style>
   :root {
@@ -21,26 +21,24 @@
   </style>
   {% endif %}
 
-  <!-- Estilo via tema (data/themes/*.yml) -->
   {% assign selected_theme = page.theme | default: 'default' %}
-
-  {% if selected_theme != 'default' %}
-    {% assign theme = site.data.themes[selected_theme] %}
-    {% if theme %}
-      <style>
-        :root {
-          {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
-          {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
-          {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
-          {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
-          {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
-          {% if theme.header %} --header-bg-color: {{ theme.header }}; {% endif %}
-          {% if theme.footer %} --footer-bg-color: {{ theme.footer }}; {% endif %}
-          {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
-          {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
-        }
-      </style>
-    {% endif %}
+  {% assign theme = site.data.themes[selected_theme] %}
+  {% if theme %}
+    <style>
+      :root {
+        {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
+        {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
+        {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
+        {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
+        {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
+        {% if theme.cabepe_color and theme.cabepe_opacity %}
+          --header-bg-color: rgba({{ theme.cabepe_color | remove: '#' | hex_to_rgb }}, {{ theme.cabepe_opacity }});
+          --footer-bg-color: rgba({{ theme.cabepe_color | remove: '#' | hex_to_rgb }}, {{ theme.cabepe_opacity }});
+        {% endif %}
+        {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
+        {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
+      }
+    </style>
   {% endif %}
 
 </head>
@@ -63,7 +61,6 @@
 
     {%- include footer.html -%}
 
-    <!-- Linhas decorativas -->
     <div class="line top"></div>
     <div class="line bottom"></div>
     <div class="line left"></div>

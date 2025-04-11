@@ -56,28 +56,6 @@ $(function () {
 			initPage();
 		}
 	}, 300); 
-
-	
-	/*Fade-out animation between load pages*/
-	$('header .top-menu, .typed-bread').on('click', 'a', function(){
-		var link = $(this).attr('href');
-		if(link.indexOf('#section-') == 0){
-			if(!$('body').hasClass('home')){
-				location.href = '/'+link;
-			}
-
-			$('body, html').animate({scrollTop: $(link).offset().top - 110}, 400);
-			if($('header').hasClass('active')){
-				$('.menu-btn').trigger('click');
-			}
-		} else {
-			$('body').removeClass('loaded');
-			setTimeout(function() {
-				location.href = "" + link;
-			}, 500);
-		}
-		return false;
-	});
 	
 	/*Menu mobile*/
 	$('header').on('click', '.menu-btn', function(){
@@ -426,3 +404,51 @@ $(function () {
 	  
 });
 
+	/*Fade-out animation between load pages*/
+	$('header .top-menu, .typed-bread').on('click', 'a', function(){
+		var link = $(this).attr('href');
+		if(link.indexOf('#section-') == 0){
+			if(!$('body').hasClass('home')){
+				location.href = '/'+link;
+			}
+
+			$('body, html').animate({scrollTop: $(link).offset().top - 110}, 400);
+			if($('header').hasClass('active')){
+				$('.menu-btn').trigger('click');
+			}
+		} else {
+			$('body').removeClass('loaded');
+			setTimeout(function() {
+				location.href = "" + link;
+			}, 500);
+		}
+		return false;
+	});
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const sidebar = document.querySelector('.content-sidebar');
+		const sidebarOverlay = document.querySelector('.s_overlay');
+		const sidebarToggle = document.querySelector('.sidebar_btn');
+		const sidebarClose = sidebar.querySelector('.close');
+	
+		if (sidebarToggle && sidebar && sidebarOverlay) {
+			sidebarToggle.addEventListener('click', () => {
+				sidebar.classList.add('active');
+				sidebarOverlay.classList.add('active');
+			});
+		}
+	
+		if (sidebarClose && sidebar && sidebarOverlay) {
+			sidebarClose.addEventListener('click', () => {
+				sidebar.classList.remove('active');
+				sidebarOverlay.classList.remove('active');
+			});
+		}
+	
+		if (sidebarOverlay && sidebar) {
+			sidebarOverlay.addEventListener('click', () => {
+				sidebar.classList.remove('active');
+				sidebarOverlay.classList.remove('active');
+			});
+		}
+	});

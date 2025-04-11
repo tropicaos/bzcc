@@ -1,25 +1,80 @@
+# primary: "#c7009c"      // Elementos principais (botões, destaques)
+# background: "#00ff00"   // Fundo do site e sidebar
+# text: "#ffffff"         // Texto geral
+# border: "#c7009c"       // Bordas e barra de rolagem
+# active: "#ff1493"       // Estados ativos (hover, cliques)
+# extra_active: "#ff69b4" // Detalhes extras (linhas, tags)
+
 default:
   primary: "#c7009c"
-  background: "#00ff00"
+  background: "#000"
   text: "#ffffff"
   border: "#c7009c"
-  active: "#ff1493"
-  extra_active: "#ff69b4"
+  active: "#fff"
+  extra_active: "#fff"
   font: "'Courier Prime', monospace"
-  header: "rgba(255, 0 0, 0.8)"
-  footer: "rgba(0, 0, 0, 0.8)"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6"
+
+teste:
+  primary: "#ff0000" # Vermelho puro
+  border: "#00ff00" # Verde limão
+  active: "#0000ff" # Azul puro
+  extra_active: "#ffff00" # Amarelo puro
+  background: "#000000" # Preto
+  text: "#ffffff" # Branco
+  font: "'Courier Prime', monospace"
+  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  cabepe_color: "#000000"
+  cabepe_opacity: "1"
+
+adm:
+  primary: "#0660b8" # Vermelho puro
+  border: "#df403a"
+  active: "#0660b8" # Azul
+  extra_active: "#0660b8"
+  background: "#f4f4f4"
+  text: "#000000"
+  font: "'Courier Prime', monospace"
+  image: "assets/img/blog/admbg.jpg"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0"
+
+colores:
+  primary: "#00a238" # Verde
+  border: "#ff8a3a" # Laranja
+  active: "#00a0ff" # Azul
+  extra_active: "#00a238" # Verde
+  background: "#1a1a1a" # Preto
+  text: "#ffffff" # Branco
+  font: "'Courier Prime', monospace"
+  image: "assets/img/blog/claquete_colores_filmes_joao_faissal.jpg"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0"
+
+armazemparaiba:
+  primary: "#fe0000" # Vermelho puro
+  border: "#ffd014" # Verde limão
+  active: "#fe0000" # Azul puro
+  extra_active: "#ffff00" # Amarelo puro
+  background: "#000"
+  text: "#ffffff"
+  font: "'Courier Prime', monospace"
+  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  cabepe_color: "#000000"
+  cabepe_opacity: "1"
 
 temas&condicoes:
   primary: "#d2cf2a"
   text: "#fff"
   border: "#d2cf2a"
   active: "#d2cf2a"
-  extra_active: "#d2cf2a"
+  extra_active: "#000"
   background: "#005e46"
   font: "'Courier Prime', monospace"
   image: "assets/images/uploads/termosecondicoesbg.jpg"
-  header: "rgba(0, 0, 0, 1)"
-  footer: "rgba(0, 0, 0, 1)"
+  cabepe_color: "#000000"
+  cabepe_opacity: "1"
 
 alice:
   primary: "#4A3724"
@@ -28,9 +83,9 @@ alice:
   font: "'Courier Prime', monospace"
   background: "#e8ba98"
   image: "assets/images/uploads/AliceBG.jpg"
-  header: "rgba(0, 0, 0, 0)"
-  footer: "rgba(0, 0, 0, 0)"
-  active: "#4A3724" 
+  cabepe_color: "#000000"
+  cabepe_opacity: "0"
+  active: "#4A3724"
   extra_active: "#4A3724"
 
 madrugada:
@@ -41,8 +96,8 @@ madrugada:
   active: "#96030f"
   extra_active: "#fff"
   font: "'Courier Prime', monospace"
-  header: "rgba(0, 0, 0, 1)"
-  footer: "rgba(0, 0, 0, 1)"
+  cabepe_color: "#000000"
+  cabepe_opacity: "1"
 
 pink:
   primary: "#ff69b4"
@@ -51,9 +106,9 @@ pink:
   font: "'Courier Prime', monospace"
   # background: "#fff0f5"
   image: "/assets/images/background.jpg"
-  header: "rgba(0, 0, 0, 0.6)"
-  footer: "rgba(0, 0, 0, 0.6)"
-  active: "#ff69b4" 
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6"
+  active: "#ff69b4"
   extra_active: "#ff69b4"
 
 cyberpunk:
@@ -62,6 +117,8 @@ cyberpunk:
   text: "#e6e6e6"
   border: "#ff00ff"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 dark-poetry:
   primary: "#9d4edd"
@@ -69,6 +126,8 @@ dark-poetry:
   text: "#f0e6f6"
   border: "#5f0f40"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 paperkraft:
   primary: "#c78c56"
@@ -76,6 +135,8 @@ paperkraft:
   text: "#3e2f1c"
   border: "#a56b3f"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 retro:
   primary: "#ff6347"
@@ -83,6 +144,8 @@ retro:
   text: "#3b3b3b"
   border: "#ffa500"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 vaporwave:
   primary: "#ff77ff"
@@ -90,6 +153,8 @@ vaporwave:
   text: "#6c3483"
   border: "#00ffff"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 forest:
   primary: "#2e8b57"
@@ -97,6 +162,8 @@ forest:
   text: "#1c3d2e"
   border: "#3cb371"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 mono-minimal:
   primary: "#999999"
@@ -104,13 +171,17 @@ mono-minimal:
   text: "#222222"
   border: "#cccccc"
   font: "'Courier Prime', monospace"
-  
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
+
 sunset:
   primary: "#ff4500"
   background: "#fff5e6"
   text: "#331100"
   border: "#ff6347"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 midnight:
   primary: "#0abdc6"
@@ -118,6 +189,8 @@ midnight:
   text: "#d9faff"
   border: "#005f73"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 pastel-dream:
   primary: "#a29bfe"
@@ -125,6 +198,8 @@ pastel-dream:
   text: "#5e548e"
   border: "#dcd6f7"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 inkwell:
   primary: "#1c1c1c"
@@ -132,6 +207,8 @@ inkwell:
   text: "#0e0e0e"
   border: "#333333"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 café-au-lait:
   primary: "#7b4b2a"
@@ -139,6 +216,8 @@ café-au-lait:
   text: "#3e2c23"
   border: "#a8745b"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 golden-hour:
   primary: "#fca311"
@@ -146,6 +225,8 @@ golden-hour:
   text: "#252422"
   border: "#ffba08"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 aqua-sky:
   primary: "#00b4d8"
@@ -153,6 +234,8 @@ aqua-sky:
   text: "#023e8a"
   border: "#48cae4"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 bloody-mary:
   primary: "#c1121f"
@@ -160,6 +243,8 @@ bloody-mary:
   text: "#1d0000"
   border: "#780000"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 lilac-wind:
   primary: "#b185db"
@@ -167,6 +252,8 @@ lilac-wind:
   text: "#3b2f63"
   border: "#d6b4fc"
   font: "'Changa One', cursive"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão
 
 stone-age:
   primary: "#8d99ae"
@@ -174,3 +261,5 @@ stone-age:
   text: "#2b2d42"
   border: "#6c757d"
   font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6" # Valor padrão

@@ -1,12 +1,12 @@
-<figure class="image-wrapper {% if include.align %}align-{{ include.align }}{% endif %} {% if include.caption %}has-caption{% endif %}">
+<figure class="image-wrapper {% if include.layout == 'inline' and include.align %}align-{{ include.align }}{% endif %} {% if include.caption %}has-caption{% endif %} {% if include.layout == 'full' %}full-width{% endif %}">
     {% if include.url %}
-    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
-        <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}" class="image-include"/>
-    </a>
+        <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+            <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}" class="image-include"/>
+        </a>
     {% else %}
         <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}" class="image-include"/>
     {% endif %}
     {% if include.caption %}
-    <figcaption>{{ include.caption }}</figcaption>
+        <figcaption>{{ include.caption | markdownify }}</figcaption>
     {% endif %}
 </figure>
