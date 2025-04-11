@@ -902,7 +902,7 @@ h3.center-heading {
         h2.widget-title {
             position: relative;
             margin: -26px -25px 25px -25px;
-            padding: 25px 30px 10px 30px;
+            padding: 25px 30px 20px 30px;
             display: block;
             line-height: 18px;
             font-size: $default-size;
@@ -914,10 +914,10 @@ h3.center-heading {
             &:after {
                 content: '';
                 position: absolute;
-                bottom: -20px;
+                bottom: -50px;
                 left: 25px;
                 width: calc(100% - 50px);
-                height: 1px;
+                height: 2px;
                 background: var(--extra-active-color, #c7009c);
             }
 
