@@ -49,7 +49,7 @@ Além disso, me envolvi de cabeça na produção de workshops e cursos focados e
 {% include image.html
     img="assets/img/blog/administradores_blog2.jpg"
     title="Queridos no Portal Administradores."
-    caption="Com Leandro Vieira segurando a platinha de 100K no topo à esquerda, tietando o Ricardo Oliveira no meio da filmagem de seu curso de Estratégias Digitais à direita e editando violentamente com estilo com o querido [Victor](https://www.instagram.com/victorbmont/)."
+    caption="Com Leandro Vieira segurando a plaquinha de 100K no topo à esquerda, tietando o Ricardo Oliveira no meio da filmagem de seu curso de Estratégias Digitais à direita e editando violentamente com estilo com o querido [Victor](https://www.instagram.com/victorbmont/)."
     layout="full"
 %}
 

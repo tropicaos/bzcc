@@ -16,7 +16,7 @@
 	15. Animations
 	16. Wrappers
 	17. Kramdown
-	18. Caption Border
+	18. Images
 	19. Sidebar
 	20. Saibamais
 	21. Paginations
@@ -52,7 +52,7 @@ body {
 	&:not(.home) {
 		background: var(--background-color, #000);
 		height: auto;
-        overflow: auto;
+		overflow: auto;
 	}
 	&.blog {
 		background: var(--background-image);
@@ -62,12 +62,18 @@ body {
 	}
 	&.scroll_hidden {
 		height: 100vh;
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
 	}
 	&.loaded {
 		header, footer, .section {
 			opacity: 1;
 			visibility: visible;
 		}
+	}
+	&.theme-saibamais {
+		padding-bottom: 200px;
 	}
 
 	header, footer, .section {
@@ -134,10 +140,6 @@ body.blog {
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-}
-
-.clear {
-	clear: both;
 }
 
 .clear {
@@ -716,7 +718,14 @@ h3.center-heading {
 	width: 100%;
 }
 
-/* 18. Caption Border */
+/* 18. Images */
+img {
+    border: 10px solid var(--border-color, #c7009c);
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
 .image-wrapper {
     display: table;
     width: auto;
@@ -763,11 +772,19 @@ h3.center-heading {
     box-sizing: border-box;
     text-align: center;
     font-style: italic;
-    background: #000;
-    color: #fff;
+    background: var(--border-color, #000);
+    color: var(--text-color, #fff);
     line-height: 1.4;
     word-wrap: break-word;
     margin: 0;
+	a {
+        color: var(--active-color); 
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--extra-active-color);
+        }
+    }
 }
 
 .image-wrapper.layout-full figcaption {

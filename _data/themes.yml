@@ -14,7 +14,7 @@ default:
   extra_active: "#fff"
   font: "'Courier Prime', monospace"
   cabepe_color: "#000000"
-  cabepe_opacity: "0.6"
+  cabepe_opacity: "0"
 
 teste:
   primary: "#ff0000" # Vermelho puro
@@ -28,6 +28,17 @@ teste:
   cabepe_color: "#000000"
   cabepe_opacity: "1"
 
+bunker:
+  primary: "#c7009c"
+  background: "#191919"
+  text: "#ffffff"
+  border: "#c7009c"
+  active: "#fff"
+  extra_active: "#fff"
+  font: "'Courier Prime', monospace"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0.6"
+
 adm:
   primary: "#0660b8" # Vermelho puro
   border: "#df403a"
@@ -38,7 +49,7 @@ adm:
   font: "'Courier Prime', monospace"
   image: "assets/img/blog/admbg.jpg"
   cabepe_color: "#000000"
-  cabepe_opacity: "0"
+  cabepe_opacity: "1"
 
 colores:
   primary: "#00a238" # Verde
@@ -62,7 +73,7 @@ armazemparaiba:
   font: "'Courier Prime', monospace"
   image: "assets/images/uploads/termosecondicoesbg.jpg"
   cabepe_color: "#000000"
-  cabepe_opacity: "1"
+  cabepe_opacity: "0"
 
 temas&condicoes:
   primary: "#d2cf2a"
@@ -74,7 +85,7 @@ temas&condicoes:
   font: "'Courier Prime', monospace"
   image: "assets/images/uploads/termosecondicoesbg.jpg"
   cabepe_color: "#000000"
-  cabepe_opacity: "1"
+  cabepe_opacity: "0"
 
 alice:
   primary: "#4A3724"
@@ -87,6 +98,8 @@ alice:
   cabepe_opacity: "0"
   active: "#4A3724"
   extra_active: "#4A3724"
+  cabepe_color: "#000000"
+  cabepe_opacity: "0"
 
 madrugada:
   primary: "#fff"

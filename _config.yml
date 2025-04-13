@@ -44,6 +44,7 @@ jekyll-archives:
 
 # Build settings
 plugins:
+  - jekyll
   - jekyll-archives
   - jekyll-paginate
   - jekyll-feed
