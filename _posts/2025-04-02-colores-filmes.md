@@ -57,4 +57,4 @@ Fui apresentado a um método de "mistura de luz" da camada de chroma com a de fu
 
 Esse tipo de aprendizado — já com solução otimizada embutida — me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase da minha jornada, com mais segurança na minha capacidade de entregar — e ajudar outros a entregarem também. Eu não só edito mais, eu crio soluções escalonáveis pra trabalhar melhor e em larga escala caso a demanda... demande. E com a bagagem depois da Colores somada a tudo que aprendi e executei nesses 8 anos de audiovisual, mídia e marketing, pra mim ficou nítido que ultrapassei o limiar do Editor Junior e cheguei ao Pleno.
 
-Hoje ficou nítido pra mim também o [próximo passo.](https://www.youtube.com/@canalpoligonal){:target="_blank"}.
+Hoje ficou nítido pra mim também o [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.
