@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-  <link rel="preload" as="image" href="/assets/images/background.jpg">
-  <title>{{ page.title | default: site.title }}</title>
-
-  {%- include head.html -%}
-
-  {% if page.layout == "home" %}
-  <style>
-  :root {
-    /* --background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('/assets/images/background.jpg'); */
-    --background-image: none;
-    --background: var(--background-color);
-    --background-size: cover;
-    --background-position: center;
-    --background-color-fallback: #000; 
-  }
-  </style>
-  {% endif %}
-
-  {% assign selected_theme = page.theme | default: 'default' %}
-  {% assign theme = site.data.themes[selected_theme] %}
-  {% if theme %}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="preload" as="image" href="/assets/images/background.jpg">
+    {% if theme.blotico_font %}
+      <link href="https://fonts.googleapis.com/css2?family={{ theme.blotico_font | replace: ' ', '+' | replace: ', sans-serif', '' | replace: ', serif', '' }}&display=swap" rel="stylesheet">
+    {% endif %}
+    <title>{{ page.title | default: site.title }}</title>
+  
+    {%- include head.html -%}
+  
+    {% assign selected_theme = page.theme | default: 'default' %}
+    {% assign theme = site.data.themes[selected_theme] %}
     <style>
       :root {
+        {% if page.layout == "home" %}
+          --background-image: none;
+          --background: var(--background-color);
+          --background-size: cover;
+          --background-position: center;
+          --background-color-fallback: #000;
+        {% endif %}
         {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
         {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
         {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
         {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
         {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
         {% if theme.cabepe_color and theme.cabepe_opacity %}
-          --header-bg-color: rgba({{ theme.cabepe_color | remove: '#' | hex_to_rgb }}, {{ theme.cabepe_opacity }});
-          --footer-bg-color: rgba({{ theme.cabepe_color | remove: '#' | hex_to_rgb }}, {{ theme.cabepe_opacity }});
+          --header-bg-color: {{ theme.cabepe_color }};
+          --footer-bg-color: {{ theme.cabepe_color }};
+          --header-opacity: {{ theme.cabepe_opacity }};
+          --footer-opacity: {{ theme.cabepe_opacity }};
+        {% else %}
+          --header-bg-color: #000000;
+          --footer-bg-color: #000000;
+          --header-opacity: 1;
+          --footer-opacity: 1;
         {% endif %}
+        {% if theme.cabepe_shadow %}
+          --header-box-shadow: {% if theme.cabepe_shadow == true %}0 4px 10px rgba(0, 0, 0, 0.3){% else %}none{% endif %};
+          --footer-box-shadow: {% if theme.cabepe_shadow == true %}0 4px 10px rgba(0, 0, 0, 0.3){% else %}none{% endif %};
+        {% else %}
+          --header-box-shadow: none;
+          --footer-box-shadow: none;
+        {% endif %}
+        {% if theme.blotico_font %} --blotico-font: {{ theme.blotico_font }}; {% endif %}
+        {% if theme.blotico_color %} --blotico-color: {{ theme.blotico_color }}; {% endif %}
         {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
         {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
       }
     </style>
-  {% endif %}
+  </head>
 
-</head>
+  <body class="
+    {% if page.layout == 'home' %}home{% endif %}
+    {% if page.layout == 'post' %}blog{% endif %}
+    {% if page.theme %}theme-{{ page.theme }}{% endif %}
+  ">
 
-<body class="
-  {% if page.layout == 'home' %}home{% endif %}
-  {% if page.layout == 'post' %}blog{% endif %}
-  {% if page.theme %}theme-{{ page.theme }}{% endif %}
-">
+    {%- include preloader.html -%}
 
-  {%- include preloader.html -%}
+    <div class="container">
+      {%- include header.html -%}
 
-  <div class="container">
+      <div class="wrapper">
+        {{ content }}
+      </div>
 
-    {%- include header.html -%}
+      {%- include footer.html -%}
 
-    <div class="wrapper">
-      {{ content }}
+      <div class="line top"></div>
+      <div class="line bottom"></div>
+      <div class="line left"></div>
+      <div class="line right"></div>
     </div>
 
-    {%- include footer.html -%}
-
-    <div class="line top"></div>
-    <div class="line bottom"></div>
-    <div class="line left"></div>
-    <div class="line right"></div>
-  </div>
-
-  {%- include sidebar.html -%}
-  {%- include scripts.html -%}
-
-</body>
+    {%- include sidebar.html -%}
+    {%- include scripts.html -%}
+    
+  </body>
 </html>

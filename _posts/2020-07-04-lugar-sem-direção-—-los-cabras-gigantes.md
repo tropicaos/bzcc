@@ -1,7 +1,7 @@
 ---
 layout: post
 image: 'assets/images/uploads/lugarsemdirecaolsdCAPA.jpg'
-title: Lugar Sem Direção 🍬 - Los Cabras Gigantes
+title: Lugar Sem Direção - Los Cabras Gigantes
 date: 2018-02-09T17:52:08.094Z
 tags: Audiovisual Videoclipe Comédia Lombra
 permalink: /LugarSemDirecao-LosCabrasGigantes
@@ -71,7 +71,7 @@ Vanuza dos Santos\
 João Victor Menezes\
 Albenise Vasconcelos\
 Wladimir Carvalho\
-Espaço Mundo
+Espaço Mundo\
 & João Lira
 
 #### ATRIBUIÇÕES:

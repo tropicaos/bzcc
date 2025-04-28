@@ -1,0 +1,83 @@
+/* Sidebar Styling */
+
+.content-sidebar {
+  background-color: var(--background-color);
+  border-color: var(--text-color);
+  
+  /* Títulos das sessões com risco abaixo */
+  h2.widget-title, 
+  .widget-title-span {
+    color: var(--text-color);
+  }
+  
+  /* Links e tags clicáveis */
+  .widget ul li a {
+    color: var(--active-color);
+    
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+  
+  /* Separadores de tags e categorias */
+  .widget ul li {
+    border-color: var(--text-color);
+  }
+  
+  /* Botão de fechar */
+  .close {
+    background-color: var(--background-color);
+    
+    &:before, 
+    &:after {
+      background-color: var(--text-color);
+    }
+  }
+  
+  /* Barra de pesquisa */
+  .search-form {
+    input[type="text"] {
+      border-color: var(--text-color);
+      color: var(--text-color);
+      
+      &::placeholder {
+        color: var(--text-color);
+        opacity: 0.7;
+      }
+    }
+    
+    .search-submit {
+      color: var(--text-color);
+      
+      .ion {
+        color: var(--text-color);
+      }
+    }
+  }
+  
+  /* Barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 10px;
+    border: 3px solid var(--background-color);
+  }
+}
+
+/* Corrigir linha extra abaixo do primeiro link */
+.content-sidebar .widget ul li:first-child {
+  border-top: none;
+}
+
+.content-sidebar .search-form .search-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

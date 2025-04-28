@@ -1,278 +1,111 @@
-# primary: "#c7009c"      // Elementos principais (botões, destaques)
-# background: "#00ff00"   // Fundo do site e sidebar
-# text: "#ffffff"         // Texto geral
-# border: "#c7009c"       // Bordas e barra de rolagem
-# active: "#ff1493"       // Estados ativos (hover, cliques)
-# extra_active: "#ff69b4" // Detalhes extras (linhas, tags)
 
 default:
   primary: "#c7009c"
-  background: "#000"
-  text: "#ffffff"
-  border: "#c7009c"
   active: "#fff"
   extra_active: "#fff"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0"
-
-teste:
-  primary: "#ff0000" # Vermelho puro
-  border: "#00ff00" # Verde limão
-  active: "#0000ff" # Azul puro
-  extra_active: "#ffff00" # Amarelo puro
-  background: "#000000" # Preto
-  text: "#ffffff" # Branco
-  font: "'Courier Prime', monospace"
-  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  text: "#ffffff"
+  background: "#000000"
+  border: "#c7009c"
   cabepe_color: "#000000"
   cabepe_opacity: "1"
+  cabepe_shadow: false
+  blotico_font: "'Courier Prime', monospace"
+  blotico_color: "#ffffff"
 
-bunker:
+matapau:
   primary: "#c7009c"
-  background: "#191919"
-  text: "#ffffff"
-  border: "#c7009c"
-  active: "#fff"
-  extra_active: "#fff"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6"
-
-adm:
-  primary: "#0660b8" # Vermelho puro
-  border: "#df403a"
-  active: "#0660b8" # Azul
-  extra_active: "#0660b8"
-  background: "#f4f4f4"
+  active: "#c7009c"
+  extra_active: "#ff00cc"
   text: "#000000"
-  font: "'Courier Prime', monospace"
-  image: "assets/img/blog/admbg.jpg"
-  cabepe_color: "#000000"
-  cabepe_opacity: "1"
-
-colores:
-  primary: "#00a238" # Verde
-  border: "#ff8a3a" # Laranja
-  active: "#00a0ff" # Azul
-  extra_active: "#00a238" # Verde
-  background: "#1a1a1a" # Preto
-  text: "#ffffff" # Branco
-  font: "'Courier Prime', monospace"
-  image: "assets/img/blog/claquete_colores_filmes_joao_faissal.jpg"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0"
+  background: "#507C43"
+  border: "#8A04D1"
+  cabepe_color: "#507C43"
+  cabepe_opacity: 1
+  cabepe_shadow: false
+  blotico_font: "'Silkscreen', sans-serif"
+  blotico_color: "#E4A672"
+  image: ""
 
 armazemparaiba:
-  primary: "#fe0000" # Vermelho puro
-  border: "#ffd014" # Verde limão
-  active: "#fe0000" # Azul puro
-  extra_active: "#ffff00" # Amarelo puro
-  background: "#000"
+  primary: "#fe0000"
+  active: "#fe0000"
+  extra_active: "#ffff00"
   text: "#ffffff"
-  font: "'Courier Prime', monospace"
-  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  background: "#000000"
+  border: "#ffd014"
   cabepe_color: "#000000"
+  cabepe_opacity: "1"
+  cabepe_shadow: true
+  blotico_font: "'Roboto', sans-serif"
+  blotico_color: "#fe0000"
+  image: ""
+
+adm:
+  primary: "#000"
+  active: "#0660b8"
+  extra_active: "#0660b8"
+  text: "#000000"
+  background: "#f4f4f4"
+  border: "#df403a"
+  cabepe_color: "#f4f4f4"
   cabepe_opacity: "0"
+  cabepe_shadow: false
+  blotico_font: "'Poppins', sans-serif"
+  blotico_color: "#0660b8"
+  image: ""
+
+colores:
+  primary: "#00a238"
+  active: "#00a0ff"
+  extra_active: "#00a238"
+  text: "#ffffff"
+  background: "#1a1a1a"
+  border: "#ff8a3a"
+  cabepe_color: "#ff4e54"
+  cabepe_opacity: "0.8"
+  cabepe_shadow: false
+  blotico_font: "'Raleway', sans-serif"
+  blotico_color: "#ff8a3a"
+  image: "assets/img/blog/claquete_colores_filmes_joao_faissal.jpg"
 
 temas&condicoes:
   primary: "#d2cf2a"
-  text: "#fff"
-  border: "#d2cf2a"
   active: "#d2cf2a"
   extra_active: "#000"
+  text: "#fff"
   background: "#005e46"
-  font: "'Courier Prime', monospace"
-  image: "assets/images/uploads/termosecondicoesbg.jpg"
+  border: "#d2cf2a"
   cabepe_color: "#000000"
-  cabepe_opacity: "0"
+  cabepe_opacity: "1"
+  cabepe_shadow: false
+  blotico_font: "'Lora', serif"
+  blotico_color: "#d2cf2a"
+  image: "assets/images/uploads/termosecondicoesbg.jpg"
 
 alice:
   primary: "#4A3724"
-  text: "#b0191a"
-  border: "#b0191a"
-  font: "'Courier Prime', monospace"
-  background: "#e8ba98"
-  image: "assets/images/uploads/AliceBG.jpg"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0"
   active: "#4A3724"
   extra_active: "#4A3724"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0"
-
-madrugada:
-  primary: "#fff"
-  background: "#000"
-  text: "#fff"
-  border: "#fff"
-  active: "#96030f"
-  extra_active: "#fff"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
+  text: "#b0191a"
+  background: "#e8ba98"
+  border: "#b0191a"
+  cabepe_color: "#e8ba98"
   cabepe_opacity: "1"
+  cabepe_shadow: true
+  blotico_font: "'Montserrat', sans-serif"
+  blotico_color: "#b0191a"
+  image: "assets/images/uploads/AliceBG.jpg"
 
-pink:
-  primary: "#ff69b4"
-  text: "#330033"
-  border: "#ff1493"
-  font: "'Courier Prime', monospace"
-  # background: "#fff0f5"
-  image: "/assets/images/background.jpg"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6"
-  active: "#ff69b4"
-  extra_active: "#ff69b4"
-
-cyberpunk:
-  primary: "#39ff14"
-  background: "#0f0f0f"
-  text: "#e6e6e6"
-  border: "#ff00ff"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-dark-poetry:
-  primary: "#9d4edd"
-  background: "#121212"
-  text: "#f0e6f6"
-  border: "#5f0f40"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-paperkraft:
-  primary: "#c78c56"
-  background: "#f5f0e1"
-  text: "#3e2f1c"
-  border: "#a56b3f"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-retro:
-  primary: "#ff6347"
-  background: "#fffaf0"
-  text: "#3b3b3b"
-  border: "#ffa500"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-vaporwave:
-  primary: "#ff77ff"
-  background: "#d0f0ff"
-  text: "#6c3483"
-  border: "#00ffff"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-forest:
-  primary: "#2e8b57"
-  background: "#e0f2e9"
-  text: "#1c3d2e"
-  border: "#3cb371"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-mono-minimal:
-  primary: "#999999"
-  background: "#ffffff"
-  text: "#222222"
-  border: "#cccccc"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-sunset:
-  primary: "#ff4500"
-  background: "#fff5e6"
-  text: "#331100"
-  border: "#ff6347"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-midnight:
-  primary: "#0abdc6"
-  background: "#0f0f0f"
-  text: "#d9faff"
-  border: "#005f73"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-pastel-dream:
-  primary: "#a29bfe"
-  background: "#fceefc"
-  text: "#5e548e"
-  border: "#dcd6f7"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-inkwell:
-  primary: "#1c1c1c"
-  background: "#f4f4f4"
-  text: "#0e0e0e"
-  border: "#333333"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-café-au-lait:
-  primary: "#7b4b2a"
-  background: "#f8f1e7"
-  text: "#3e2c23"
-  border: "#a8745b"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-golden-hour:
-  primary: "#fca311"
-  background: "#fffbf0"
-  text: "#252422"
-  border: "#ffba08"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-aqua-sky:
-  primary: "#00b4d8"
-  background: "#e0f7fa"
-  text: "#023e8a"
-  border: "#48cae4"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-bloody-mary:
-  primary: "#c1121f"
-  background: "#fff0f0"
-  text: "#1d0000"
-  border: "#780000"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-lilac-wind:
-  primary: "#b185db"
-  background: "#faf5ff"
-  text: "#3b2f63"
-  border: "#d6b4fc"
-  font: "'Changa One', cursive"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
-
-stone-age:
-  primary: "#8d99ae"
-  background: "#edf2f4"
-  text: "#2b2d42"
-  border: "#6c757d"
-  font: "'Courier Prime', monospace"
-  cabepe_color: "#000000"
-  cabepe_opacity: "0.6" # Valor padrão
+  teste:
+  primary: "#ff0000" # Elementos principais (botões, destaques)
+  active: "#0000ff" # Estados ativos (hover, cliques)
+  extra_active: "#ffff00" # Detalhes extras (linhas, tags)
+  text: "#ffffff" # Texto geral
+  background: "#000000" # Fundo do site e sidebar
+  border: "#00ff00" # borda
+  cabepe_color: "#000000" # cor cabeçalho rodape 
+  cabepe_opacity: "1" # opacidade cabeçalho rodape
+  cabepe_shadow: false # drop shadow cabeçalho rodape
+  blotico_font: "'Lora', serif" # fonte do título
+  blotico_color: "#ff0000" # cor do título
+  image: "assets/images/uploads/termosecondicoesbg.jpg" # hero image

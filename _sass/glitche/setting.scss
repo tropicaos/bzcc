@@ -7,7 +7,7 @@
    $default-color: #ffffff;
    $extra-color: #ffffff;
    $dark-color: #ffffff;
-   $light-color: #ffffff;
+   $light-color: #c7009c;
    $white-color: #000000;
    $active-color: #c7009c;
    $extra-active-color: #c7009c;
@@ -23,6 +23,7 @@
    $footer-text-color: #ffffff;
    $header-blur: 6px;
    $footer-blur: 6px;
+   /* Nota: A opacidade agora é controlada apenas pela variável RGBA */
    
 /* --------------------------------------------------
 	3. Tipografia (SASS)
@@ -30,11 +31,11 @@
    $default-font: 'Courier Prime', monospace;
    $icons-font: 'Ionicons';
    
-   $large-size: 15px;
-   $default-size: 13px;
-   $small-size: 12px;
-   $extra-small-size: 11px;
-   $title-size: 68px;
+   $large-size: 25px;
+   $default-size: 16px;
+   $small-size: 13px;
+   $extra-small-size: 12px;
+   $title-size: 70px;
    $subtitle-size: 15px;
    $h1-size: 26px;
    $h2-size: 23px;

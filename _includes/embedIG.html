@@ -1,0 +1,20 @@
+{% comment %}
+  Include para embed de Instagram com controles.
+  Parâmetros:
+    url: URL do post do Instagram (ex.: https://www.instagram.com/p/CfelpFxFu-6/)
+    title: Título do embed
+    caption: Legenda do embed
+    layout: full ou half (opcional, padrão: full)
+{% endcomment %}
+<div class="embedIG {% if include.layout == 'half' %}half{% else %}full{% endif %}">
+  <h2>{{ include.title }}</h2>
+  <blockquote class="instagram-media" data-instgrm-permalink="{{ include.url }}" data-instgrm-version="14">
+    <div style="padding:16px;">
+      <a href="{{ include.url }}"></a>
+    </div>
+  </blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+  {% if include.caption %}
+  <p class="caption">{{ include.caption }}</p>
+  {% endif %}
+</div>

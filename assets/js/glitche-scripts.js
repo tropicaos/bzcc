@@ -354,6 +354,11 @@ $(function () {
 		$('.s_overlay').fadeOut();
 		$('.content-sidebar').removeClass('active');
 		$('body').removeClass('scroll_hidden');
+		// Restaurar a barra de rolagem quando a sidebar é fechada
+		$('html, body').css({
+			overflow: '',
+			height: ''
+		});
 	});
 
 	/*

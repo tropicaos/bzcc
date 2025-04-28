@@ -3,7 +3,7 @@ layout: post
 image: 'assets/images/uploads/perdidonela.jpg'
 title: Entre Quasares & Supernovas. 🌌👩‍🚀
 date: 2016-08-19T11:58:18.209Z
-tags: Textos Romance Sci-fi Lírico
+tags: Textos Amor-Original Sci-fi Lírico
 permalink: /EntreQuasares&Supernovas
 published: true
 ---

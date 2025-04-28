@@ -7,7 +7,6 @@
 
   {%- include head.html -%}
 
-  <!-- Estilo via tema (data/themes/*.yml) -->
   {% assign selected_theme = page.theme | default: 'default' %}
   {% if selected_theme != 'default' %}
     {% assign theme = site.data.themes[selected_theme] %}
@@ -36,12 +35,11 @@
     {%- include header.html -%}
 
     <div class="wrapper">
-      <!-- Cabeçalho Integrado -->
+      
       <div class="started">
         <div class="centrize full-width">
           <div class="vertical-center">
             <div class="started-content">
-              <!-- Modifique esta linha -->
               <div class="h-title glitch-effect" data-text="{{ page.title | upcase }}" style="color: #fff; font-size: 48px; font-weight: 700; text-align: center;">
                 {{ page.title | upcase }}
               </div>
@@ -57,14 +55,12 @@
         </div>
       </div>
 
-      <!-- Conteúdo dos Botões -->
       <div class="saibamais-wrapper">
         {{ content }}
       </div>
     
     {%- include footer.html -%}
 
-    <!-- Linhas decorativas -->
     <div class="line top"></div>
     <div class="line bottom"></div>
     <div class="line left"></div>
@@ -73,5 +69,6 @@
 
   {%- include sidebar.html -%}
   {%- include scripts.html -%}
+
 </body>
 </html>

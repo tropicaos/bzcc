@@ -55,7 +55,7 @@ layout: default
 		<div class="single-post-text">
 			{{ page.content }}
 		</div>
-		
+		<hr>
 		<div class="post-text-bottom">
 			<div class="post-meta">
 				<span>Postado em</span> 
@@ -63,6 +63,7 @@ layout: default
 				<span class="time">{{ page.date | date: "%H:%M" }}</span>
 				<span class="byline">Por <span class="author">Lau</span></span>
 			</div>
+			<!-- 
 			<div class="social-share" data-title="{{ page.title }}" data-url="{{ page.url | absolute_url }}">
 				<span>{{ ui_text.share }}:</span>
 				<a class="share-btn share-btn-facebook share-btn-1" title="{{ ui_text.share_on }} Facebook">
@@ -81,6 +82,7 @@ layout: default
 					<i class="ion ion-social-pinterest"></i>
 				</a>
 			</div>
+			 -->
 			{% assign tags_size = page.tags | size %}
 			{% if tags_size != 0 %}
 			<div class="tags-links">
@@ -108,7 +110,7 @@ layout: default
 			</div>
 		</nav>
 		{% endif %}
-
+		
 		{% if site.disqus_comments == 'yes' %}
 		<div class="post-comments">
 			<div class="title">
@@ -135,7 +137,7 @@ layout: default
 			</div>
 		</div>
 		{% endif %}
-
+		<hr>
 		<div class="clear"></div>
 	</div>
 </div>
