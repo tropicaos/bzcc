@@ -48,14 +48,18 @@ subtítulo
 {:target="_blank"}
 
 Exemplo de Tema em (_data/themes.yml)
-pink:
-  primary: "#ff69b4"         # Cor de destaque (links, botões, efeitos)
-  text: "#330033"            # Cor principal do texto
-  font: "'Courier Prime', monospace"  # Fonte personalizada para o conteúdo
-  border: "#ff1493"          # Cor para bordas decorativas (linhas, caixas, etc.)
-  background: "#fff0f5"      # Cor de fundo padrão da página (caso não use imagem)
-  image: "/assets/images/bg-pink.jpg" # (opcional) imagem de fundo
-  header: "rgba(255, 255, 255, 0.6)"   # Cor de fundo do header com transparência
-  footer: "rgba(0, 0, 0, 0.6)"         # Cor de fundo do footer com transparência
+  teste:
+  primary: "#ff0000" # Elementos principais (botões, destaques)
+  active: "#0000ff" # Estados ativos (hover, cliques)
+  extra_active: "#ffff00" # Detalhes extras (linhas, tags)
+  text: "#ffffff" # Texto geral
+  background: "#000000" # Fundo do site e sidebar
+  border: "#00ff00" # borda
+  cabepe_color: "#000000" # cor cabeçalho rodape 
+  cabepe_opacity: "1" # opacidade cabeçalho rodape
+  cabepe_shadow: false # drop shadow cabeçalho rodape
+  blotico_font: "'Lora', serif" # fonte do título
+  blotico_color: "#ff0000" # cor do título
+  image: "assets/images/uploads/termosecondicoesbg.jpg" # hero image
 
 Controle de fundo e cores Globais (_sass/glitche/settings.scss)

@@ -91,21 +91,7 @@ alice:
   border: "#b0191a"
   cabepe_color: "#e8ba98"
   cabepe_opacity: "1"
-  cabepe_shadow: true
+  cabepe_shadow: false
   blotico_font: "'Montserrat', sans-serif"
   blotico_color: "#b0191a"
   image: "assets/images/uploads/AliceBG.jpg"
-
-  teste:
-  primary: "#ff0000" # Elementos principais (botões, destaques)
-  active: "#0000ff" # Estados ativos (hover, cliques)
-  extra_active: "#ffff00" # Detalhes extras (linhas, tags)
-  text: "#ffffff" # Texto geral
-  background: "#000000" # Fundo do site e sidebar
-  border: "#00ff00" # borda
-  cabepe_color: "#000000" # cor cabeçalho rodape 
-  cabepe_opacity: "1" # opacidade cabeçalho rodape
-  cabepe_shadow: false # drop shadow cabeçalho rodape
-  blotico_font: "'Lora', serif" # fonte do título
-  blotico_color: "#ff0000" # cor do título
-  image: "assets/images/uploads/termosecondicoesbg.jpg" # hero image
