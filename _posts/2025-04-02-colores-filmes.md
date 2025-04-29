@@ -14,17 +14,17 @@ theme: colores
 
 Depois de quase [uma década produzindo](/tags/trampo/) audiovisual para empresas, finalmente fui parar... numa empresa de audiovisual.
 
-Meu ingresso na Colores rolou com muito amor envolvido. Isaque, diretor de fotografia do meu xodó [Lugar Sem Direção](/LugarSemDirecao-LosCabrasGigantes) e pessoa profundamente querida (apresentada por uma pessoa [profundamente amada](/EntreQuasares&Supernovas)), me indicou ao Kant quando soube que ele estava procurando um assistente.
+Meu ingresso na Colores rolou com muito amor envolvido. Isaque, diretor de fotografia do meu xodó [Lugar Sem Direção](/LugarSemDirecao-LosCabrasGigantes) e pessoa profundamente querida (apresentada por uma pessoa [profundamente amada](/EntreQuasares&Supernovas)), me indicou ao Kant quando soube que ele tava procurando um assistente.
 
-Não rolou entrevista formal. O próprio contexto do convite — que não posso expor aqui — já mostrava que aquele era um ambiente onde eu poderia me encaixar. Entrei para assistir em montagem e, como sempre jogo de suporte, apresentei o Notion aos processos da empresa. Fiz um mapeamento arquivológico de diversos HDs e transformei tudo num banco de dados funcional.
+Não rolou entrevista formal. O próprio contexto do convite — que não cabe expor aqui — já mostrava que era um ambiente onde eu podia me encaixar. Entrei pra assistir em montagem e, como sempre jogo de suporte, apresentei o Notion aos processos da empresa. Mapeei uma porrada de HDs e transformei tudo num banco de dados funcional.
 
-Com o que aprendi de gestão de processos no [Armazém Paraíba](/ArmazemParaiba) e meu envolvimento com o Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), consegui montar uma solução multidisciplinar que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento e outras turbinadas com a ajuda do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
+Com o que aprendi de gestão no [Armazém Paraíba](/ArmazemParaiba) e meu envolvimento com o Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), montei uma solução multidisciplinar que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento, cronograma e outras turbinadas pelas mãos do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
 
 ---
 
 # COMO FOI MINHA EXPERIÊNCIA NA COLORES FILMES
 
-Na Colores, tive a oportunidade de trabalhar com empresas grandes e de setores variados, como a [Heineken Brasil](https://www.youtube.com/watch?v=DIGGo9dNBoE&list=PL2ex3uSZMa5CHRVGxGuuf2pJRhBBUIKnp&ab_channel=ColoresFilmes){:target="_blank"} e o Hospital HNSN. Também embarquei na montagem e finalização de roadtrips intimistas com Ronaldo Fraga e Ernesto Paglia, como essa aqui:
+Na Colores, tive a oportunidade de trabalhar com empresas grandes e de setores variados, como a [Heineken Brasil](https://www.youtube.com/watch?v=DIGGo9dNBoE&list=PL2ex3uSZMa5CHRVGxGuuf2pJRhBBUIKnp&ab_channel=ColoresFilmes){:target="_blank"} e o Hospital HNSN. Também embarquei na assistência de montagem e finalização de roadtrips intimistas com Ronaldo Fraga e Ernesto Paglia, como essa aqui:
 
 <div class="videoWrapper">
     <iframe
@@ -37,24 +37,24 @@ Na Colores, tive a oportunidade de trabalhar com empresas grandes e de setores v
 
 Ao contrário de [certas empresas](/ArmazemParaiba), a Colores era de fato uma empresa familiar — e isso fez diferença num momento em que acolhimento era exatamente o que eu precisava.
 
-Qual empresa que se diz familiar você conhece que já precisou evacuar a ilha de edição por causa de um vazamento de fralda? KLKKKKKK. Teve seu caos, mas teve muito cuidado também. E isso me marcou.
+Qual empresa "familiar" você conhece que já precisou evacuar a ilha de edição por causa de um vazamento de fralda? KLKKKKKK. Teve seu caos, mas teve muito cuidado também. E isso me marcou.
 
 ---
 
 # POR QUE SAÍ DA COLORES FILMES?
 
-Além do Isaque já mencionado, conversei com outros montadores que também ficaram por cerca de um ano por lá. Pelo que senti, esse é o ciclo natural da casa.
+Além do Isaque já citado, conversei com outros montadores que também ficaram por cerca de um ano. Pelo que percebi, esse é o ciclo natural da casa.
 
-Depois de ouvir que "um dia eu poderia estar ensinando também", sendo que eu já era especialista em roteiro e montagem cinematográfica há quase uma década, com uma longa carreira atuando e lecionando teatro além de já ter experiência dando oficinas e escrevendo sobre comunicação, percebi que, apesar do clima mais leve que em qualquer empresa anterior, a estrutura ainda era bastante vertical.
+Quando ouvi que "um dia eu poderia estar ensinando também" — sendo que já era especialista em roteiro e montagem há quase uma década, com uma longa carreira no teatro, além de experiência com oficinas e escrita sobre comunicação — percebi que, apesar do clima mais leve que em qualquer empresa anterior, a verticalidade era a mesma.
 
-Cheguei lá com o papo de que era para dar assistência ao Kant, mas o tempo foi passando e senti que esperavam que eu fosse um Kant II. Não tenho interesse nenhum em ser Kant II — tô satisfeitíssimo sendo Laureano I. Quer dizer... Eu sou Junior, então tecnicamente sou Laureano II, mas sinto que nesse caso não se encaixa, então acho mais apropriado ser Laureano **TURBO POWER DELUXE ULTIMATE COLLECTOR'S EDITION**[.](https://www.youtube.com/watch?v=8pKN0u-4jb4&ab_channel=HenriqueLuiz){:target="_blank"}
+Cheguei com o papo de dar assistência ao Kant, mas com o tempo senti que esperavam que eu virasse um Kant II. E eu não tenho interesse nenhum nisso. Tô satisfeitíssimo sendo o Laureano I. Quer dizer... Eu sou Junior, então tecnicamente sou II, mas nesse contexto acho mais apropriado **Laureano TURBO POWER DELUXE ULTIMATE COLLECTOR'S EDITION**[.](https://www.youtube.com/watch?v=8pKN0u-4jb4&ab_channel=HenriqueLuiz){:target="_blank"}
 
-Apesar dos apesares, aprendi bagaray. Mais em um ano de Colores do que em dois de UFPB. E além de aprender, pude refinar processos e perceber — como mencionei no começo — que gestão de tarefas e projetos dentro da produção audiovisual é mesmo minha vibe.
+Apesar dos apesares, aprendi bagaray. Mais em um ano de Colores do que em dois de UFPB. E mais do que aprender: refinei processos e percebi — como falei lá em cima — que gestão de tarefas e projetos dentro da produção audiovisual é mesmo minha vibe.
 
-Sempre fui nerd de produtividade. Criar templates e automações de tarefas é algo natural pra mim, tanto no macro quanto no micro. E se isso parecer abstrato, tenho uma anedota que ilustra bem:
+Sempre fui nerd de produtividade. Criar templates e automações me sai natural, tanto no macro quanto no micro. Se parecer abstrato, tem um exemplo:
 
-Fui apresentado a um método de "mistura de luz" da camada de chroma com a de fundo. O processo tinha 10 passos e nem nome tinha. Minha cabeça, inquieta com tanta etapa, investigou até descobrir que aquilo se chamava *light wrap*. Com esse nome em mãos, entendi melhor o conceito: suavizar a borda do chroma com um blur do fundo. Isso dá uma sensação mais natural, impedindo que a borda do chroma fique áspera demais e chame atenção. Redesenhei o processo, cortei pela metade os passos e criei um método replicável.
+Me apresentaram um processo de "mistura de luz" entre chroma e fundo. Eram 10 passos, sem nome. Fiquei encucado e fui atrás: descobri que se chamava *light wrap*. Com o termo certo, entendi melhor o conceito  - suavizar as bordas do chroma com desfoque do fundo pra evitar que fiquem ásperas demais - redesenhei o processo, cortei os passos pela metade e deixei a operação facilmente replicável.
 
-Esse tipo de aprendizado — já com solução otimizada embutida — me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase da minha jornada, com mais segurança na minha capacidade de entregar — e ajudar outros a entregarem também. Eu não só edito mais, eu crio soluções escalonáveis pra trabalhar melhor e em larga escala caso a demanda... demande. E com a bagagem depois da Colores somada a tudo que aprendi e executei nesses 8 anos de audiovisual, mídia e marketing, pra mim ficou nítido que ultrapassei o limiar do Editor Junior e cheguei ao Pleno.
+Esse tipo de aprendizado — já com solução embutida — me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase, mais seguro da minha entrega e apto a ajudar outros a entregarem também. Eu não só edito: crio soluções escalonáveis pra trabalhar melhor e em larga escala caso seja necessário. E com tudo que aprendi na Colores somado a esses 8 anos de audiovisual, mídia e marketing, ficou claro: passei do ponto do Editor Junior. Hoje sou, com tranquilidade, **Pleno**.
 
-Hoje ficou nítido pra mim também o [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.
+E também ficou claro qual é meu [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.

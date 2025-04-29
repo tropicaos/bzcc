@@ -22,7 +22,6 @@ Porém, surpreendentemente não fui desligado e depois de apenas dois meses de l
 
 ---
 
-
 # COMO FOI MINHA EXPERIÊNCIA NO ARMAZÉM PARAÍBA  
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -34,14 +33,6 @@ O **Armazém Paraíba** é um nome enraizado na cultura nordestina. Em todos os 
 Essa autossuficiência faz as agências detestarem o Armazém e eu sempre achei isso bem engraçado. É impossível ser nordestino e não conhecer o bordão *"Fiado é só no Armazém Paraíba"* e as dezenas de jingles chicletes de Dia das Mães, Dia das Crianças e principalmente o de Natal.  
 
 Inclusive é por causa desse jingle que eu passei esses três anos tendo que desmentir as pessoas que *Amazan* não era o dono do Armazém, por mais que os nomes combinem.  
-
-{% 
-include image.html
-img="assets/img/blog/armazempb/amazão.png"
-title="Amazão"
-caption="'Sou não carai kkkkkkk aff. NO ARMAZÉM PARAÍBA É O LUGAR DE COMPRAR. BARATO!!11! Desculpa, é o costume' ZÃO, Ama."
-layout="left"
-%}
 
 Além da publicidade tradicional, a marca tem um pé fortíssimo no merchan televisivo, nas rádios e na cultura popular. Os cenários das TVs locais sempre tinham ao fundo telas que eu produzia.  
 
