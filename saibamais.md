@@ -27,16 +27,12 @@ permalink: /saibamais
             <span class="saibamais-icon ion-social-twitch"></span>
             <span class="saibamais-text">STREAMING<br>twitch</span>
         </a>
-        <a href="https://www.instagram.com/bezerramos/" target="_blank" class="saibamais-button">
-            <span class="saibamais-icon ion-social-instagram-outline"></span>
-            <span class="saibamais-text">INSTAGRAM<br>@bezerramos</span>
-        </a>
         <h3 class="category-title">TECNOLOGIA</h3>
         <a href="https://poligonal.itch.io/" target="_blank" class="saibamais-button">
                     <span class="saibamais-icon ion-android-playstore"></span>
                     <span class="saibamais-text">itch.io<br>Poligonal</span>
         </a>
-        <a href="https://github.com/tropicaos/" target="_blank" class="saibamais-button">
+        <a href="https://github.com/poligonaldev" target="_blank" class="saibamais-button">
                     <span class="saibamais-icon ion ion-social-github"></span>
                     <span class="saibamais-text">Github<br>ignora a bagunça</span>
         </a>
