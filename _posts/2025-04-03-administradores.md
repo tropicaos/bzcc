@@ -2,7 +2,7 @@
 layout: post
 title: Administradores.com
 tags: Trampo Audiovisual Youtube
-image: 'assets/img/blog/administradores_blog.jpg'
+image: 'assets/img/blog/adm/administradores_blog.jpg'
 permalink: /PortalAdministradores
 published: true
 theme: adm
@@ -49,7 +49,7 @@ Além disso, me envolvi de cabeça na produção de workshops e cursos focados e
 
 {% 
 include image.html
-img="assets/img/blog/administradores_blog2.jpg"
+img="assets/img/blog/adm/administradores_blog2.jpg"
 title="Queridos no Portal Administradores."
 caption="Com Leandro Vieira segurando a plaquinha de 100K no topo à esquerda em plena pandemia! À direita tietando o [**Ricardo Oliveira**](https://www.instagram.com/ricardoollliveira/){:target='_blank'} no meio da filmagem de seu curso de Estratégias Digitais e editando com estilo com o querido [**Victor**](https://www.instagram.com/victorbmont/){:target='_blank'} no canto inferior esquerdo."
 layout="full"
@@ -67,7 +67,7 @@ O massa é que, assim que as coisas voltaram aos eixos, Leandro e Simão tentara
 
 {% 
 include image.html
-img="assets/img/blog/administradores_blog3.jpg"
+img="assets/img/blog/adm/administradores_blog3.jpg"
 title="Queridos no Portal Administradores."
 caption="'Maca, você é nosso Pokémon esquisito favorito' PACHECO, Raiza. É massa trampar num lugar onde você pode ser estranho em paz. PS: muito engraçada minha insistência em ser gótico suave em João Pessoa. Fotografado em dezembro de 2018."
 layout="full"

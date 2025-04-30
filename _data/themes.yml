@@ -16,10 +16,10 @@ matapau:
   primary: "#c7009c"
   active: "#c7009c"
   extra_active: "#ff00cc"
-  text: "#000000"
-  background: "#507C43"
+  text: "#E4A672"
+  background: "#193D3F"
   border: "#8A04D1"
-  cabepe_color: "#507C43"
+  cabepe_color: "#193D3F"
   cabepe_opacity: 1
   cabepe_shadow: false
   blotico_font: "'Silkscreen', sans-serif"
@@ -60,13 +60,13 @@ colores:
   extra_active: "#00a238"
   text: "#ffffff"
   background: "#1a1a1a"
-  border: "#ff8a3a"
-  cabepe_color: "#ff4e54"
-  cabepe_opacity: "0.8"
+  border: "#ff4e54"
+  cabepe_color: "#1a1a1a"
+  cabepe_opacity: "0.1"
   cabepe_shadow: false
   blotico_font: "'Raleway', sans-serif"
-  blotico_color: "#ff8a3a"
-  image: "assets/img/blog/claquete_colores_filmes_joao_faissal.jpg"
+  blotico_color: ""
+  image: "assets/img/blog/colores/claquete_colores_filmes_joao_faissal.jpg"
 
 temas&condicoes:
   primary: "#d2cf2a"
@@ -95,3 +95,12 @@ alice:
   blotico_font: "'Montserrat', sans-serif"
   blotico_color: "#b0191a"
   image: "assets/images/uploads/AliceBG.jpg"
+
+madrugada:
+  primary: "#fff"
+  active: "#96030f"
+  extra_active: "#fff"
+  background: "#000"
+  text: "#fff"
+  border: "#fff"
+  font: "'Courier Prime', monospace"

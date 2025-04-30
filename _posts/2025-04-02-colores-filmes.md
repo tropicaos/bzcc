@@ -2,7 +2,7 @@
 layout: post
 title: Colores Filmes
 tags: Trampo Audiovisual Cinema
-image: 'assets/img/blog/coloresfilmes_blog.jpg'
+image: 'assets/img/blog/colores/coloresfilmes_blog.jpg'
 permalink: /ColoresFilmes
 published: true
 theme: colores
@@ -18,7 +18,7 @@ Meu ingresso na Colores rolou com muito amor envolvido. Isaque, diretor de fotog
 
 Não rolou entrevista formal. O próprio contexto do convite — que não cabe expor aqui — já mostrava que era um ambiente onde eu podia me encaixar. Entrei pra assistir em montagem e, como sempre jogo de suporte, apresentei o Notion aos processos da empresa. Mapeei uma porrada de HDs e transformei tudo num banco de dados funcional.
 
-Com o que aprendi de gestão no [Armazém Paraíba](/ArmazemParaiba) e meu envolvimento com o Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), montei uma solução multidisciplinar que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento, cronograma e outras turbinadas pelas mãos do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
+Com o que aprendi de gestão de processos no [Armazém Paraíba](/ArmazemParaiba) e essa minha bagagem de Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), montei uma solução multidepartamental que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento, cronograma e outras turbinadas pelas mãos do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
 
 ---
 
@@ -53,8 +53,12 @@ Apesar dos apesares, aprendi bagaray. Mais em um ano de Colores do que em dois d
 
 Sempre fui nerd de produtividade. Criar templates e automações me sai natural, tanto no macro quanto no micro. Se parecer abstrato, tem um exemplo:
 
-Me apresentaram um processo de "mistura de luz" entre chroma e fundo. Eram 10 passos, sem nome. Fiquei encucado e fui atrás: descobri que se chamava *light wrap*. Com o termo certo, entendi melhor o conceito  - suavizar as bordas do chroma com desfoque do fundo pra evitar que fiquem ásperas demais - redesenhei o processo, cortei os passos pela metade e deixei a operação facilmente replicável.
+Me apresentaram um processo de "mistura de luz" entre chroma e fundo. Eram 10 passos, **sem nome**. Meu cérebro hiperativo quase entrou em curto. No meio eu já tinha esquecido do começo e no fim, nem lembrava mais do meio. E mesmo estando há anos de conhecer o termo "Pensamento Computacional", apliquei quase todos os seus pilares: **reconheci o padrão** dessas operações descobrindo que se chamava *light wrap*. Com o termo certo, entendi melhor o conceito e **decompus o problema**:
 
-Esse tipo de aprendizado — já com solução embutida — me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase, mais seguro da minha entrega e apto a ajudar outros a entregarem também. Eu não só edito: crio soluções escalonáveis pra trabalhar melhor e em larga escala caso seja necessário. E com tudo que aprendi na Colores somado a esses 8 anos de audiovisual, mídia e marketing, ficou claro: passei do ponto do Editor Junior. Hoje sou, com tranquilidade, **Pleno**.
+![Desenhando fica mais fácil](assets/img/blog/colores/colores-lightwrap.jpg)
 
-E também ficou claro qual é meu [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.
+*Light Wrapping* é "envelopar" as bordas do chroma com um desfoque da camada ao fundo pra evitar que elas fiquem ásperas demais e chamem atenção, passando uma sensação mais natural ao chroma. Agora conhecendo o problema pelo nome e sabendo de seus pormenores, pude redesenhar todo o fluxo e automatizar os 10 passos em 5, além de deixar a operação facilmente replicável __*(e hoje o After tem plugin que acelera inda mais esse processo, heh)*__.
+
+Esse tipo de aprendizado me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase, mais seguro não só da qualidade do produto final, mas da minha capacidade de desenvolver sistemas que aceleram a esteira de produção audiovisual de ponta a ponta. Desde estruturar a concepção de ideias em roteiros sólidos baseado nos meus estudos em narratologia (que comecei a levar a sério em 2017), até agora com esses fluxos de trabalho otimizados que se personalizam às demandas da vez - unindo várias etapas de automação com templates, plugins, ou só execução otimizada, mesmo. Esses sistemas tem funcionado tão bem que Pós-Colores esses meus templates e fluxos otimizados são usados por camaradas de ilha. Eu não só edito: crio soluções escalonáveis pra trabalhar melhor e em larga escala que melhora meu trampo e o de quem tiver editando comigo. A Colores foi um marco por ter explicitado algo que nem tava prestando atenção: ultrapassei o limiar de Junior pra me tornar um editor Pleno.
+
+E também ficou claro qual deveria ser meu [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.

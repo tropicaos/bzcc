@@ -2,7 +2,7 @@
 layout: post
 title: Armazém Paraíba
 tags: Trampo Audiovisual Marketing
-image: 'assets/img/blog/armazemparaiba_blog.jpg'
+image: 'assets/img/blog/armazempb/armazemparaiba_blog.jpg'
 permalink: /ArmazemParaiba
 published: true
 theme: armazemparaiba
