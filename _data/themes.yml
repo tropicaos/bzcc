@@ -13,17 +13,17 @@ default:
   blotico_color: "#ffffff"
 
 matapau:
-  primary: "#c7009c"
-  active: "#c7009c"
-  extra_active: "#ff00cc"
-  text: "#E4A672"
-  background: "#193D3F"
+  primary: "#8A04D1"
+  active: "#743f39"
+  extra_active: "#16EFA7"
+  text: "#193d3f"
+  background: "#458F7A"
   border: "#8A04D1"
-  cabepe_color: "#193D3F"
+  cabepe_color: "#458F7A"
   cabepe_opacity: 1
   cabepe_shadow: false
   blotico_font: "'Silkscreen', sans-serif"
-  blotico_color: "#E4A672"
+  blotico_color: "#193d3f"
   image: ""
 
 armazemparaiba:
@@ -104,3 +104,16 @@ madrugada:
   text: "#fff"
   border: "#fff"
   font: "'Courier Prime', monospace"
+
+bunker:
+  primary: "#c7009c"
+  active: "#fff"
+  extra_active: "#fff"
+  text: "#ffffff"
+  background: "#191919"
+  border: "#c7009c"
+  cabepe_color: "#191919"
+  cabepe_opacity: "1"
+  cabepe_shadow: false
+  blotico_font: "'Courier Prime', monospace"
+  blotico_color: "#ffffff"
