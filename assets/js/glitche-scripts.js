@@ -1,6 +1,33 @@
+/**
+ * Glitche - Scripts Personalizados
+ *
+ * Sumário (Table of Contents):
+ * ---------------------------
+ * 1. Configurações Iniciais e Polyfills (onpageshow)
+ * 2. Ajuste de Altura Inicial
+ * 3. Animações Typed.js (Preload, Subtitle, Breadcrumbs)
+ * 4. Preloader e Inicialização da Página
+ * 5. Menu Mobile (Header Toggle)
+ * 6. Efeitos de Scroll (Mouse Button Fade/Click)
+ * 7. Efeitos de Hover (Saibamais Button)
+ * 8. Validação do Formulário de Contato (#cform)
+ * 9. Inicialização Isotope/Masonry (Clientes, Blog, Portfolio)
+ * 10. Filtros do Portfolio
+ * 11. Inicialização Magnific Popup (Gallery, Media, Image, Video, Music, Content Popups)
+ * 12. Ajustes no Resize da Janela
+ * 13. Inicialização Visual das Skills (Dotted, Circles)
+ * 14. Compartilhamento Social (RRSSB)
+ * 15. Lógica da Sidebar (Abrir/Fechar)
+ * 16. Estilização de Títulos de Widgets
+ * 17. Inicialização da Busca (SimpleJekyllSearch)
+ * 18. Efeito Parallax (Hero Image)
+ * 19. Animação de Transição entre Páginas
+ */
+
 $(function () {
 	'use strict';
 
+	/* 1. Configurações Iniciais e Polyfills */
 	window.onpageshow = function(event) {
 		if (event.persisted) {
 			setTimeout(() => {
@@ -9,84 +36,97 @@ $(function () {
 		}
 	};
 
-	/* Set full height in blocks */
-	var width = $(window).width();
-	var height = $(window).height();
-	$('.section.started').css({'height': height-60});
+	/* 2. Ajuste de Altura Inicial */
+	function adjustStartedSectionHeight() {
+		var width = $(window).width();
+		var height = $(window).height();
+		var offset = (width < 840) ? 30 : 60;
+		$('.section.started').css({'height': height - offset});
+	}
+	adjustStartedSectionHeight();
 
-	/* Typed preload text */
-	$('.typed-load').typed({
-		stringsElement: $('.typing-load'),
-		loop: true
-	});
-	
-	/* Preloader */
+	/* 3. Animações Typed.js */
+	if ($('.typed-load').length) {
+		$('.typed-load').typed({
+			stringsElement: $('.typing-load'),
+			loop: true
+		});
+	}
+
+	/* 4. Preloader e Inicialização da Página */
 	function initPage() {
 		if ($('.preloader').hasClass('done')) return;
-	
+
 		$(".preloader .pre-inner").fadeOut(300, function () {
-			$('.preloader').fadeOut();
+			$('.preloader').fadeOut(function() {
+				$(this).addClass('done');
+			});
 			$('body').addClass('loaded').removeClass('scroll_hidden');
-			$('.preloader').addClass('done');
-	
-			/* Typed subtitle */
-			$('.typed-subtitle').typed({
-				stringsElement: $('.typing-subtitle'),
-				loop: true
-			});
-			/* Typed breadcrumbs */
-			$('.typed-bread').typed({
-				stringsElement: $('.typing-bread'),
-				showCursor: false
-			});
-	
-			/* One Page Nav */
-			const url_hash = location.hash;
-			const sectionElem = $(url_hash);
-			if (url_hash.indexOf('#section-') === 0 && sectionElem.length) {
-				$('html, body').animate({ scrollTop: sectionElem.offset().top - 70 }, 300);
+
+			if ($('.typed-subtitle').length) {
+				$('.typed-subtitle').typed({
+					stringsElement: $('.typing-subtitle'),
+					loop: true
+				});
+			}
+			if ($('.typed-bread').length) {
+				$('.typed-bread').typed({
+					stringsElement: $('.typing-bread'),
+					showCursor: false
+				});
+			}
+
+			const url_hash = window.location.hash;
+			if (url_hash && url_hash.indexOf('#section-') === 0) {
+				const sectionElem = $(url_hash);
+				if (sectionElem.length) {
+					$('html, body').animate({ scrollTop: sectionElem.offset().top - 70 }, 300);
+				}
 			}
 		});
 	}
 
-	$(window).on('load', initPage);
+	$(window).on('load', function() {
+		initPage();
+		initializeSkillsVisuals(); // Mover inicialização das skills para cá
+	});
 
 	setTimeout(function () {
-		if (!$('body').hasClass('loaded')) {
+		if (!$('.preloader').hasClass('done')) {
 			initPage();
 		}
-	}, 300); 
-	
-	/*Menu mobile*/
+	}, 1500);
+
+	/* 5. Menu Mobile (Header Toggle) */
 	$('header').on('click', '.menu-btn', function(){
-		if($('header').hasClass('active')){
-			$('header').removeClass('active');
-			$('body').addClass('loaded');
-		} else {
-			$('header').addClass('active');
-			$('body').removeClass('loaded');
-		}
-		
+		const header = $('header');
+		const body = $('body');
+		const overlay = $('.s_overlay');
+
+		header.toggleClass('active');
+		overlay.toggleClass('active');
+		body.toggleClass('scroll_hidden');
+
 		return false;
 	});
-	
-	/* Hide mouse button on scroll */
+
+	/* 6. Efeitos de Scroll (Mouse Button Fade/Click) */
 	$(window).scroll(function(){
-		if ($(this).scrollTop() >= 1 /*$('#blue_bor').offset().top*/) {
+		if ($(this).scrollTop() >= 1) {
 			$('.mouse_btn').fadeOut();
-		}
-		else {
+		} else {
 			$('.mouse_btn').fadeIn();
 		}
 	});
-	
-	/* On click mouse button, page scroll down */
 	$('.section').on('click', '.mouse_btn', function(){
+		var currentHeight = $(window).height();
 		$('body,html').animate({
-			scrollTop: height - 150
+			scrollTop: currentHeight - 150
 		}, 800);
+		return false;
 	});
-	
+
+	/* 7. Efeitos de Hover (Saibamais Button) */
 	$('body').on({
 		mouseenter: function () {
 			$(this).addClass('glitch-active');
@@ -95,365 +135,300 @@ $(function () {
 			$(this).removeClass('glitch-active');
 		}
 	}, '.saibamais-button.glitch-effect');
-	
-	/* Validate contact form */
-	$("#cform").validate({
-		rules: {
-			name: {
-				required: true
+
+	/* 8. Validação do Formulário de Contato (#cform) */
+	if ($("#cform").length) {
+		$("#cform").validate({
+			rules: {
+				name: { required: true },
+				message: { required: true },
+				email: { required: true, email: true }
 			},
-			message: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
+			success: "valid",
+			submitHandler: function(form) {
+				// Placeholder para lógica AJAX, se necessário
+				return true; // Permite envio padrão
 			}
-		},
-		success: "valid",
-		submitHandler: function() {
-			return true;
-			$("#cform").find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
-		}
-	});
-	
-	/* Initialize masonry items */
-	var $container_clients = $('.section.clients .box-items');
-	$container_clients.imagesLoaded(function() {
-		$container_clients.isotope({
-			itemSelector: '.box-item'
-		});
-	});
-
-	/* Initialize masonry items */
-	var $container_blog = $('.section.blog .box-items');
-	$container_blog.imagesLoaded(function() {
-		$container_blog.isotope({
-			itemSelector: '.box-item'
-		});
-	});
-	
-	/*
-		Initialize portfolio items
-	*/
-	var $container = $('.section.works .box-items');
-	$container.imagesLoaded(function() {
-		$container.isotope({
-			itemSelector: '.box-item'
-		});
-	});
-
-	/*
-		Filter items on button click
-	*/
-	$('.filters').on( 'click', '.btn-group', function() {
-		var filterValue = $(this).find('input').val();
-		$container.isotope({ filter: filterValue });
-		$('.filters .btn-group label').removeClass('glitch-effect');
-		$(this).find('label').addClass('glitch-effect');
-	});
-	
-	/*
-		Gallery popup
-	*/
-	if(/\.(?:jpg|jpeg|gif|png)$/i.test($('.gallery-item:first a').attr('href'))){
-		$('.gallery-item a').magnificPopup({
-			gallery: {
-				enabled: true
-			},
-			type: 'image',
-			closeBtnInside: false,
-			mainClass: 'mfp-fade'
 		});
 	}
 
-	/*
-		Media popup
-	*/
-	$('.has-popup-media').magnificPopup({
+	/* 9. Inicialização Isotope/Masonry */
+	function initIsotope($container) {
+		if ($container.length) {
+			$container.imagesLoaded(function() {
+				$container.isotope({
+					itemSelector: '.box-item',
+					layoutMode: 'masonry'
+				});
+			});
+		}
+	}
+	initIsotope($('.section.clients .box-items'));
+	initIsotope($('.section.blog .box-items'));
+	initIsotope($('.section.works .box-items'));
+
+	/* 10. Filtros do Portfolio */
+	$('.filters').on('click', '.btn-group', function() {
+		var filterValue = $(this).find('input').val();
+		var $portfolioContainer = $('.section.works .box-items');
+		if ($portfolioContainer.length) {
+			$portfolioContainer.isotope({ filter: filterValue });
+		}
+		$('.filters .btn-group label').removeClass('glitch-effect');
+		$(this).find('label').addClass('glitch-effect');
+	});
+
+	/* 11. Inicialização Magnific Popup */
+	function getMagnificPopupDefaults(type = 'image', extraOptions = {}) {
+		let defaults = {
+			type: type,
+			closeBtnInside: false,
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			fixedContentPos: true
+		};
+		return { ...defaults, ...extraOptions };
+	}
+
+	$('.has-popup-image').magnificPopup(getMagnificPopupDefaults('image', {
+		closeOnContentClick: true,
+		image: { verticalFit: true }
+	}));
+
+	$('.has-popup-gallery').on('click', function(e) {
+		e.preventDefault();
+		var galleryId = $(this).attr('href');
+		if ($(galleryId).length) {
+			$(galleryId).magnificPopup({
+				delegate: 'a',
+				...getMagnificPopupDefaults('image', {
+					gallery: { enabled: true },
+					closeOnContentClick: false
+				})
+			}).magnificPopup('open');
+		}
+	});
+
+	// Consolidação para .has-popup-media e .has-popup-music
+	// Inclui callbacks de dematerialize para .has-popup-media
+	$('.has-popup-media, .has-popup-music').magnificPopup({
 		type: 'inline',
 		overflowY: 'auto',
 		closeBtnInside: true,
-		mainClass: 'mfp-fade'
-	});
-
-	/*
-		Image popup
-	*/
-	$('.has-popup-image').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
 		mainClass: 'mfp-fade',
-		image: {
-			verticalFit: true
+		removalDelay: 600,
+		fixedContentPos: true,
+		callbacks: {
+		  beforeClose: function() {
+			if ($(this.st.el).hasClass('has-popup-media') && this.content && typeof this.content.addClass === 'function') {
+			  this.content.addClass('dematerialize');
+			}
+		  },
+		  close: function() {
+			if ($(this.st.el).hasClass('has-popup-media') && this.content && typeof this.content.removeClass === 'function') {
+			  this.content.removeClass('dematerialize');
+			}
+		  }
 		}
 	});
-	
-	/*
-		Video popup
-	*/
-	$('.has-popup-video').magnificPopup({
+
+	// Popups específicos podem ter suas próprias configs se necessário
+	$('.has-popup-writing').magnificPopup(getMagnificPopupDefaults('inline', {
+		overflowY: 'auto',
+		closeBtnInside: true
+	}));
+
+	$('.has-popup-video').magnificPopup(getMagnificPopupDefaults('iframe', {
 		disableOn: 700,
-		type: 'iframe',
-		iframe: {
-            patterns: {
-                youtube_short: {
-                  index: 'youtu.be/',
-                  id: 'youtu.be/',
-                  src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-                }
-            }
-        },
-		removalDelay: 160,
 		preloader: false,
-		fixedContentPos: false,
-		mainClass: 'mfp-fade',
+		iframe: {
+			patterns: {
+				youtube_short: {
+				  index: 'youtu.be/',
+				  id: 'youtu.be/',
+				  src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+				},
+				youtube: {
+					index: 'youtube.com/',
+					id: 'v=',
+					src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+				},
+				vimeo: {
+					index: 'vimeo.com/',
+					id: '/',
+					src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+				}
+			},
+			 srcAction: 'iframe_src',
+		},
 		callbacks: {
 			markupParse: function(template, values, item) {
-				template.find('iframe').attr('allow', 'autoplay');
+				template.find('iframe').attr('allow', 'autoplay; fullscreen'); // Adicionado fullscreen
 			}
 		}
-	});
-	
-	/*
-		Music popup
-	*/
-	$('.has-popup-music').magnificPopup({
+	}));
+
+	// Não precisa mais da inicialização separada de music/media aqui
+	// $('.has-popup-music').magnificPopup(...);
+	// $('.has-popup-media').magnificPopup(...); // Segunda inicialização removida
+
+	$('.has-popup-game').magnificPopup(getMagnificPopupDefaults('iframe', {
 		disableOn: 700,
-		type: 'iframe',
-		removalDelay: 160,
 		preloader: false,
-		fixedContentPos: false,
-		mainClass: 'mfp-fade'
-	});
-
-	/*
-		Gallery popup
-	*/
-	$('.has-popup-gallery').on('click', function() {
-        var gallery = $(this).attr('href');
-    
-        $(gallery).magnificPopup({
-            delegate: 'a',
-            type:'image',
-            closeOnContentClick: false,
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            fixedContentPos: false,
-            gallery: {
-                enabled: true
-            }
-        }).magnificPopup('open');
-
-        return false;
-	});
-	
-		/*
-    Documentos/Writing popup
-*/
-	$('.has-popup-writing').magnificPopup({
-		type: 'inline',
-		overflowY: 'auto',
-		closeBtnInside: true,
-		mainClass: 'mfp-fade',
-		callbacks: {
-			open: function() {
-				$('.ion').addClass('ion-document-text'); // Ícone de documento
-			}
-		}
-	});
-	
-	/*
-		Games popup
-	*/
-	$('.has-popup-game').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
 		iframe: {
 			patterns: {
 				itch_io: {
 					index: 'itch.io/',
-					id: 'itch.io/',
-					src: 'https://%id%?autoplay=true'
+					id: function(url) {
+						var match = url.match(/https?:\/\/([^.]+)\.itch\.io\/([^?#]+)/);
+						return (match) ? match[1] + '.itch.io/' + match[2] : null;
+					},
+					src: 'https://itch.io/embed/%id%?autoplay=1'
 				}
 			}
-		},
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-		mainClass: 'mfp-fade',
-		callbacks: {
-			open: function() {
-				$('.ion').addClass('ion-joystick'); // Ícone de jogo
-			}
 		}
-	});
-	
-	/* Resize function */
+	}));
+
+	/* 12. Ajustes no Resize da Janela */
 	$(window).resize(function() {
-		var width = $(window).width();
-		var height = $(window).height();
-		
-		$('.section.started').css({'height': height-60});
-
-		/* Dotted Skills Line On Resize Window */
-		var skills_dotted = $('.skills-list.dotted .progress');
-		var skills_dotted_w = skills_dotted.width();
-		if(skills_dotted.length){
-			skills_dotted.find('.percentage .da').css({'width':skills_dotted_w+1});
+		adjustStartedSectionHeight();
+		var $skills_dotted = $('.skills-list.dotted .progress');
+		if ($skills_dotted.length) {
+			var skills_dotted_w = $skills_dotted.width();
+			$skills_dotted.find('.percentage .da').css({'width': skills_dotted_w + 1});
 		}
 	});
-	
-	if(width < 840) {
-		$('.section.started').css({'height': height-30});
-	}
 
-	/*
-		Dotted Skills Line
-	*/
+	/* 13. Inicialização Visual das Skills */
+	function initializeSkillsVisuals() {
+		var $skills_dotted = $('.skills.dotted .progress');
+		if ($skills_dotted.length && !$skills_dotted.find('.dg').length) {
+			var skills_dotted_w = $skills_dotted.width();
+			$skills_dotted.append('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
+			$skills_dotted.find('.percentage').append('<span class="da"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
+			$skills_dotted.find('.percentage .da').css({'width': skills_dotted_w});
+		}
 
-	function skills(){
-		var skills_dotted = $('.skills.dotted .progress');
-		var skills_dotted_w = skills_dotted.width();
-		if(skills_dotted.length){
-			skills_dotted.append('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
-			skills_dotted.find('.percentage').append('<span class="da"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>');
-			skills_dotted.find('.percentage .da').css({'width':skills_dotted_w});
+		var $skills_circles = $('.skills.circles .progress');
+		if ($skills_circles.length && !$skills_circles.find('.slice').length) {
+			$skills_circles.append('<div class="slice"><div class="bar"></div><div class="fill"></div></div>');
 		}
 	}
-	setTimeout(skills, 1000);
+	// A chamada foi movida para $(window).on('load', ...)
 
-	/*
-		Circle Skills Line
-	*/
-
-	var skills_circles = $('.skills.circles .progress');
-	if(skills_circles.length){
-		skills_circles.append('<div class="slice"><div class="bar"></div><div class="fill"></div></div>');
+	/* 14. Compartilhamento Social (RRSSB) */
+	if ($('.social-share').length && typeof $.fn.rrssb === 'function') {
+		$('.social-share').rrssb({
+			title: $('.social-share').data('title'),
+			url: $('.social-share').data('url')
+		});
 	}
 
-	/*
-		Social Share
-	*/
-	$('.social-share').rrssb({
-		title: $('.social-share').data('title'),
-		url: $('.social-share').data('url'),
-	});
-	
-	/*
-		Sidebar Show/Hide
-	*/
-	$('header').on('click', '.sidebar_btn', function(){
-		$('.s_overlay').fadeIn();
+	/* 15. Lógica da Sidebar (Abrir/Fechar) */
+	$('header').on('click', '.sidebar_btn', function(e) {
+		e.preventDefault();
+		$('.s_overlay').addClass('active');
 		$('.content-sidebar').addClass('active');
 		$('body').addClass('scroll_hidden');
-		
-		return false;
 	});
-	$('.content-sidebar, .container').on('click', '.close, .s_overlay', function(){
-		$('.s_overlay').fadeOut();
+
+	function closeSidebar() {
+		$('.s_overlay').removeClass('active');
 		$('.content-sidebar').removeClass('active');
 		$('body').removeClass('scroll_hidden');
-		// Restaurar a barra de rolagem quando a sidebar é fechada
-		$('html, body').css({
-			overflow: '',
-			height: ''
-		});
+	}
+
+	$('.content-sidebar').on('click', '.close', function(e) {
+		e.preventDefault();
+		closeSidebar();
 	});
 
-	/*
-		Widget Title
-	*/
-	$('.widget-title').wrapInner('<span class="widget-title-span"></span>');
-
-	/*
-		Search
-	*/
-	var sjs = SimpleJekyllSearch({
-	  searchInput: document.getElementById('search-input'),
-	  resultsContainer: document.getElementById('results-container'),
-	  json: '/search.json'
+	// Listener unificado para fechar overlay/menu/sidebar
+	$('.s_overlay').on('click', function(e) {
+		if (!$(e.target).hasClass('menu-btn') && !$(e.target).closest('.menu-btn').length) {
+			if ($('.content-sidebar').hasClass('active')) {
+				closeSidebar(); // Fecha a sidebar se ela estiver ativa
+			} else if ($('header').hasClass('active')) {
+				// Se a sidebar não está ativa, mas o header está (menu mobile), fecha o menu
+				$('header').removeClass('active');
+				$('.s_overlay').removeClass('active');
+				$('body').removeClass('scroll_hidden');
+			}
+		}
 	});
 
-
-	document.addEventListener("scroll", function () {
-		let scrollTop = window.scrollY;
-		let heroImage = document.querySelector(".hero-image.parallax");
-	  
-		if (heroImage) {
-		  heroImage.style.transform = `translateY(${scrollTop * 0.3}px)`;
+	$('.s_overlay').on('wheel', function(e) {
+		var $sidebarScrollable = $('.content-sidebar .widget-area');
+		if ($sidebarScrollable.length) {
+			e.preventDefault();
+			var currentScrollTop = $sidebarScrollable.scrollTop();
+			$sidebarScrollable.scrollTop(currentScrollTop + e.originalEvent.deltaY);
 		}
-	  });
+	});
 
-	  $('.has-popup-music').magnificPopup({
-		type: 'inline',
-		mainClass: 'mfp-fade',
-		removalDelay: 300,
-		closeBtnInside: true,
-		fixedContentPos: true
-	  });
-
-	  $('.has-popup-media').magnificPopup({
-		type: 'inline',
-		mainClass: 'mfp-fade',
-		removalDelay: 600, // Deve corresponder ao tempo da animação
-		callbacks: {
-		  beforeClose: function() {
-			this.content.addClass('dematerialize');
-		  },
-		  close: function() {
-			this.content.removeClass('dematerialize');
-		  }
+	/* 16. Estilização de Títulos de Widgets */
+	$('.widget-title').each(function() {
+		if (!$(this).children('.widget-title-span').length) {
+			$(this).wrapInner('<span class="widget-title-span"></span>');
 		}
-	  });
-	  
-});
+	});
 
-	/*Fade-out animation between load pages*/
-	$('header .top-menu, .typed-bread').on('click', 'a', function(){
+	/* 17. Inicialização da Busca (SimpleJekyllSearch) */
+	if ($('#search-input').length && $('#results-container').length && typeof SimpleJekyllSearch === 'function') {
+		try {
+			var sjs = SimpleJekyllSearch({
+			  searchInput: document.getElementById('search-input'),
+			  resultsContainer: document.getElementById('results-container'),
+			  json: '/search.json',
+			  searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+			  noResultsText: '<li>Nenhum resultado encontrado</li>'
+			});
+		} catch(e) {
+			console.error("Erro ao inicializar SimpleJekyllSearch:", e);
+			$('#results-container').html('<li>Erro ao carregar a busca.</li>');
+		}
+	}
+
+	/* 18. Efeito Parallax (Hero Image) */
+	$(window).on("scroll", function () {
+		let scrollTop = $(this).scrollTop();
+		let $heroImage = $(".hero-image.parallax");
+		if ($heroImage.length) {
+		  $heroImage.css('transform', `translateY(${scrollTop * 0.3}px)`);
+		}
+	});
+
+	/* 19. Animação de Transição entre Páginas */
+	$('header .top-menu a, .typed-bread a, .post-navigation a, .pagination a, .widget ul li a, .widget .tagcloud a')
+	.not('.has-popup-gallery, .has-popup-media, .has-popup-image, .has-popup-video, .has-popup-music, .has-popup-writing, .has-popup-game, [href^="#"], [target="_blank"]')
+	.on('click', function(e){
 		var link = $(this).attr('href');
-		if(link.indexOf('#section-') == 0){
-			if(!$('body').hasClass('home')){
-				location.href = '/'+link;
-			}
 
-			$('body, html').animate({scrollTop: $(link).offset().top - 110}, 400);
-			if($('header').hasClass('active')){
-				$('.menu-btn').trigger('click');
-			}
-		} else {
+		if (link && link !== '#') { // Verifica se o link não é apenas '#'
+			e.preventDefault();
 			$('body').removeClass('loaded');
 			setTimeout(function() {
-				location.href = "" + link;
+				window.location.href = link;
 			}, 500);
 		}
-		return false;
 	});
 
-	document.addEventListener('DOMContentLoaded', () => {
-		const sidebar = document.querySelector('.content-sidebar');
-		const sidebarOverlay = document.querySelector('.s_overlay');
-		const sidebarToggle = document.querySelector('.sidebar_btn');
-		const sidebarClose = sidebar.querySelector('.close');
-	
-		if (sidebarToggle && sidebar && sidebarOverlay) {
-			sidebarToggle.addEventListener('click', () => {
-				sidebar.classList.add('active');
-				sidebarOverlay.classList.add('active');
-			});
+	// Tratamento especial para links de âncora na home page
+	$('header .top-menu a[href^="#section-"]').on('click', function(e){
+		if ($('body').hasClass('home')) {
+			e.preventDefault();
+			const targetSection = $(this).attr('href');
+			const sectionElem = $(targetSection);
+			if (sectionElem.length) {
+				$('body, html').animate({ scrollTop: sectionElem.offset().top - 110 }, 400);
+				if($('header').hasClass('active')){
+					$('.menu-btn').trigger('click'); // Fecha o menu mobile
+				}
+			}
 		}
-	
-		if (sidebarClose && sidebar && sidebarOverlay) {
-			sidebarClose.addEventListener('click', () => {
-				sidebar.classList.remove('active');
-				sidebarOverlay.classList.remove('active');
-			});
-		}
-	
-		if (sidebarOverlay && sidebar) {
-			sidebarOverlay.addEventListener('click', () => {
-				sidebar.classList.remove('active');
-				sidebarOverlay.classList.remove('active');
-			});
-		}
+		// Se não for a home page, deixa a animação de saída padrão tratar (irá recarregar a home)
 	});
+
+	// Remover o bloco duplicado de vanilla JS que estava aqui
+
+}); // Fim do $(function() { ... });

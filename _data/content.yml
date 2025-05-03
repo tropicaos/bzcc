@@ -63,9 +63,9 @@ resume:
         name: "GRADUAÇÃO | RÁDIO, TV E WEB - UFPB"
         text: "No curso de Radio, TV e WEB, os estudantes se familiarizam com ambientes como estúdios de gravação de áudio e de vídeo; e com equipamentos como câmeras, microfones e ilhas de edição audiovisual."
 
-      - year: "2021 - 202?"
-        name: "CST | FILMMAKING - UNINASSAU"
-        text: "O curso abrange todas as funções dentro das etapas da produção audiovisual, passando pelo processo de pré-produção, técnicas de planejamento e roteiro, aprofundando-se nas funções e processos da realização no set de filmagem, envolvendo também as dinâmicas da edição e montagem fílmica na pós-produção."
+      - year: "2025 - 2027"
+        name: "CST | JOGOS DIGITAIS - ESTÁCIO"
+        text: "O curso capacita profissionais para atuar no desenvolvimento de jogos digitais, abrangendo desde a criação de roteiros e personagens até a programação e modelagem 2D/3D. Prepara para trabalhar com ferramentas e plataformas voltadas à produção de jogos educativos, de ação, simulação e entretenimento interativo."
 
 ### Skills [ skills ]
 skills:
@@ -116,13 +116,13 @@ skills:
 clients:
   title: "SERVIÇOS PRESTADOS"
   items:
-    - url: "https://lp.administradores.com.br/assine/"
+    - url: "/PortalAdministradores"
       image: "assets/img/clients/client_1.jpg"
 
-    - url: "https://www.youtube.com/channel/UCEonmw7XYjPpk9pun00UrZw"
+    - url: "/ColoresFilmes"
       image: "assets/img/clients/client_3.jpg"
 
-    - url: "https://www.instagram.com/laureano.mkp"
+    - url: "/ArmazemParaiba"
       image: "assets/img/clients/client_2.jpg"
 
 ### Contact Info [ contacts-info ]

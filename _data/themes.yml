@@ -1,8 +1,8 @@
 
 default:
   primary: "#c7009c"
-  active: "#fff"
-  extra_active: "#fff"
+  active: "#c7009c"
+  extra_active: "#fc21cd"
   text: "#ffffff"
   background: "#000000"
   border: "#c7009c"
@@ -13,9 +13,9 @@ default:
   blotico_color: "#ffffff"
 
 matapau:
-  primary: "#8A04D1"
-  active: "#743f39"
-  extra_active: "#16EFA7"
+  primary: "#4c0770"
+  active: "#8A04D1"
+  extra_active: "#4c0770"
   text: "#193d3f"
   background: "#458F7A"
   border: "#8A04D1"
@@ -57,7 +57,7 @@ adm:
 colores:
   primary: "#00a238"
   active: "#00a0ff"
-  extra_active: "#00a238"
+  extra_active: "#78c6f5"
   text: "#ffffff"
   background: "#1a1a1a"
   border: "#ff4e54"
@@ -106,12 +106,12 @@ madrugada:
   font: "'Courier Prime', monospace"
 
 bunker:
-  primary: "#c7009c"
-  active: "#fff"
-  extra_active: "#fff"
-  text: "#ffffff"
+  primary: "#cb4844"
+  active: "#cb4844"
+  extra_active: "#fc6560"
+  text: "#cb4844"
   background: "#191919"
-  border: "#c7009c"
+  border: "#080107"
   cabepe_color: "#191919"
   cabepe_opacity: "1"
   cabepe_shadow: false
