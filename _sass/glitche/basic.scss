@@ -62,11 +62,11 @@ body {
 		background-attachment: fixed;
 	}
 	&.scroll_hidden {
-		overflow-y: scroll;
 		height: 100vh;
-		width: 100%;
+		overflow: hidden;
 		position: fixed;
-	  }
+		width: 100%;
+	}
 	&.loaded {
 		header, footer, .section {
 			opacity: 1;
@@ -115,7 +115,7 @@ body {
 
 body.blog {
 	hr {
-		background: var(--border-color);
+		background: var(--extra-active-color, #c7009c);
 		height: 2px;
 		border: 0;
 		margin: 40px 0;
@@ -356,14 +356,14 @@ strong {
 
 /* 5. Links */
 a {
-	color: var(--active-color);
+	color: var(--primary-color, var(--active-color));
 	text-decoration: none;
 	opacity: 1;
 	outline: none;
 
 	&:hover {
 		text-decoration: none;
-		color: var(--extra-active-color);
+		color: var(--border-color, var(--active-color));
 	}
 }
 
@@ -374,8 +374,8 @@ a.btn, .btn {
 	height: 42px;
 	line-height: 40px;
 	text-align: center;
-	color: var(--primary-color);
-	border: 1px solid var(--primary-color);
+	color: var(--text-color);
+	border: 1px solid var(--border-color, #c7009c);
 	font-size: $default-size;
 	background: none;
 	position: relative;
@@ -385,15 +385,14 @@ a.btn, .btn {
 	@include transition(all 0.3s ease 0s);
 
 	&.fill {
-		color: var(--text-color);
+		color: var(--background-color);
 		background: var(--active-color);
 		border: none;
 	}
 
 	&:hover {
 		color: var(--background-color);
-		background: var(--extra-active-color);
-		border: 1px solid var(--active-color);
+		background: var(--border-color);
 	}
 }
 
@@ -818,20 +817,19 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--background-color); 
+    background: rgba(0, 0, 0, 0.6);
     z-index: 106;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-
+    transition: opacity 0.3s ease;
     &.active {
-      opacity: 1;
-      visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
-  }
 	.s_overlay.active ~ body {
 		overflow: auto !important;
 	}
+}
 
 .sidebar_btn {
     position: relative;
@@ -840,7 +838,7 @@ img {
     height: 42px;
     line-height: 40px;
     text-align: center;
-    color: var(--background-color);
+    color: var(--text-color, #c7009c);
     font-size: $default-size;
     background: none;
     overflow: hidden;
@@ -859,7 +857,7 @@ img {
         top: 50%;
         width: 30px;
         height: 1px;
-        background: var(--active-color);
+        background: var(--text-color, #c7009c);
         transition: all 0.3s ease 0s;
 
         &:before, &:after {
@@ -869,7 +867,7 @@ img {
             top: -8px;
             width: 100%;
             height: 1px;
-            background: var(--active-color);
+            background: var(--text-color, #c7009c);
             transition: all 0.3s ease 0s;
         }
 
@@ -880,10 +878,10 @@ img {
     }
 
     &:hover span {
-        background: var(--extra-active-color);
+        background: var(--border-color, #c7009c);
 
         &:before, &:after {
-            background: var(--extra-active-color);
+            background: var(--border-color, #c7009c);
         }
     }
 }
@@ -896,7 +894,7 @@ img {
     height: 100%;
     background: var(--background-color, #000000);
     z-index: 107;
-    opacity: 0;
+    opacity: 1;
     transition: left 0.3s ease, opacity 0.3s ease;
 
     &.active {
@@ -920,10 +918,10 @@ img {
         height: 100vh;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
-        scrollbar-color: var(--background-color);
+        scrollbar-color: var(--border-color, #c7009c) var(--background-color, #000000);
         &::-webkit-scrollbar {
             width: 6px;
-            background: var(--active-color);
+            background: var(--background-color, #000000);
         }
         &::-webkit-scrollbar-thumb {
             background: var(--border-color, #c7009c);
@@ -960,17 +958,17 @@ img {
             li {
                 padding-bottom: 10px;
                 margin-bottom: 10px;
-                color: var(--active-color);
-                border-bottom: 1px solid var(--extra-active-color);
+                color: var(--border-color, #c7009c);
+                border-bottom: 1px solid var(--extra-active-color, #c7009c);
 
                 &:last-child {
                     margin-bottom: 0;
                 }
 
                 a {
-                    color: var(--active-color);
+                    color: var(--text-color, #c7009c);
                     &:hover {
-                        color: var(--extra-active-color, #c7009c);
+                        color: var(--border-color, #c7009c);
                     }
                 }
 
@@ -980,24 +978,24 @@ img {
             }
         }
 
-        .tagcloud {	
+        .tagcloud {
             a {
-                color: var(--active-color);
-                border: 1px solid var(--active-color);
+                color: var(--text-color);
+                border: 1px solid var(--border-active-color);
 				&:hover {
-					color: var(--extra-active-color);
+					color: var(--border-color, #c7009c);
 				}
             }
         }
     }
 
-    .close { 
+    .close {
         position: absolute;
         top: 0;
         right: -68px;
         width: 68px;
         height: 68px;
-        background: var(--border-color, #c7009c);
+        background: var(--background-color, #000000);
         cursor: pointer;
         z-index: 108;
 
@@ -1010,7 +1008,7 @@ img {
             top: 50%;
             width: 20px;
             height: 1px;
-            background: var(--background-color, #000000);
+            background: var(--border-color, #c7009c);
             transform: rotate(45deg);
         }
 
@@ -1055,7 +1053,7 @@ img {
 
 .search-form {
     input.search-field {
-        border: solid 1px var(--text-color, #c7009c);
+        border: solid 1px #ddd;
         width: 100%;
         height: 50px;
         margin: 0;
@@ -1065,7 +1063,6 @@ img {
     }
 
     input.search-submit {
-		color: var(--text-color, #c7009c);
         margin-top: -34px;
         margin-right: 12px;
         float: right;
