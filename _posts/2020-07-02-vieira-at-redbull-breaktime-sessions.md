@@ -3,6 +3,7 @@ layout: post
 image: 'assets/images/uploads/vieiracapa.jpg'
 title: VIEIRA | Red Bull Breaktime Sessions 🎸
 date: 2017-08-10T19:17:05.764Z
+category: Trampo
 tags: Fotos Cobertura Show Evento
 permalink: /Vieira-RED-BULL
 published: true

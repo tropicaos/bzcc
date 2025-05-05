@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/veranobusao.jpg'
 title: Nada Vai Mudar
 date: 2016-03-01T03:58:23.231Z
-tags: Textos Conto Romance
+category: Texto
+tags: Conto Romance
 permalink: /NadaVaiMudar
 permalink: "/AMaiorMentiraDeTodas"
 spotifytrack: 131F3d3InZE2fqzTHptIgQ

@@ -3,13 +3,14 @@ layout: post
 image: 'assets/images/uploads/joguindiecapa.jpg'
 title: "JOGUINDIE"
 date: 2017-08-10T19:22:03.492Z
-tags: Games Mídia
+category: Game
+tags: Mídia
 permalink: /JOGUINDIE
 published: true
 ---
 >##### Transbordando amor por jogos independentes
 
-Iniciei minha "carreira" nos jogos quando ganhei um Master System Compact em 1996, então você pode acreditar quando digo que conheço com certa propriedade a indústria, o mercado e a arte dos videogames. Ver como ela evoluiu me deixa feliz por um lado, por notar que ela galgou seu merecido status de forma de arte. Por outro, é realmente triste como grandes conglomerados de entretenimento se aproveitaram dessa ascensão dos games para fazer peças puramente comerciais.
+Iniciei minha "carreira" nos jogos quando ganhei um Master System Compact em 1997, então você pode acreditar quando digo que conheço com certa propriedade a indústria, o mercado e a arte dos videogames. Ver como ela evoluiu me deixa feliz por um lado, por notar que ela galgou seu merecido status de forma de arte. Por outro, é realmente triste como grandes conglomerados de entretenimento se aproveitaram dessa ascensão dos games para fazer peças puramente comerciais.
 
 ![imagem do meu texto sobre Chronology](assets/images/uploads/joguindie01.jpg)
 

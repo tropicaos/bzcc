@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/wafflecapa.jpg'
 title: Waffle House 🥝 — João Pessoa
 date: 2017-08-10T10:03:11.681Z
-tags: Audiovisual Gastronomia Publicidade
+category: Video
+tags: Gastronomia Publicidade
 permalink: /wafflehousejpa
 published: true
 vimeoId: 230738870

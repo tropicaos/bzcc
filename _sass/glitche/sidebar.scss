@@ -1,83 +1,267 @@
-/* Sidebar Styling */
+/* TABLE OF CONTENTS
+  1. Sidebar Container (.content-sidebar)
+     - Positioning & Animation
+     - Background
+  2. Scroll Wrapper (.sidebar-wrap)
+     - Scrollbar Styles (Webkit & Firefox)
+  3. Content Area (.widget-area)
+  4. Widgets (.widget)
+     - Titles (h2.widget-title)
+     - Lists (ul, li, a, small)
+  5. Close Button (.close)
+  6. Search Form (.search-form)
+     - Input Field
+     - Results Container
+  7. Tag Cloud (.tagcloud)
+  8. Mobile Adjustments
+*/
 
+/* 1. Sidebar Container (.content-sidebar) */
 .content-sidebar {
-  background-color: var(--background-color);
-  border-color: var(--text-color);
-  
-  /* Títulos das sessões com risco abaixo */
-  h2.widget-title, 
-  .widget-title-span {
-    color: var(--text-color);
+  position: fixed;
+  top: 0;
+  left: -320px; 
+  width: 300px;
+  height: 100%;
+  background: var(--background-color);
+  z-index: 107; 
+  transition: left 0.4s ease;
+  overflow: hidden;
+
+  &.active {
+    left: 0;
   }
-  
-  /* Links e tags clicáveis */
-  .widget ul li a {
-    color: var(--active-color);
-    
-    &:hover {
-      color: var(--text-color);
-    }
-  }
-  
-  /* Separadores de tags e categorias */
-  .widget ul li {
-    border-color: var(--text-color);
-  }
-  
-  /* Botão de fechar */
+
+  /* 5. Close Button (.close) */
   .close {
-    background-color: var(--background-color);
-    
-    &:before, 
-    &:after {
-      background-color: var(--text-color);
+    position: absolute;
+    top: 0px;
+    right: -68px;
+    width: 68px;
+    height: 68px;
+    background: var(--active-color); 
+    cursor: pointer;
+    z-index: 108;
+    transition: background 0.3s ease;
+    border: none;
+
+     &:before,
+     &:after {
+        content: '';
+        margin: -1.5px 0 0 -10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 3px;
+        background: var(--background-color); 
+        transform: rotate(45deg);
+    }
+
+     &:after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        background: var(--extra-active-color); 
     }
   }
-  
-  /* Barra de pesquisa */
-  .search-form {
-    input[type="text"] {
-      border-color: var(--text-color);
-      color: var(--text-color);
-      
-      &::placeholder {
-        color: var(--text-color);
-        opacity: 0.7;
-      }
-    }
-    
-    .search-submit {
-      color: var(--text-color);
-      
-      .ion {
-        color: var(--text-color);
-      }
-    }
-  }
-  
-  /* Barra de rolagem */
+}
+
+/* 2. Scroll Wrapper (.sidebar-wrap) */
+.content-sidebar .sidebar-wrap {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-color) var(--active-color); 
+
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
   }
-  
   &::-webkit-scrollbar-track {
-    background: var(--background-color);
+    background: var(--active-color);
   }
-  
   &::-webkit-scrollbar-thumb {
-    background-color: var(--text-color);
-    border-radius: 10px;
-    border: 3px solid var(--background-color);
+    background-color: var(--background-color);
+    border-radius: 20px;
+    border: 3px solid var(--active-color);
   }
 }
 
-/* Corrigir linha extra abaixo do primeiro link */
-.content-sidebar .widget ul li:first-child {
-  border-top: none;
+/* 3. Content Area (.widget-area) */
+.content-sidebar .widget-area {
+    padding: 30px;
+    height: auto;
 }
 
-.content-sidebar .search-form .search-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 4. Widgets (.widget) */
+.content-sidebar .widget {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Títulos dos Widgets */
+.content-sidebar h2.widget-title {
+  position: relative;
+  margin: 0 0 25px 0;
+  padding: 0 0 15px 0;
+  display: block;
+  line-height: 3;
+  font-size: $default-size;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+
+  .widget-title-span {
+      position: relative;
+  }
+}
+
+/* Listas nos Widgets */
+.content-sidebar .widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.1)); /* Borda mais sutil */
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        a {
+          color: var(--active-color);
+          font-weight: 500;
+          transition: color 0.3s ease;
+          &:hover {
+            color: var(--extra-active-color);
+          }
+        }
+        .post-date {
+            display: block;
+            font-size: $extra-small-size;
+            opacity: 0.7;
+            margin-top: 3px;
+            color: var(--text-color);
+        }
+        small {
+            opacity: 0.7;
+            margin-left: 5px;
+            color: var(--text-color);
+        }
+    }
+}
+
+/* Corrigir linha extra no primeiro item */
+.content-sidebar .widget ul li:first-child {
+  border-top: none; /* Garante que não haja borda superior */
+}
+
+/* 6. Search Form (.search-form) */
+.content-sidebar .search-form {
+  position: relative;
+  margin-bottom: 25px; /* Espaço abaixo */
+
+  input.search-field {
+    border: solid 1px var(--text-color); /* Borda na cor do texto */
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 15px;
+    color: var(--text-color); /* Cor do texto digitado */
+    background: transparent;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+
+     &:focus {
+       border-color: var(--active-color); /* Borda ativa no focus */
+       outline: none;
+     }
+    &::placeholder {
+      color: var(--text-color); /* Cor do placeholder */
+      opacity: 0.7;
+    }
+  }
+
+  input.search-submit { display: none; } /* Botão submit escondido */
+
+  #results-container {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0; /* Espaço acima */
+      li {
+          padding: 8px 0; /* Espaçamento vertical */
+          border-bottom: 1px dashed var(--border-color);
+          &:last-child { border-bottom: none; }
+          a {
+              color: var(--text-color);
+              font-size: $small-size;
+              &:hover { color: var(--active-color); }
+          }
+          &:empty {
+              font-style: italic;
+              opacity: 0.7;
+              padding: 8px 0;
+          }
+      }
+  }
+}
+
+/* 7. Tag Cloud (.tagcloud) */
+.content-sidebar .widget .tagcloud {
+    a {
+        margin: 4px 2px;
+        display: inline-block;
+        vertical-align: bottom;
+        padding: 2px 8px;
+        font-weight: 500;
+        font-size: $extra-small-size;
+        color: var(--active-color);
+        border: 1px solid var(--border-color);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        &:hover {
+            color: var(--background-color);
+            background: var(--active-color);
+            border-color: var(--active-color);
+        }
+    }
+}
+
+/* 8. Mobile Adjustments */
+@media (max-width: 767px) {
+  .content-sidebar {
+    width: 80%;
+    left: -80vw;
+
+    &.active {
+      left: 0;
+    }
+
+    .sidebar-wrap {
+       padding-right: 10px;
+    }
+
+    .widget-area {
+        padding: 20px;
+    }
+
+    .close {
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        &:before, &:after { height: 2px; margin-top: -1px; }
+    }
+  }
 }

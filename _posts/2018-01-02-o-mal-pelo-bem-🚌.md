@@ -3,7 +3,7 @@ layout: post
 image: 'assets/images/uploads/OMALPELOBEMCOVER.jpg'
 title: O Mal Pelo Bem 🚌
 date: 2018-01-02T17:29:07.826Z
-category: Textos
+category: Texto
 tags: Conto Argumento
 permalink: /OMalPeloBem
 published: false

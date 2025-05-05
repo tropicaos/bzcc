@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/termosecondicoescapa.jpg'
 title: "TERMOS & CONDIÇÕES"
 date: 2019-01-01T18:34:28.857Z
-tags: Textos Argumento Conto Comédia Suspense Distopia Sci-fi HISTERIVERSO
+category: Texto
+tags: Argumento Conto Comédia Suspense Distopia Sci-fi HISTERIVERSO
 permalink: /Termos&Condicoes
 published: true
 spotifyplaylist: 0MMS0CWIcIF02UCBmac4EU

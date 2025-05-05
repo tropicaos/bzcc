@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Administradores.com
-tags: Trampo Audiovisual Youtube
+category: Trampo
+tags: Youtube Streaming
 image: 'assets/img/blog/adm/administradores_blog.jpg'
 permalink: /PortalAdministradores
 published: true

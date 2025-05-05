@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Armazém Paraíba
-tags: Trampo Audiovisual Marketing
+category: Trampo
+tags: Marketing Mídia
 image: 'assets/img/blog/armazempb/armazemparaiba_blog.jpg'
 permalink: /ArmazemParaiba
 published: true

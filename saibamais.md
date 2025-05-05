@@ -1,11 +1,11 @@
 ---
 layout: saibamais
-title: "Saiba Mais"
+title: "SAIBA MAIS"
 permalink: /saibamais
 ---
 <div class="saibamais-container">
     <div class="saibamais-buttons">
-    <h3 class="category-title">CONTEÚDOS</h3>
+    <h3 class="category-title">OBRAS</h3>
         <a href="/" class="saibamais-button">
             <span class="saibamais-icon ion-earth"></span>
             <span class="saibamais-text">SITE<br><span>.portfolio /.blog /.currículo</span></span>

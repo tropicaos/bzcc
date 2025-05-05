@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/abelhacapa.jpg'
 title: Zé Silva — Abelha, abelhinha 🐝
 date: 2017-08-10T15:43:14.107Z
-tags: Audiovisual Videoclipe Bucólico
+category: Video
+tags: Videoclipe Bucólico
 vimeoId: 224962688
 permalink: /ZeSilvaAbelhaAbelhinha
 published: true

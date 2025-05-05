@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/AQUELECHEIROCAPA.jpg'
 title: Aquele Cheiro 👃
 date: 2017-08-16T16:55:39.805Z
-tags: Textos Lírico Romance Conto
+category: Texto
+tags: Lírico Romance Conto
 permalink: /AqueleCheiro
 published: true
 ---

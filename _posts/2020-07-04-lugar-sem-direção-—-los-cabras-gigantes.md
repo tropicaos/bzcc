@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/lugarsemdirecaolsdCAPA.jpg'
 title: Lugar Sem Direção - Los Cabras Gigantes
 date: 2018-02-09T17:52:08.094Z
-tags: Audiovisual Videoclipe Comédia Lombra
+category: Video
+tags: Videoclipe Comédia Lombra
 permalink: /LugarSemDirecao-LosCabrasGigantes
 published: true
 vimeoId: 254650419

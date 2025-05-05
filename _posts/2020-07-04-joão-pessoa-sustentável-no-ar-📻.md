@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/joaopessoasustentavelnoarcapa.jpg'
 title: João Pessoa Sustentável no AR 📻
 date: 2017-10-31T17:04:54.504Z
-tags: Trampos Rádio Podcast UFPB
+tags: Rádio Podcast UFPB
+categories: Audio Trampo
 permalink: /JoaoPessoaSustentavelNoAr
 published: true
 ---

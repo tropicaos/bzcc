@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/UFPBACONTECECAPA.jpg'
 title: UFPB Acontece 📺📰
 date: 2017-08-10T19:59:27.027Z
-tags: Trampos Jornalismo
+categories: Trampo Video
+tags: Jornalismo
 permalink: /UFPB-Acontece
 published: true
 youtubeId: videoseries?list=PLgFWXTZM16pDin9oI1VPTtMpw_3IptBBH

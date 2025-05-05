@@ -35,31 +35,33 @@
     {%- include header.html -%}
 
     <div class="wrapper">
-      
-      <div class="started">
-        <div class="centrize full-width">
-          <div class="vertical-center">
-            <div class="started-content">
-              <div class="h-title glitch-effect" data-text="{{ page.title | upcase }}" style="color: #fff; font-size: 48px; font-weight: 700; text-align: center;">
-                {{ page.title | upcase }}
-              </div>
-              <div class="h-subtitle typing-bread" style="text-align: center; font-size: 16px; opacity: 0.8; margin-top: 15px;">
-                {% if page.subtitle == '' or page.subtitle == nil %}
-                <p><a href="{{ site.url }}" style="color: var(--primary-color);">{{ site.data.ui-text.ui_text.home | downcase }}</a> / <span style="text-transform: lowercase;">{{ page.title | downcase }}</span></p>
-                {% else %}
-                <p style="text-transform: lowercase;">{{ page.subtitle | downcase }}</p>
-                {% endif %}
+
+      <div class="mobile-wrapper">
+
+        <div class="started">
+          <div class="centrize full-width">
+            <div class="vertical-center">
+              <div class="started-content">
+                <div class="h-title glitch-effect" data-text="{{ page.title | upcase }}" style="color: #fff; font-size: 48px; font-weight: 700; text-align: center;">
+                  {{ page.title | upcase }}
+                </div>
+                <div class="h-subtitle typing-bread" style="text-align: center; font-size: 16px; opacity: 0.8; margin-top: 15px;">
+                  {% if page.subtitle == '' or page.subtitle == nil %}
+                  <p><a href="{{ site.url }}" style="color: var(--primary-color);">{{ site.data.ui-text.ui_text.home | downcase }}</a> / <span style="text-transform: lowercase;">{{ page.title | downcase }}</span></p>
+                  {% else %}
+                  <p style="text-transform: lowercase;">{{ page.subtitle | downcase }}</p>
+                  {% endif %}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="saibamais-wrapper">
-        {{ content }}
-      </div>
-    
-    {%- include footer.html -%}
+        <div class="saibamais-wrapper">
+          {{ content }}
+        </div>
+
+      </div> </div> {%- include footer.html -%}
 
     <div class="line top"></div>
     <div class="line bottom"></div>

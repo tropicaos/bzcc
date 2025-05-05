@@ -61,12 +61,6 @@ body {
 		background-position: center;
 		background-attachment: fixed;
 	}
-	&.scroll_hidden {
-		height: 100vh;
-		overflow: hidden;
-		position: fixed;
-		width: 100%;
-	}
 	&.loaded {
 		header, footer, .section {
 			opacity: 1;
@@ -91,7 +85,7 @@ body {
 	&::-webkit-scrollbar-thumb {
 		background-color: var(--background-color);
 		border-radius: 20px;
-		border: 3px solid var(--background-color);
+		border: 3px solid var(--active-color);
 	}
 
 	&::after {
@@ -112,6 +106,10 @@ body {
 		opacity: 0 !important;
 	}
 }
+
+body.body-no-scroll {
+	overflow: hidden;
+  }
 
 body.blog {
 	hr {
@@ -374,7 +372,7 @@ a.btn, .btn {
 	height: 42px;
 	line-height: 40px;
 	text-align: center;
-	color: var(--text-color);
+	color: var(--border-color, #c7009c);
 	border: 1px solid var(--border-color, #c7009c);
 	font-size: $default-size;
 	background: none;
@@ -817,7 +815,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 106;
     opacity: 0;
     visibility: hidden;
@@ -826,16 +824,12 @@ img {
         opacity: 1;
         visibility: visible;
     }
-	.s_overlay.active ~ body {
-		overflow: auto !important;
-	}
 }
-
 .sidebar_btn {
     position: relative;
     float: left;
     width: 42px;
-    height: 42px;
+    height: 30px;
     line-height: 40px;
     text-align: center;
     color: var(--text-color, #c7009c);
@@ -856,7 +850,7 @@ img {
         left: 50%;
         top: 50%;
         width: 30px;
-        height: 1px;
+        height: 3px;
         background: var(--text-color, #c7009c);
         transition: all 0.3s ease 0s;
 
@@ -866,7 +860,7 @@ img {
             left: 0;
             top: -8px;
             width: 100%;
-            height: 1px;
+            height: 3px;
             background: var(--text-color, #c7009c);
             transition: all 0.3s ease 0s;
         }
@@ -911,23 +905,6 @@ img {
         height: 100%;
     }
 
-    .widget-area {
-        position: relative;
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: 100vh;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--border-color, #c7009c) var(--background-color, #000000);
-        &::-webkit-scrollbar {
-            width: 6px;
-            background: var(--background-color, #000000);
-        }
-        &::-webkit-scrollbar-thumb {
-            background: var(--border-color, #c7009c);
-        }
-    }
-
     .widget {
         padding: 25px;
 
@@ -938,7 +915,7 @@ img {
             display: block;
             line-height: 18px;
             font-size: $default-size;
-            color: var(--border-color, #c7009c);
+            color: var(--text-color, #c7009c);
             text-transform: uppercase;
             letter-spacing: 0.04em;
             font-weight: 400;
@@ -946,7 +923,7 @@ img {
             span {
                 position: relative;
                 left: -5px;
-                box-shadow: inset 0 -6px 0px var(--border-color, #c7009c);
+                box-shadow: inset 0 -4px 0px var(--border-color, #c7009c);
             }
         }
 
@@ -1420,4 +1397,45 @@ button.mfp-close {
 	font-size: 0.9em;
 	color: var(--border-color, #c7009c);
 	text-align: center;
+}
+
+/* Mobile wrapper to prevent menu overlap */
+@media (max-width: 840px) {
+    .mobile-wrapper {
+        margin-top: 60px;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* Saibamais container styling */
+.saibamais-container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.saibamais-container .started-content {
+    margin: 0;
+    padding: 0;
+}
+
+.saibamais-container .h-title {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--text-color, #fff);
+}
+
+.saibamais-container .h-subtitle {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.saibamais-container .typed-bread {
+    margin-bottom: 10px;
+}
+
+.saibamais-container .saibamais-buttons {
+    margin-top: 10px;
 }

@@ -3,8 +3,8 @@ layout: post
 image: 'assets/images/uploads/madrugadacapa.jpg'
 title: A Madrugada não é para Noobs
 date: 2016-10-18T12:18:09.446Z
-category: Textos
-tags: Conto Suspense Textos
+category: Texto
+tags: Conto Suspense Argumento
 permalink: /AMadrugadaNaoEParaNoobs
 theme: madrugada
 published: true

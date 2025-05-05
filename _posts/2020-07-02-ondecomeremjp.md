@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/ondecomeremjpcapa.jpg'
 title: OndeComerEmJP 🍨
 date: 2017-08-10T19:30:39.224Z
-tags: Trampos Gastronomia Mídia
+category: Trampo
+tags: Gastronomia Mídia
 permalink: /OndeComerEmJP
 published: true
 ---

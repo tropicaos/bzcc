@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/lacunacapa.jpg'
 title: LACUNA Roteiro Original
 date: 2019-09-25T18:51:37.696Z
-tags: Textos Roteiro Drama Conto
+category: Texto
+tags: Roteiro Drama Conto
 permalink: /LACUNA
 published: true
 ---

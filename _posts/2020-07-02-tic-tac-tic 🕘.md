@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/tictacticcapa.jpg'
 title: Tic. Tac. Tic. 🕘
 date: 2016-09-09T12:02:51.589Z
-tags: Textos Conto Drama
+category: Texto
+tags: Conto Drama
 permalink: /TicTacTic
 published: true
 ---

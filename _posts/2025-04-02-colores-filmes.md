@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Colores Filmes
-tags: Trampo Audiovisual Cinema
+category: Trampo
+tags: Cinema Publicidade Documentário
 image: 'assets/img/blog/colores/coloresfilmes_blog.jpg'
 permalink: /ColoresFilmes
 published: true

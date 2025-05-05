@@ -13,9 +13,9 @@ default:
   blotico_color: "#ffffff"
 
 matapau:
-  primary: "#8A04D1"
+  primary: "#743f39"
   active: "#743f39"
-  extra_active: "#16EFA7"
+  extra_active: "#efdd88"
   text: "#193d3f"
   background: "#458F7A"
   border: "#8A04D1"
@@ -23,7 +23,7 @@ matapau:
   cabepe_opacity: 1
   cabepe_shadow: false
   blotico_font: "'Silkscreen', sans-serif"
-  blotico_color: "#193d3f"
+  blotico_color: "#efdd88"
   image: ""
 
 armazemparaiba:

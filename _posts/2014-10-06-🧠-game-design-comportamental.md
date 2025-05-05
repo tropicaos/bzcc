@@ -3,7 +3,8 @@ layout: post
 title: Game Design Comportamental
 image: assets/images/uploads/comportamentalcapa.jpg
 date: 2014-10-06T17:09:19.000Z
-tags: Games Game-design Behaviorismo Psicologia
+categories: Texto Game
+tags: Game-design Behaviorismo Psicologia
 permalink: /GameDesignComportamental
 published: true
 ---

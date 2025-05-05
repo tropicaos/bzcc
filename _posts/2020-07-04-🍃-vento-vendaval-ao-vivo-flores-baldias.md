@@ -3,7 +3,8 @@ layout: post
 image: 'assets/images/uploads/floresvadiascapa.jpg'
 title: 🍃 Vento Vendaval - Flores Baldias
 date: 2018-02-20T18:10:08.584Z
-tags: Audiovisual Videoclipe Natureza
+category: Video
+tags: Videoclipe Natureza
 permalink: /FloresBaldiasVentoVendaval
 published: true
 vimeoId: 256395382
