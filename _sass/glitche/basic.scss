@@ -1070,219 +1070,194 @@ img {
 }
 
 /* 20. Saibamais */
-.saibamais-container {
-    display: block;
-    height: auto;
-    min-height: calc(100vh - 120px);
-    background: var(--background-color);
-    overflow: visible;
-    padding: 20px 0;
-
-    @media (max-width: 768px) {
-        min-height: calc(100vh - 120px);
-    }
-    @media (max-width: 480px) {
-        padding: 15px !important;
-    }
-}
-
 body.theme-saibamais {
-	.container {
-		margin: 15px;
-		height: auto;
-	}
+  
+	// Ajusta o wrapper principal para garantir espaçamento
 	.wrapper {
-		height: auto;
-		display: block;
+	  padding-top: 100px;    // Aumentado para garantir espaço para o header + borda superior
+	  padding-bottom: 90px;  // Ajustado para footer + borda inferior
+	  min-height: 100vh;     
+	  display: block;        // Mudar de flex para block pode resolver alguns problemas de altura
+	  box-sizing: border-box;
 	}
-	.saibamais-container {
-		padding: 0;
-		min-height: 0;
-
-		.saibamais-buttons {
-			max-width: 600px;
-			margin: 0 auto;
-		}
+  
+	// A seção específica da página saibamais
+	.section.saibamais-page {
+	  padding: 40px; // Adiciona padding interno geral na seção para respiro
+	  margin: 0 auto; // Centraliza a seção se o wrapper for maior
+	  max-width: 1060px; // Garante que a seção não ultrapasse a largura padrão
+	  width: 100%;      // Ocupa a largura disponível
+	  box-sizing: border-box; // Inclui padding na largura total
+  
+	  // O container do conteúdo dentro da seção
+	  .content {
+		padding-top: 0;     // Remove padding superior extra do content (já temos na seção)
+		padding-bottom: 0;  // Remove padding inferior extra do content
+		width: 100%;        // Garante que ocupe toda a largura da seção
+		
+		// Estilização COMPLETA do título da página, copiando de layout.scss e adaptando
+		.title {
+		  position: relative; // Necessário para posicionamento interno e efeitos
+		  margin-bottom: 60px; // Aumenta espaço abaixo do título
+		  text-align: center;  // Centraliza o contêiner do título
+  
+		  .title_inner {
+			display: inline-block; // Comportamento padrão
+			vertical-align: middle;
+			text-align: center;
+			position: relative; // Crucial para o glitch-effect funcionar
+			line-height: 1.2; // Ajustado para melhor leitura
+			font-size: $h2-size; // Usar um tamanho de título padrão (ajuste se necessário)
+			color: var(--text-color); // Cor do texto do tema da página
+			text-transform: uppercase;
+			letter-spacing: $extra-letter-spacing;
+			@include transition(all 0.3s ease 0s); // Transição padrão
+			box-shadow: inset 0 -8px 0px var(--border-color); // Linha com cor da borda do tema da página (espessura ajustada)
+			padding: 0 5px 2px 5px; // Padding para não cortar a linha
+  
+			// Herda ou redefine estilos necessários para glitch-effect de basic.scss:198
+			&.glitch-effect {
+			  &::before, &::after {
+				content: attr(data-text);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: transparent; // Ou var(--background-color) se precisar cobrir
+				clip: rect(0, 0, 0, 0);
+				opacity: 0.8;
+				// Garante que a cor do glitch use as cores do TEMA DA PÁGINA
+				text-shadow: -1px 0 var(--active-color); // Usa active color do tema da página
+			  }
+  
+			  &::before {
+				left: -2px;
+				text-shadow: 2px 0 var(--primary-color); // Usa primary color do tema da página
+				animation: glitch-2 2s infinite linear alternate-reverse;
+			  }
+			   &::after {
+				  left: 2px;
+				  text-shadow: -1px 0 var(--active-color); // Usa active color do tema da página
+				  animation: glitch-1 2s infinite linear alternate-reverse;
+			   }
+			}
+		  }
+		} // Fim .title
+	  } // Fim .content
+	} // Fim .section.saibamais-page
+  } // Fim body.theme-saibamais
+  
+  
+  // Título da Categoria
+  .category-title {
+	color: var(--primary-color);
+	font-family: $default-font;
+	font-size: 1em;
+	margin: 40px 0 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid var(--active-color);
+	text-align: center;
+  
+	&:first-child {
+	  margin-top: 0; 
 	}
-	.started {
-		height: auto;
-		min-height: 0;
-		position: relative;
-		z-index: 2;
-		padding: 20px 0 !important;
-
-		.centrize {
-			display: block;
-			height: auto;
-		}
-		.vertical-center {
-			display: block;
-			transform: none;
-		}
-		.h-title {
-			font-size: $h1-size;
-			margin-bottom: 15px;
-		}
-		.h-subtitle {
-			font-size: $default-size;
-			opacity: 0.8;
-		}
-	}
-	.mouse_btn {
-		display: none !important;
-	}
-}
-
-@media (max-width: 480px) {
-	body.theme-saibamais .started {
-		padding: 30px 0 15px;
-
-		.h-title {
-			font-size: $h1-size * 0.8 !important;
-			line-height: 1.2;
-		}
-		.h-subtitle {
-			font-size: $default-size * 0.9 !important;
-		}
-	}
-}
-
-.saibamais-buttons {
-	max-width: 500px;
+  }
+  
+  // Container dos Botões
+  .saibamais-buttons {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	max-width: 700px;
 	width: 100%;
-}
-
-.saibamais-button {
+  }
+  
+  // Estilo Base do Botão
+  .saibamais-button {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	width: 100%;
 	margin: 12px 0;
 	padding: 16px 25px;
-	background: rgba(199, 0, 156, 0.1);
-	border: 4px solid #c7009c;
-	border-radius: 0px;
-	color: #ffffff;
+	background: var(--btn-bg-color, rgba(199, 0, 156, 0.1)); 
+	border: 2px solid var(--btn-border-color, #c7009c); 
+	color: var(--btn-text-color, #ffffff); 
+	border-radius: 0px; 
 	text-decoration: none;
 	transition: all 0.3s ease;
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 1;
-
+  
 	&:hover {
-		background: #c7009c;
-		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(199, 0, 156, 0.3);
-
-		.saibamais-icon, .saibamais-text {
-			color: #000000 !important;
+		background: var(--btn-hover-bg-color, var(--btn-border-color));
+		color: var(--btn-hover-text-color, var(--btn-bg-color));
+		border-color: var(--btn-hover-bg-color, var(--btn-border-color));
+		transform: translateY(-2px); 
+	
+		.saibamais-icon {
+		   color: var(--btn-hover-text-color, var(--btn-bg-color));
 		}
-	}
-
-	&.glitch-effect {
-		@media (min-width: 580px) {
-			&:hover {
-				&:before, &:after {
-					content: attr(data-text);
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					display: flex;
-					align-items: center;
-					padding: inherit;
-					pointer-events: none;
-					opacity: 0.8;
-					z-index: -1;
-				}
-				&:after {
-					animation: glitch-1 0.8s infinite linear alternate-reverse;
-					text-shadow: -2px 0 var(--active-color);
-					left: 2px;
-				}
-				&:before {
-					animation: glitch-2 0.8s infinite linear alternate-reverse;
-					text-shadow: 2px 0 var(--active-color);
-					left: -2px;
-				}
-			}
-		}
-	}
-
+	  }
+  
 	@media (max-width: 480px) {
-		padding: 12px 15px;
-		margin: 8px 0;
+	  padding: 12px 15px;
+	  margin: 10px 0;
 	}
-}
-
-.saibamais-icon {
+  }
+  
+  // Ícone do Botão
+  .saibamais-icon {
 	font-size: 24px;
 	margin-right: 20px;
-	width: 30px;
+	width: 30px; 
 	text-align: center;
-	color: #ffffff;
-
+	color: var(--btn-text-color, #ffffff); 
+	transition: color 0.3s ease; 
+  
 	@media (max-width: 480px) {
-		font-size: 20px;
-		margin-right: 12px;
+	  font-size: 20px;
+	  margin-right: 12px;
+	  width: 25px;
 	}
-}
-
-.saibamais-text {
-	flex: 1;
-	font-family: 'Courier Prime', monospace;
-	font-size: 13px;
+  }
+  
+  // Texto do Botão
+  .saibamais-text {
+	flex: 1; 
+	font-family: $default-font; 
+	font-size: 14px; 
 	line-height: 1.3;
 	text-align: left;
-	text-transform: lowercase;
-	letter-spacing: 0.8px;
-
-	&::first-line {
-		text-transform: uppercase !important;
-		font-weight: 600;
-		letter-spacing: 1.5px;
-		font-size: 15px;
-	}
-
+	text-transform: uppercase; 
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: inherit; 
+  
 	br {
-		display: block;
-		content: '';
-		margin: 3px 0;
+	  display: block;
+	  content: "";
+	  margin-top: 3px; 
 	}
-	br + span {
-		text-transform: lowercase !important;
-		display: block;
-		margin-top: 5px;
-		font-size: 12px;
-		opacity: 0.9;
-		font-weight: 300;
+  
+	span {
+	  text-transform: none; 
+	  display: block;
+	  font-size: 12px; 
+	  opacity: 0.9;
+	  font-weight: 400; 
+	  letter-spacing: 0.5px;
+	  color: inherit; 
 	}
-
+  
 	@media (max-width: 480px) {
-		font-size: 12px;
-
-		br + span {
-			font-size: 0.8em;
-		}
+	  font-size: 13px;
+	  span {
+		  font-size: 11px;
+	  }
 	}
-}
-
-.category-title {
-	color: var(--primary-color);
-	font-family: 'Courier Prime', monospace;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 1.2em;
-	margin: 30px 0 15px;
-	padding-top: 20px;
-	border-bottom: 2px solid var(--active-color);
-
-	&:first-child {
-		margin-top: 0;
-	}
-}
+  }
 
 /* 21. Paginations */
 .pagination {
@@ -1397,45 +1372,4 @@ button.mfp-close {
 	font-size: 0.9em;
 	color: var(--border-color, #c7009c);
 	text-align: center;
-}
-
-/* Mobile wrapper to prevent menu overlap */
-@media (max-width: 840px) {
-    .mobile-wrapper {
-        margin-top: 60px;
-        position: relative;
-        z-index: 1;
-    }
-}
-
-/* Saibamais container styling */
-.saibamais-container {
-    padding: 10px 0;
-    text-align: center;
-}
-
-.saibamais-container .started-content {
-    margin: 0;
-    padding: 0;
-}
-
-.saibamais-container .h-title {
-    margin-bottom: 5px;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
-    color: var(--text-color, #fff);
-}
-
-.saibamais-container .h-subtitle {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.saibamais-container .typed-bread {
-    margin-bottom: 10px;
-}
-
-.saibamais-container .saibamais-buttons {
-    margin-top: 10px;
 }

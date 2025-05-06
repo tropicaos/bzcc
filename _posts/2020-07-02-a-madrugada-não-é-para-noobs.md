@@ -9,7 +9,6 @@ permalink: /AMadrugadaNaoEParaNoobs
 theme: madrugada
 published: true
 ---
-<p style="text-align:center"><h4>Maconha, medo e assassinato nas ruas de Jaguaribe.</h4></p>
 
 ![](assets/images/uploads/madrugadanoobs01.jpg)
 

@@ -1,0 +1,87 @@
+# _data/saibamais.yml
+
+categories:
+
+  - title: "OBRAS"
+    buttons:
+      - url: "/matapau"
+        icon: "fas fa-tree"
+        main_text: "MATAPAU!"
+        secondary_text: "o primeiro jogo da Poligonal 💝"
+        target_blank: false
+        theme: "matapau" 
+      - url: "/Alice"
+        icon: "fas fa-pen-nib"
+        main_text: "ALICE"
+        secondary_text: "dito e feito"
+        target_blank: false
+        theme: "alice" 
+      - url: "/Termos&Condicoes"
+        icon: "fa-solid fa-gun"
+        main_text: "TERMOS E CONDIÇÕES"
+        secondary_text: "um jogo doentio no Tucanistão"
+        target_blank: false
+        theme: "temas&condicoes" 
+      - url: "/AMadrugadaNaoEParaNoobs"
+        icon: "fa-solid fa-road"
+        main_text: "A MADRUGADA NÃO É PARA NOOBS"
+        secondary_text: "medo nas ruas de Jaguaribe"
+        target_blank: false
+        theme: "madrugada" 
+      - url: "/"
+        icon: "fa-solid fa-earth-americas"
+        main_text: "SITE"
+        secondary_text: ".portfolio /.blog /.currículo"
+
+  - title: "AUDIOVISUAL"
+    buttons:
+      - url: "/categories/trampo/"
+        icon: "fa-solid fa-hammer"
+        main_text: "TRAMPOS"
+        secondary_text: "o caminho até aqui"
+        target_blank: false
+      - url: "https://vimeo.com/bezerramos"
+        icon: "fa-brands fa-vimeo"
+        main_text: "VIDEOGRAFIA"
+        secondary_text: "vimeo"
+        target_blank: true
+      - url: "https://www.youtube.com/@canalpoligonal"
+        icon: "fa-brands fa-youtube"
+        main_text: "POLIGONAL"
+        secondary_text: "youtube"
+        target_blank: true
+      - url: "https://www.linkedin.com/in/bezerramos/"
+        icon: "fa-brands fa-linkedin"
+        main_text: "LINKEDINHO"
+        secondary_text: "se é q vc usa isso"
+        target_blank: true
+      - url: "https://www.instagram.com/canalpoligonal/"
+        icon: "fa-brands fa-instagram"
+        main_text: "INSTAGRAM"
+        secondary_text: "@canalpoligonal"
+        target_blank: true
+      - url: "https://twitch.tv/canalpoligonal"
+        icon: "fa-brands fa-twitch"
+        main_text: "STREAMING"
+        secondary_text: "twitch"
+        target_blank: true
+
+  - title: "TECNOLOGIA"
+    buttons:
+      - url: "https://github.com/poligonaldev"
+        icon: "ion-social-github"
+        main_text: "Github"
+        secondary_text: "ignora a bagunça"
+        target_blank: true
+      - url: "https://steamcommunity.com/id/tropicaos"
+        icon: "ion-steam"
+        main_text: "Steam"
+        secondary_text: "since 2011"
+        target_blank: true
+
+  # - title: "OUTRA CATEGORIA"
+  #   buttons:
+  #     - url: "..."
+  #       icon: "..."
+  #       main_text: "..."
+  #       secondary_text: "..."

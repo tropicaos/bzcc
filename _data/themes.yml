@@ -1,8 +1,8 @@
 
 default:
   primary: "#c7009c"
-  active: "#fff"
-  extra_active: "#fff"
+  active: "#c7009c"
+  extra_active: "#F473D8"
   text: "#ffffff"
   background: "#000000"
   border: "#c7009c"
@@ -84,8 +84,8 @@ temas&condicoes:
 
 alice:
   primary: "#4A3724"
-  active: "#4A3724"
-  extra_active: "#4A3724"
+  active: "#b0191a"
+  extra_active: "#4A372"
   text: "#b0191a"
   background: "#e8ba98"
   border: "#b0191a"

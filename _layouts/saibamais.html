@@ -1,76 +1,54 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" as="image" href="/assets/images/background.jpg">
-  <title>{{ page.title | default: site.title }}</title>
+---
+layout: default
+title: Saiba Mais
+permalink: /saibamais/ # Define a URL amigável
+theme: default # Ou o tema que você quer para a página em si
+---
 
-  {%- include head.html -%}
+<div class="saibamais-container section started">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <div class="started-content">
+        
+        <div class="saibamais-buttons">
+          {% for category in site.data.saibamais.categories %}
+            <h3 class="category-title">{{ category.title }}</h3>
+            {% for button in category.buttons %}
+              {% assign btn_theme_name = button.theme | default: page.theme | default: 'default' %}
+              {% assign btn_theme = site.data.themes[btn_theme_name] %}
+              
+              <a href="{{ button.url | relative_url }}"
+              class="saibamais-button"
+              {% if button.target_blank %}target="_blank" rel="noopener noreferrer"{% endif %}
+              style="
+                --btn-border-color: {{ btn_theme.border | default: 'var(--border-color)' }};
+                --btn-bg-color: {{ btn_theme.background | default: 'rgba(199, 0, 156, 0.1)' }};
+                --btn-text-color: {{ btn_theme.text | default: 'var(--text-color)' }};
 
-  {% assign selected_theme = page.theme | default: 'default' %}
-  {% if selected_theme != 'default' %}
-    {% assign theme = site.data.themes[selected_theme] %}
-    {% if theme %}
-      <style>
-        :root {
-          {% if theme.primary %} --primary-color: {{ theme.primary }}; {% endif %}
-          {% if theme.background %} --background-color: {{ theme.background }}; {% endif %}
-          {% if theme.text %} --text-color: {{ theme.text }}; {% endif %}
-          {% if theme.font %} --font-family: {{ theme.font }}; {% endif %}
-          {% if theme.border %} --border-color: {{ theme.border }}; {% endif %}
-          {% if theme.header %} --header-bg-color: {{ theme.header }}; {% endif %}
-          {% if theme.footer %} --footer-bg-color: {{ theme.footer }}; {% endif %}
-          {% if theme.active %} --active-color: {{ theme.active }}; {% endif %}
-          {% if theme.extra_active %} --extra-active-color: {{ theme.extra_active }}; {% endif %}
-        }
-      </style>
-    {% endif %}
-  {% endif %}
-</head>
+                {% if button.theme %}
+                  --btn-hover-bg-color: {{ btn_theme.active | default: 'var(--active-color)' }};
+                  --btn-hover-text-color: {{ btn_theme.extra_active | default: 'var(--background-color)' }};
+                {% else %}
+                  --btn-hover-bg-color: {{ btn_theme.border | default: 'var(--border-color)' }};
+                  --btn-hover-text-color: {{ btn_theme.background | default: 'var(--background-color)' }};
+                {% endif %}
+              "
+              
+              data-text="{{ button.main_text }}">
 
-<body class="theme-saibamais">
-  {%- include preloader.html -%}
-
-  <div class="container">
-    {%- include header.html -%}
-
-    <div class="wrapper">
-
-      <div class="mobile-wrapper">
-
-        <div class="started">
-          <div class="centrize full-width">
-            <div class="vertical-center">
-              <div class="started-content">
-                <div class="h-title glitch-effect" data-text="{{ page.title | upcase }}" style="color: #fff; font-size: 48px; font-weight: 700; text-align: center;">
-                  {{ page.title | upcase }}
-                </div>
-                <div class="h-subtitle typing-bread" style="text-align: center; font-size: 16px; opacity: 0.8; margin-top: 15px;">
-                  {% if page.subtitle == '' or page.subtitle == nil %}
-                  <p><a href="{{ site.url }}" style="color: var(--primary-color);">{{ site.data.ui-text.ui_text.home | downcase }}</a> / <span style="text-transform: lowercase;">{{ page.title | downcase }}</span></p>
-                  {% else %}
-                  <p style="text-transform: lowercase;">{{ page.subtitle | downcase }}</p>
+                <span class="saibamais-icon {{ button.icon }}"></span>
+                <span class="saibamais-text">
+                  {{ button.main_text }}
+                  {% if button.secondary_text %}
+                    <br><span>{{ button.secondary_text }}</span>
                   {% endif %}
-                </div>
-              </div>
-            </div>
-          </div>
+                </span>
+            </a>
+            {% endfor %}
+          {% endfor %}
         </div>
-
-        <div class="saibamais-wrapper">
-          {{ content }}
-        </div>
-
-      </div> </div> {%- include footer.html -%}
-
-    <div class="line top"></div>
-    <div class="line bottom"></div>
-    <div class="line left"></div>
-    <div class="line right"></div>
+        
+      </div>
+    </div>
   </div>
-
-  {%- include sidebar.html -%}
-  {%- include scripts.html -%}
-
-</body>
-</html>
+   </div>

@@ -41,15 +41,15 @@ resume:
     title: "Experiência"
     items:
       - year: "2017 - 2022"
-        name: "Administradores.com"
+        name: "Administradores.com | Videomaker"
         text: "Produção, filmagem, logging, edição, montagem, finalização e motion graphics tanto p/ formatos do canal do Youtube, quanto para cursos, palestras, workshops e programas variados p/ a plataforma de streaming Administradores Premium."
 
       - year: "2020 - 2022"
-        name: "Armazém Paraíba"
+        name: "Armazém Paraíba | Videomaker"
         text: "Produzindo conteúdos audiovisuais institucionais, videoaulas de treinamento e programas variados para a TV Corporativa quando na célula de Endomarketing no setor de Relações Humanas; roteirista, cinegrafista, editor e finalizador de peças publicitárias para mídias online e TV quando na célula de Audiovisual no setor de Marketing e Publicidade."
         
       - year: "2023 - 2024"
-        name: "Colores Filmes"
+        name: "Colores Filmes | Pós-Produtor"
         text: "Logging, montagem, edição, finalização, correção de cor e colorimetria, motion graphics e tudo o que tiver a ver com pós-produção. De quebra, também contribuí com ferramentas de produtividade e gestão de tarefas que foram implementadas em vários fluxos de trabalho na produtora."
         
   education:
@@ -63,9 +63,9 @@ resume:
         name: "GRADUAÇÃO | RÁDIO, TV E WEB - UFPB"
         text: "No curso de Radio, TV e WEB, os estudantes se familiarizam com ambientes como estúdios de gravação de áudio e de vídeo; e com equipamentos como câmeras, microfones e ilhas de edição audiovisual."
 
-      - year: "2021 - 202?"
-        name: "CST | FILMMAKING - UNINASSAU"
-        text: "O curso abrange todas as funções dentro das etapas da produção audiovisual, passando pelo processo de pré-produção, técnicas de planejamento e roteiro, aprofundando-se nas funções e processos da realização no set de filmagem, envolvendo também as dinâmicas da edição e montagem fílmica na pós-produção."
+      - year: "2025 - 2028"
+        name: "CST | JOGOS DIGITAIS - ESTÁCIO"
+        text: "Forma profissionais aptos ao desenvolvimento de todas as etapas que compõem um jogo, do roteiro à modelagem, da criação do ambiente digital aos testes. O estudante se aprofundará em ferramentas, softwares e plataformas de criação de ambientes em 2D e 3D."
 
 ### Skills [ skills ]
 skills:
