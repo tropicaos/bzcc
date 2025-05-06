@@ -1152,6 +1152,8 @@ body.theme-saibamais {
   .category-title {
 	color: var(--primary-color);
 	font-family: $default-font;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 	font-size: 1em;
 	margin: 40px 0 15px;
 	padding-bottom: 5px;
