@@ -25,9 +25,8 @@ A selva de pedra megalopolitana se estende para além da linha do horizonte crep
 
 No portão Talita e Morgana comentam brevemente sobre os ares luxuosos que a entrada do prédio tem e passam por um corredor com algumas lâmpadas defeituosas. Talita nota o semblante estranho de Morgana e tenta extrair qual é o problema, sem sucesso. Um longo silêncio se estende até o fim do corredor na porta do elevador, até Talita tentar novamente descobrir qual é o problema que se passa com sua companheira. Enquanto o elevador sobe
 
-<p align="center">
-  <img src="assets/images/uploads/termosecondicoes01.jpg" alt="trecho do roteiro" />
-</p>
+![trecho do roteiro](assets/images/uploads/termosecondicoes01.jpg)
+
 
 Imediatamente Morgana nota que sua argumentação enfática pesou a atmosfera de uma viagem que nada tinha a ver com sociopolítica. A ideia original era só curtir o show e ir embora. Ela tenta remendar argumentando que vai tentar deixar todos esses problemas de lado enquanto estiverem curtindo o apartamento alugado pela _TerrainT_. Talita salienta que elas só têm três dias naquele apê e que deveriam aproveitar do jeito mais distante possível da política possível: com sexo, drogas e tapiocas. Ela ativa a tranca eletrônica e ambas entram no apartamento.
 
@@ -135,7 +134,7 @@ Do lado de fora, o mesmo motorista do _KRIEG_ espera tão ofegante que chega a s
 
 **Um luxuoso carro preto sai em disparada, serpenteando a selva de pedra megalopolitana que viola a linha do horizonte, prateada por um luar intenso.**
 
-![O poster principal de Termos e Condições & que simula a bandeira brasileira com uma foto esverdeada de prédios na Vila Buarque em São Paulo, um letreiro com o título da história centralizada numa faixa de angulação idêntica ao da bandeira brasileira, porém com fundo preto e letras amarelas e um letreiro superior centralizado que evitencia o autor: UM ARGUMENTO BEZERRAMOS.CC. Um jogo sombras subliminarmente fazem o losango e o círculo da bandeira e há váriás gotas de sangue pingadas em cima de tudo.](assets/images/uploads/termosecondicoesposter.jpg)
+![O poster principal de Termos e Condições & que simula a bandeira brasileira com uma foto esverdeada de prédios na Vila Buarque em São Paulo, um letreiro com o título da história centralizada numa faixa de angulação idêntica ao da bandeira brasileira, porém com fundo preto e letras amarelas e um letreiro superior centralizado que evitencia o autor: UM ARGUMENTO BEZERRAMOS.CC. Um jogo sombras subliminarmente fazem o losango e o círculo da bandeira e há váriás gotas de sangue pingadas em cima de tudo.](assets/images/uploads/termosecondicoesPOSTER.jpg)
 
 - - -
 _Feito com a colaboração de [Mônica Barros](https://www.instagram.com/monicag.barros/){:target="_blank"}, [Everton Agner](https://twitter.com/ertonnnn){:target="_blank"}, [Amanda Azevedo](https://twitter.com/MandaAzevedo/){:target="_blank"} e [Ju Carneiro](https://twitter.com/exaustasambah){:target="_blank"}_

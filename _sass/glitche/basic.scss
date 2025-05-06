@@ -730,6 +730,9 @@ img {
 	max-width: 100%;
 	border: 10px solid var(--border-color, #c7009c);
 	box-sizing: border-box;
+	display: block;
+  	margin: auto;
+	
 }
 
 .image-wrapper {
