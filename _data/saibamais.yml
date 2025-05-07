@@ -10,7 +10,7 @@ categories:
       #  secondary_text: "o primeiro jogo da Poligonal 💝"
       #  target_blank: false
       #  theme: "matapau" 
-      # - url: "/Alice"
+      #- url: "/Alice"
       #  icon: "fas fa-pen-nib"
       #  main_text: "ALICE"
       #  secondary_text: "dito e feito"
@@ -50,11 +50,6 @@ categories:
         main_text: "POLIGONAL"
         secondary_text: "youtube"
         target_blank: true
-      - url: "https://www.linkedin.com/in/bezerramos/"
-        icon: "fa-brands fa-linkedin"
-        main_text: "LINKEDINHO"
-        secondary_text: "se é q vc usa isso"
-        target_blank: true
       - url: "https://www.instagram.com/canalpoligonal/"
         icon: "fa-brands fa-instagram"
         main_text: "INSTAGRAM"
@@ -65,16 +60,21 @@ categories:
         main_text: "STREAMING"
         secondary_text: "twitch"
         target_blank: true
+      - url: "https://www.linkedin.com/in/bezerramos/"
+        icon: "fa-brands fa-linkedin"
+        main_text: "LINKEDINHO"
+        secondary_text: "se é q vc usa isso"
+        target_blank: true
 
   - title: "TECNOLOGIA"
     buttons:
       - url: "https://github.com/poligonaldev"
-        icon: "ion-social-github"
+        icon: "fa-brands fa-github"
         main_text: "Github"
         secondary_text: "ignora a bagunça"
         target_blank: true
       - url: "https://steamcommunity.com/id/tropicaos"
-        icon: "ion-steam"
+        icon: "fa-brands fa-steam"
         main_text: "Steam"
         secondary_text: "since 2011"
         target_blank: true
