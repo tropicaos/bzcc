@@ -50,11 +50,6 @@ categories:
         main_text: "POLIGONAL"
         secondary_text: "youtube"
         target_blank: true
-      - url: "https://www.linkedin.com/in/bezerramos/"
-        icon: "fa-brands fa-linkedin"
-        main_text: "LINKEDINHO"
-        secondary_text: "se é q vc usa isso"
-        target_blank: true
       - url: "https://www.instagram.com/canalpoligonal/"
         icon: "fa-brands fa-instagram"
         main_text: "INSTAGRAM"
@@ -64,6 +59,11 @@ categories:
         icon: "fa-brands fa-twitch"
         main_text: "STREAMING"
         secondary_text: "twitch"
+        target_blank: true
+      - url: "https://www.linkedin.com/in/bezerramos/"
+        icon: "fa-brands fa-linkedin"
+        main_text: "LINKEDINHO"
+        secondary_text: "se é q vc usa isso"
         target_blank: true
 
   - title: "TECNOLOGIA"
