@@ -16,12 +16,12 @@ categories:
       #  secondary_text: "dito e feito"
       #  target_blank: false
       #  theme: "alice" 
-      #- url: "/Termos&Condicoes"
-      #  icon: "fa-solid fa-gun"
-      #  main_text: "TERMOS E CONDIÇÕES"
-      #  secondary_text: "um jogo doentio no Tucanistão"
-      #  target_blank: false
-      #  theme: "temas&condicoes" 
+      - url: "/Termos&Condicoes"
+        icon: "fa-solid fa-gun"
+        main_text: "TERMOS E CONDIÇÕES"
+        secondary_text: "um jogo doentio no Tucanistão"
+        target_blank: false
+        theme: "temas&condicoes" 
       - url: "/AMadrugadaNaoEParaNoobs"
         icon: "fa-solid fa-road"
         main_text: "A MADRUGADA NÃO É PARA NOOBS"
