@@ -9,13 +9,13 @@ categories:
       #  main_text: "MATAPAU!"
       #  secondary_text: "o primeiro jogo da Poligonal 💝"
       #  target_blank: false
-      #  theme: "matapau" 
-      #- url: "/Alice"
-      #  icon: "fas fa-pen-nib"
-      #  main_text: "ALICE"
-      #  secondary_text: "dito e feito"
-      #  target_blank: false
-      #  theme: "alice" 
+      #  theme: "matapau"
+      - url: "/Alice"
+        icon: "fas fa-pen-nib"
+        main_text: "ALICE"
+        secondary_text: "dito e feito"
+        target_blank: false
+        theme: "alice" 
       - url: "/Termos&Condicoes"
         icon: "fa-solid fa-gun"
         main_text: "TERMOS E CONDIÇÕES"
