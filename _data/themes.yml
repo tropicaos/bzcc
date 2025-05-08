@@ -13,13 +13,13 @@ default:
   blotico_color: "#ffffff"
 
 matapau:
-  primary: "#743f39"
-  active: "#743f39"
-  extra_active: "#efdd88"
-  text: "#193d3f"
-  background: "#458F7A"
+  primary: "#B86F50"
+  active: "#193D3F"
+  extra_active: "#8A04D1"
+  text: "#7EB272"
+  background: "#432255"
   border: "#8A04D1"
-  cabepe_color: "#458F7A"
+  cabepe_color: "#432255"
   cabepe_opacity: 1
   cabepe_shadow: false
   blotico_font: "'Silkscreen', sans-serif"
@@ -99,19 +99,19 @@ alice:
 madrugada:
   primary: "#fff"
   active: "#96030f"
-  extra_active: "#fff"
+  extra_active: "#cd4945"
   background: "#000"
   text: "#fff"
   border: "#fff"
   font: "'Courier Prime', monospace"
 
 bunker:
-  primary: "#c7009c"
-  active: "#fff"
-  extra_active: "#fff"
+  primary: "#cd4945"
+  active: "#522e2a"
+  extra_active: "#cd4945"
   text: "#ffffff"
   background: "#191919"
-  border: "#c7009c"
+  border: "#cd4945"
   cabepe_color: "#191919"
   cabepe_opacity: "1"
   cabepe_shadow: false
