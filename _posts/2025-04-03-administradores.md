@@ -49,10 +49,10 @@ Logo no primeiro trampo tive a sorte de trabalhar com equipamentos da Black Magi
 Além disso, me envolvi de cabeça na produção de workshops e cursos focados em estratégias digitais. Teve até um curso com o Ricardo Oliveira – ex-estrategista de mídias sociais da TV Cabo Branco (a filiada da Globo aqui de João Pessoa) – que me marcou bastante e reforçou meu posicionamento sobre como trabalhar com conteúdo independente da plataforma. Cada projeto foi uma oportunidade de aprender, testar e principalmente compartilhar conhecimento, o que é maravilhoso pois divulgação científica é um dos meus focos desde a adolescência. Eu tava sendo pago pra editar conteúdos que eu mesmo pagaria caro se fosse contratar!
 
 {% include image.html
-img="assets/img/blog/adm/administradores_blog2.jpg"
-title="Queridos no Portal Administradores."
-caption="(&#x1F881;)Com Leandro Vieira segurando a plaquinha de 100K (&#x1F882;) Tietando o [**Ricardo Oliveira**](https://www.instagram.com/ricardoollliveira/){:target='_blank'} no meio da filmagem de seu curso de Estratégias Digitais (&#x1F883;) editando com estilo com o querido [**Victor**](https://www.instagram.com/victorbmont/){:target='_blank'}
-layout="full"
+    img="assets/img/blog/adm/administradores_blog2.jpg"
+    title="Queridos no Portal Administradores."
+    caption="Com Leandro Vieira segurando a plaquinha de 100K / Tietando o [**Ricardo Oliveira**](https://www.instagram.com/ricardoollliveira/){:target='_blank'} no meio da filmagem de seu curso de Estratégias Digitais / editando com estilo com o querido [**Victor**](https://www.instagram.com/victorbmont/){:target='_blank'}"
+    layout="full"
 %}
 
 ---
