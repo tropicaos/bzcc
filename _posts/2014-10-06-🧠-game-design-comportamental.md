@@ -5,7 +5,7 @@ image: assets/images/uploads/comportamentalcapa.jpg
 date: 2014-10-06T17:09:19.000Z
 categories: Texto Game
 tags: Game-design Behaviorismo Psicologia
-permalink: /GameDesignComportamental
+permalink: /gamedesigncomportamental
 published: true
 ---
 <h4><p style="text-align:center">Como a psicologia behaviorista é utilizada em jogos eletrônicos.</p></h4>

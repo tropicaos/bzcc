@@ -5,7 +5,7 @@ title: SÍSTOLE 🖤 — Vídeo poema
 date: 2018-03-20T18:30:39.054Z
 category: Video
 tags: Lírico Poemia
-permalink: /SISTOLEvideopoema
+permalink: /sistolevideopoema
 published: true
 vimeoId: 251818155
 ---

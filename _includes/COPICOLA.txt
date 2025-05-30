@@ -1,3 +1,5 @@
+{:target="_blank"}
+
 blogpost
 ---
 layout: post
@@ -44,8 +46,6 @@ subtítulo
     layout="inline" / full
     align="left" / (if full DELET THIS)
 %}
-
-{:target="_blank"}
 
 Exemplo de Tema em (_data/themes.yml)
   teste:

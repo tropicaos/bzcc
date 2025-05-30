@@ -4,7 +4,7 @@ image: 'assets/images/uploads/rolereligiosoCAPA.jpg'
 title: Rolê ✝️ Religioso
 date: 2017-08-13T15:58:47.174Z
 tags: Fotos Diário-de-bordo Arquitetura Turístico Histórico Paisagem
-permalink: /RoleReligioso
+permalink: /rolereligioso
 published: true
 ---
 ![a](assets/images/uploads/rolereligiosoCAPA.jpg)

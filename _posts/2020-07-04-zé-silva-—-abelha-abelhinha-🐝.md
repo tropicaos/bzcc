@@ -6,7 +6,7 @@ date: 2017-08-10T15:43:14.107Z
 category: Video
 tags: Videoclipe Bucólico
 vimeoId: 224962688
-permalink: /ZeSilvaAbelhaAbelhinha
+permalink: /zesilvaabelhaabelhinha
 published: true
 ---
 ![](assets/images/uploads/abelhaabelhinha02.jpg)

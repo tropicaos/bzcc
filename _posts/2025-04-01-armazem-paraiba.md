@@ -4,7 +4,7 @@ title: Armazém Paraíba
 category: Trampo
 tags: Marketing Mídia
 image: 'assets/img/blog/armazempb/armazemparaiba_blog.jpg'
-permalink: /ArmazemParaiba
+permalink: /armazempb
 published: true
 theme: armazemparaiba
 ---

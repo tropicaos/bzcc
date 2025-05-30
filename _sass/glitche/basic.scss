@@ -354,15 +354,23 @@ strong {
 
 /* 5. Links */
 a {
-	color: var(--primary-color, var(--active-color));
+	color: var(--active-color, var(--active-color));
 	text-decoration: none;
 	opacity: 1;
 	outline: none;
 
 	&:hover {
 		text-decoration: none;
-		color: var(--border-color, var(--active-color));
+		color: var(--extra-active-color, var(--extra-active-color));
 	}
+}
+
+.post-content a {
+    text-decoration: underline;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
 }
 
 /* 6. Buttons */
@@ -720,95 +728,173 @@ h3.center-heading {
 }
 
 /* 18. Images */
-img {
-	max-width: 100%;
-	height: auto;
-	box-sizing: border-box;
+
+/* Propriedade CSS para animar o ângulo do gradiente */
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
-.blog .single-post-text img {
-	max-width: 100%;
-	border: 10px solid var(--border-color, #c7009c);
-	box-sizing: border-box;
-	display: block;
-  	margin: auto;
-	
+/* Estilos gerais para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
+
+/* Estilos para imagens em posts de blog */
+.blog .single-post-text img {
+  max-width: 100%;
+  border: 10px solid var(--border-color, #c7009c); /* Sua borda original */
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+}
+
+/* Wrapper para a borda de arco-íris giratória */
+.arcoiro {
+  display: inline-block;         /* Para o wrapper se ajustar ao conteúdo */
+  position: relative;            /* Necessário para o pseudo-elemento ::before */
+  padding: 5px;                  /* Define a ESPESSURA da borda. Ajuste como desejar. */
+  box-sizing: border-box;
+  /* Opcional: Adicione border-radius para cantos arredondados.
+     Exemplo: border-radius: 12px;
+  */
+}
+
+.arcoiro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Coloca o gradiente atrás da imagem */
+  background: conic-gradient(
+    from var(--gradient-angle),
+    hsl(0, 100%, 50%),    /* Vermelho */
+    hsl(30, 100%, 50%),   /* Laranja avermelhado */
+    hsl(60, 100%, 50%),   /* Amarelo */
+    hsl(90, 100%, 50%),   /* Verde limão */
+    hsl(120, 100%, 50%),  /* Verde */
+    hsl(150, 100%, 50%),  /* Verde ciano */
+    hsl(180, 100%, 50%),  /* Ciano */
+    hsl(210, 100%, 50%),  /* Azul ciano */
+    hsl(240, 100%, 50%),  /* Azul */
+    hsl(270, 100%, 50%),  /* Roxo */
+    hsl(300, 100%, 50%),  /* Magenta */
+    hsl(330, 100%, 50%),  /* Rosa */
+    hsl(360, 100%, 50%)   /* Vermelho (para fechar o ciclo) */
+  );
+  animation: girar-gradiente 4s linear infinite;
+  /* Se você usou border-radius em .arcoiro, adicione o mesmo valor aqui ou use 'inherit'.
+     Exemplo: border-radius: inherit;
+  */
+}
+
+.arcoiro img {
+  display: block;      /* Remove espaços extras abaixo da imagem */
+  max-width: 100%;
+  height: auto;
+  /* Opcional: Se .arcoiro tem border-radius, a imagem interna pode precisar também.
+     Ajuste o valor para que os cantos da imagem se alinhem bem com a borda.
+     Exemplo: Se .arcoiro tem padding: 5px e border-radius: 12px,
+              a imagem poderia ter border-radius: 7px; (12px - 5px)
+  */
+}
+
+/* Animação para o gradiente giratório */
+@keyframes girar-gradiente {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+/*
+   Seu CSS original para .image-wrapper e outros elementos de imagem continua abaixo.
+   Lembre-se que se você aplicar a classe .arcoiro a uma imagem que também
+   estaria sujeita às regras de .blog .single-post-text img ou .image-wrapper,
+   você precisará garantir que não haja conflitos indesejados de bordas.
+   Por exemplo, a imagem DENTRO de .arcoiro não deve ter a borda de 10px
+   de .blog .single-post-text img. A estrutura HTML para .arcoiro
+   (um div envolvendo a img) já ajuda a separar isso.
+*/
 
 .image-wrapper {
-	display: block;
-	width: auto;
-	max-width: 100%;
-	margin: 15px 0 !important;
-	padding: 0;
-	border: 10px solid var(--border-color, #c7009c);
-	box-sizing: border-box;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 15px 0 !important;
+  padding: 0;
+  border: 10px solid var(--border-color, #c7009c);
+  box-sizing: border-box;
 }
 
 .image-wrapper.align-left {
-	float: left;
-	margin-right: 15px !important;
+  float: left;
+  margin-right: 15px !important;
 }
 
 .image-wrapper.align-right {
-	float: right;
-	margin-left: 15px !important;
+  float: right;
+  margin-left: 15px !important;
 }
 
 .image-wrapper.layout-full {
-	display: block;
-	width: 100%;
-	max-width: 100%;
-	margin: 15px 0 !important;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 15px 0 !important;
 }
 
 .image-wrapper .image-include {
-	display: block;
-	width: 100%;
-	height: auto;
-	max-width: 100%;
-	margin: 0;
-	padding: 0;
-	border: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .image-wrapper.layout-full .image-include {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .image-wrapper figcaption {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	text-align: center;
-	font-style: italic;
-	background: var(--border-color, #000);
-	color: var(--text-color, #fff);
-	line-height: 1.4;
-	word-wrap: break-word;
-	margin: 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-style: italic;
+  background: var(--border-color, #000);
+  color: var(--text-color, #fff);
+  line-height: 1.4;
+  word-wrap: break-word;
+  margin: 0;
 }
 
 .image-wrapper figcaption a {
-	color: var(--active-color);
-	transition: color 0.3s ease;
+  color: var(--active-color);
+  transition: color 0.3s ease;
 }
 
 .image-wrapper figcaption a:hover {
-	color: var(--extra-active-color);
+  color: var(--extra-active-color);
 }
 
 .image-wrapper.layout-full figcaption {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .single-post-text .image-wrapper {
-	display: block;
-	width: auto;
-	max-width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
 }
 
 /* 19. Sidebar */

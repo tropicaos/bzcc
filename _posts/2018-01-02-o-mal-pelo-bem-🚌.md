@@ -5,7 +5,7 @@ title: O Mal Pelo Bem 🚌
 date: 2018-01-02T17:29:07.826Z
 category: Texto
 tags: Conto Argumento
-permalink: /OMalPeloBem
+permalink: /omalpelobem
 published: false
 ---
 

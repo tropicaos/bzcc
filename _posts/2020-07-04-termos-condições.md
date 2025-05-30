@@ -5,7 +5,7 @@ title: "TERMOS & CONDIÇÕES"
 date: 2019-01-01T18:34:28.857Z
 category: Texto
 tags: Argumento Conto Comédia Suspense Distopia Sci-fi HISTERIVERSO
-permalink: /Termos&Condicoes
+permalink: /termosecondicoes
 published: true
 spotifyplaylist: 0MMS0CWIcIF02UCBmac4EU
 theme: temas&condicoes

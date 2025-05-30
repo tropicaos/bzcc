@@ -5,7 +5,7 @@ title: OndeComerEmJP 🍨
 date: 2017-08-10T19:30:39.224Z
 category: Trampo
 tags: Gastronomia Mídia
-permalink: /OndeComerEmJP
+permalink: /ondecomeremjp
 published: true
 ---
 Esse foi um dos trabalhos ***mais difíceis da minha vida***. Não! Não por ter sido meu primeiro freela de mídias digitais e finalmente estar trabalhando com isso, mas por ser impossível não digitar babando pelas delícias que a galera do blog [ondecomeremjp](https://www.ondecomeremjp.com.br/){:target="_blank"} caçava por João Pessoa!

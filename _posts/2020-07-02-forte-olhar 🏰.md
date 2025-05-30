@@ -4,7 +4,7 @@ image: 'assets/images/uploads/forteolharcapa.jpg'
 title: FORTE OLHAR 🏰
 date: 2017-08-09T12:26:17.492Z
 tags: Fotos Arquitetura Turístico Histórico Paisagem
-permalink: /FORTEOLHAR
+permalink: /forteolhar
 published: true
 ---
 <h4><p style="text-align:center"><strong>A primeira brincada fotográfica a gente nunca esquece…</strong></p></h4>

@@ -4,7 +4,7 @@ title: Colores Filmes
 category: Trampo
 tags: Cinema Publicidade Documentário
 image: 'assets/img/blog/colores/coloresfilmes_blog.jpg'
-permalink: /ColoresFilmes
+permalink: /colores
 published: true
 theme: colores
 ---
@@ -58,8 +58,10 @@ Me apresentaram um processo de "mistura de luz" entre chroma e fundo. Eram 10 pa
 
 ![Desenhando fica mais fácil](assets/img/blog/colores/colores-lightwrap.jpg)
 
-*Light Wrapping* é "envelopar" as bordas do chroma com um desfoque da camada ao fundo pra evitar que elas fiquem ásperas demais e chamem atenção, deixando o chroma melhor integrado à cena. Agora conhecendo o problema pelo nome e sabendo de seus pormenores, pude redesenhar todo o fluxo e automatizar os 10 passos em 5, além de deixar a operação facilmente replicável ( *e hoje o After tem plugin que acelera inda mais esse processo, heh*).
+*Light Wrapping* é "envelopar" as bordas do chroma com um desfoque da camada ao fundo pra evitar que elas fiquem ásperas demais e chamem atenção, deixando o chroma melhor integrado à cena. Agora conhecendo o problema pelo nome e sabendo de seus pormenores, pude redesenhar todo o fluxo e automatizar os 10 passos em 5, além de deixar a operação facilmente replicável (*e hoje o After tem plugin que acelera inda mais esse processo, heh*).
 
 Esse tipo de aprendizado me mostrou o quanto amadureci tecnicamente. Me sinto entrando numa nova fase, mais seguro não só da qualidade do produto final, mas da minha capacidade de desenvolver sistemas que aceleram a esteira de produção audiovisual de ponta a ponta. Desde estruturar a concepção de ideias em roteiros sólidos baseado nos meus estudos em narratologia (que comecei a levar a sério em 2017), até agora com esses fluxos de trabalho que se personalizam às demandas da vez - unindo várias etapas de automação com templates, plugins, ou só execução otimizada, mesmo. Não só edito: crio soluções escalonáveis pra trabalhar melhor e em larga escala que melhora meu trampo e o de quem tiver editando comigo. A Colores foi um marco por ter explicitado algo que nem tava prestando atenção: ultrapassei o limiar de Junior pra me tornar um editor Pleno.
 
 E também ficou claro qual deveria ser meu [próximo passo](https://www.youtube.com/@canalpoligonal){:target="_blank"}.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/904607308?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="VOVÓ NA REDE - PMCG"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

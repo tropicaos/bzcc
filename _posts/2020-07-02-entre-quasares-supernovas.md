@@ -5,7 +5,7 @@ title: Entre Quasares & Supernovas. 🌌👩‍🚀
 date: 2016-08-19T11:58:18.209Z
 category: Texto
 tags: Amor Sci-fi Lírico
-permalink: /EntreQuasares&Supernovas
+permalink: /entrequasaresesupernovas
 published: true
 ---
 Sou um cosmonauta, leve, solto, deslizando deliciosamente pelo espaço.

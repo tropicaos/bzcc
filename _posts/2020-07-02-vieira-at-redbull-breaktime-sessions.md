@@ -5,7 +5,7 @@ title: VIEIRA | Red Bull Breaktime Sessions 🎸
 date: 2017-08-10T19:17:05.764Z
 category: Trampo
 tags: Fotos Cobertura Show Evento
-permalink: /Vieira-RED-BULL
+permalink: /vieiraredbull
 published: true
 ---
 ![foto multicoloria de vieira, guitarrista e baixista](assets/images/uploads/vieira03.jpg)

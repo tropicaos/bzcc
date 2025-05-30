@@ -5,7 +5,7 @@ title: LACUNA Roteiro Original
 date: 2019-09-25T18:51:37.696Z
 category: Texto
 tags: Roteiro Drama Conto
-permalink: /LACUNA
+permalink: /lacuna
 published: true
 ---
 

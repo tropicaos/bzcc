@@ -5,7 +5,7 @@ title: 🍃 Vento Vendaval - Flores Baldias
 date: 2018-02-20T18:10:08.584Z
 category: Video
 tags: Videoclipe Natureza
-permalink: /FloresBaldiasVentoVendaval
+permalink: /floresbaldiasventovendaval
 published: true
 vimeoId: 256395382
 ---

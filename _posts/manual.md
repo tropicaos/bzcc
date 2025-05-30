@@ -30,19 +30,12 @@ Gaiato é um RPG de investigação em texto ambientado em João Pessoa, 1999. Vo
 
 - **ITENS**: Listar objetos disponíveis no ambiente atual
 
-- **PISTAS**: Mostrar pistas coletadas sobre o caso
-
-- **STATUS**: Verificar informações sobre o personagem
-
 - **AJUDA**: Mostrar lista de comandos disponíveis
 
 ## Mecânicas do Jogo
 
 ### Sistema de Diálogos
 Durante conversas, você verá opções de diálogo com **PALAVRAS-CHAVE** em maiúsculas. Digite a palavra-chave para selecionar essa opção de diálogo.
-
-### Sistema de Pistas
-Ao descobrir informações importantes, elas são registradas como pistas. Use o comando `PISTAS` para revisar o que você descobriu.
 
 ### Inventário
 Colete itens úteis com o comando `PEGAR`. Use o comando `INVENTARIO` ou `INV` para ver o que você carrega.

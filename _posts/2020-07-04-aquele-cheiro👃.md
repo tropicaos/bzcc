@@ -5,7 +5,7 @@ title: Aquele Cheiro 👃
 date: 2017-08-16T16:55:39.805Z
 category: Texto
 tags: Lírico Romance Conto
-permalink: /AqueleCheiro
+permalink: /aquelecheiro
 published: true
 ---
 ![Mariana Adelino se aconchega com meu casaco](assets/images/uploads/marianaadelinoseaconchegacommeucasaco.jpg)

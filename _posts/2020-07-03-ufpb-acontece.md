@@ -5,7 +5,7 @@ title: UFPB Acontece 📺📰
 date: 2017-08-10T19:59:27.027Z
 categories: Trampo Video
 tags: Jornalismo
-permalink: /UFPB-Acontece
+permalink: /ufpbacontece
 published: true
 youtubeId: videoseries?list=PLgFWXTZM16pDin9oI1VPTtMpw_3IptBBH
 ---

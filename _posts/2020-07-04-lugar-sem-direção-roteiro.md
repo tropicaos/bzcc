@@ -4,7 +4,7 @@ title: Lugar Sem Direção 🍬 Roteiro Original
 date: 2017-11-13T17:17:35.373Z
 category: Texto
 tags: Roteiro
-permalink: "/LugarSemDirecao-Roteiro"
+permalink: "/lugarsemdirecaoroteiro"
 published: true
 ---
 

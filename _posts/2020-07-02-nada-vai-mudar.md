@@ -5,8 +5,8 @@ title: Nada Vai Mudar
 date: 2016-03-01T03:58:23.231Z
 category: Texto
 tags: Conto Romance
-permalink: /NadaVaiMudar
-permalink: "/AMaiorMentiraDeTodas"
+permalink: /nadavaimudar
+permalink: "/amaiormentiradetodas"
 spotifytrack: 131F3d3InZE2fqzTHptIgQ
 published: true
 ---

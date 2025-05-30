@@ -4,7 +4,7 @@ image: 'assets/images/uploads/floresvadiascapa2.jpg'
 title: 🌱 Flores Baldias no Meio do Mato
 date: 2018-02-19T18:02:04.132Z
 tags: Fotos Natureza
-permalink: /FloresBaldiasNoMeioDoMato
+permalink: /floresbaldiasnomeiodomato
 published: true
 ---
 

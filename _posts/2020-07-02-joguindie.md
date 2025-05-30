@@ -5,7 +5,7 @@ title: "JOGUINDIE"
 date: 2017-08-10T19:22:03.492Z
 category: Game
 tags: Mídia
-permalink: /JOGUINDIE
+permalink: /joguindie
 published: true
 ---
 >##### Transbordando amor por jogos independentes
