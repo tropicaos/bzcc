@@ -15,7 +15,7 @@ default:
 matapau:
   primary: "#507C43"
   active: "#507C43"
-  extra_active: "#7EB272"
+  extra_active: "#fff"
   text: "#ffffff"
   background: "#193D3F"
   border: "#507C43"
@@ -98,7 +98,7 @@ alice:
 madrugada:
   primary: "#fff"
   active: "#96030f"
-  extra_active: "#cd4945"
+  extra_active: "#fff"
   background: "#000"
   text: "#fff"
   border: "#fff"
