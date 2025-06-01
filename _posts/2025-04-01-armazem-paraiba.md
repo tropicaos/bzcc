@@ -13,7 +13,7 @@ theme: armazemparaiba
 
 # COMO FUI PARAR NO ARMAZÉM PARAÍBA?  
 
-Depois de 3 anos no [Administradores.com](/PortalAdministradores), trabalhando numa empresa compacta, com 13 funcionários, onde qualquer coisa era só eu esticar o braço que eu alcançava o CEO, fui parar em um dos maiores gigantes do varejo nordestino. Saí de um ambiente ágil, de equipe reduzida, e entrei em uma empresa com mais de 3000 funcionários, onde tudo era maior, mais estruturado e, claro, mais burocrático.  
+Depois de 3 anos no [Administradores.com](/administradores), trabalhando numa empresa compacta, com 13 funcionários, onde qualquer coisa era só eu esticar o braço que eu alcançava o CEO, fui parar em um dos maiores gigantes do varejo nordestino. Saí de um ambiente ágil, de equipe reduzida, e entrei em uma empresa com mais de 3000 funcionários, onde tudo era maior, mais estruturado e, claro, mais burocrático.  
 
 Meu primeiro momento foi no departamento de Relações Humanas, dentro da célula de Endomarketing. Lá, minha função era produzir conteúdos para treinamentos internos e programas para a TV Corporativa da empresa. Essa experiência reforçou ainda mais meu envolvimento com conteúdos educativos e me permitiu desenvolver um olhar específico para a comunicação interna de uma organização desse porte.  
 
@@ -61,7 +61,7 @@ Sim, isso é [literalmente um dos valores da empresa](https://www.armazempb.com.
 
 O Armazém sempre teve essa identidade familiar e cristã, o que por si só não é um problema. Mas, com o tempo, percebi que, como acontece em muitas empresas que se apoiam fortemente em valores morais, nem sempre o discurso se alinha à prática. Além disso, apesar de ter aprendido na prática técnicas avançadíssimas de *marketing de guerrilha* e produção de alto impacto com o mínimo de recursos, no que era a minha especialidade – o audiovisual – comecei a sentir que estava estagnando. Ou pior: regredindo.  
 
-O que ficou claro pra mim foi que, com o tempo, a pressão para assumir cada vez mais responsabilidades além da minha função começou a pesar. Mas no fim, saí com muito aprendizado na bagagem. Tive contato com um universo completamente diferente do que estava acostumado e aprendi a me adaptar a um outro tipo de narrativa audiovisual. Mas era hora de buscar novas experiências e voltar a explorar todo o potencial que sei que tenho. Eu nem imaginava que [meu próximo trampo](/ColoresFilmes) seria tão certeiro nessa minha necessidade.
+O que ficou claro pra mim foi que, com o tempo, a pressão para assumir cada vez mais responsabilidades além da minha função começou a pesar. Mas no fim, saí com muito aprendizado na bagagem. Tive contato com um universo completamente diferente do que estava acostumado e aprendi a me adaptar a um outro tipo de narrativa audiovisual. Mas era hora de buscar novas experiências e voltar a explorar todo o potencial que sei que tenho. Eu nem imaginava que [meu próximo trampo](/coloresfilmes) seria tão certeiro nessa minha necessidade.
 
 Apesar dos apesares, tenho muito carinho por essa etapa da minha carreira e muito do que eu aprendi lá tô aplicando até hoje nos meus próprios produtos criativos.
 

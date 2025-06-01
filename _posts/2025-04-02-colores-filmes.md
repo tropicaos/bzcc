@@ -4,7 +4,7 @@ title: Colores Filmes
 category: Trampo
 tags: Cinema Publicidade Documentário
 image: 'assets/img/blog/colores/coloresfilmes_blog.jpg'
-permalink: /colores
+permalink: /coloresfilmes
 published: true
 theme: colores
 ---
@@ -15,11 +15,11 @@ theme: colores
 
 Depois de quase [uma década produzindo](/tags/trampo/) audiovisual para empresas, finalmente fui parar... numa empresa de audiovisual.
 
-Meu ingresso na Colores rolou com muito amor envolvido. Isaque, diretor de fotografia do meu xodó [Lugar Sem Direção](/LugarSemDirecao-LosCabrasGigantes) e pessoa profundamente querida (apresentada por uma pessoa [profundamente amada](/EntreQuasares&Supernovas)), me indicou ao Kant quando soube que ele tava procurando um assistente.
+Meu ingresso na Colores rolou com muito amor envolvido. Isaque, diretor de fotografia do meu xodó [Lugar Sem Direção](/lugarsemdirecao-loscabrasgigantes) e pessoa profundamente querida (apresentada por uma pessoa [profundamente amada](/entrequasaresesupernovas)), me indicou ao Kant quando soube que ele tava procurando um assistente.
 
 Não rolou entrevista formal. O próprio contexto do convite — que não cabe expor aqui — já mostrava que era um ambiente onde eu podia me encaixar. Entrei pra assistir em montagem e, como sempre jogo de suporte, apresentei o Notion aos processos da empresa. Mapeei um mói de HDs e transformei tudo num banco de dados funcional.
 
-Com o que aprendi de gestão de processos no [Armazém Paraíba](/ArmazemParaiba) e essa minha bagagem de Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), montei uma solução multidepartamental que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento, cronograma e outras turbinadas pelas mãos do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
+Com o que aprendi de gestão de processos no [Armazém Paraíba](/armazemparaiba) e essa minha bagagem de Notion (minha ferramenta principal pra organizar o trampo e a vida desde 2020), montei uma solução multidepartamental que ajudou a organizar o fluxo de trabalho. Depois, o projeto cresceu, ganhou orçamento, cronograma e outras turbinadas pelas mãos do [Rafa](https://www.instagram.com/rcriativo){:target="_blank"}, que manja muito de gestão.
 
 ---
 
@@ -36,7 +36,7 @@ Na Colores, tive a oportunidade de trabalhar com empresas grandes e de setores v
     </iframe>
 </div>
 
-Ao contrário de [certas empresas](/ArmazemParaiba), a Colores era de fato uma empresa familiar — e isso fez diferença num momento em que acolhimento era exatamente o que eu precisava.
+Ao contrário de [certas empresas](/armazemparaiba), a Colores era de fato uma empresa familiar — e isso fez diferença num momento em que acolhimento era exatamente o que eu precisava.
 
 Qual empresa "familiar" você conhece que já precisou evacuar a ilha de edição por causa de um vazamento de fralda? KLKKKKKK. Teve seu caos, mas teve muito cuidado também. E isso me marcou.
 
