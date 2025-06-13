@@ -4,12 +4,12 @@ categories:
 
   - title: "OBRAS"
     buttons:
-      #- url: "/matapau"
-      #  icon: "fas fa-tree"
-      #  main_text: "MATAPAU!"
-      #  secondary_text: "o primeiro jogo da Poligonal 💝"
-      #  target_blank: false
-      #  theme: "matapau"
+      - url: "/matapau"
+        icon: "fas fa-tree"
+        main_text: "MATAPAU!"
+        secondary_text: "o primeiro jogo da Poligonal 💝"
+        target_blank: false
+        theme: "matapau"
       - url: "/Alice"
         icon: "fas fa-pen-nib"
         main_text: "ALICE"

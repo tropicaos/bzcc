@@ -14,7 +14,6 @@ published: true
 >[Baseado no conto Tic. Tac. Tic. 🕘](/TicTacTic)
 
 ---
-<p><img src="assets/images/uploads/lacuna.jpg" alt="Marina e Júlio seminus, jogados no tapete da sala" /></p>
 
 *FADE IN:*
 
