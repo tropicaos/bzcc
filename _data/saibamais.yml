@@ -10,7 +10,7 @@ categories:
         secondary_text: "o primeiro jogo da Poligonal 💝"
         target_blank: false
         theme: "matapau"
-      - url: "/Alice"
+      - url: "/alice"
         icon: "fas fa-pen-nib"
         main_text: "ALICE"
         secondary_text: "dito e feito"
