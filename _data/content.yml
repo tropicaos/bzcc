@@ -5,31 +5,31 @@
 
 ### About [ about ]
 about:
-  title: "Ecce homo"
+  title: "<strong>Ecce homo</strong>"
   image: "assets/img/man1.jpg"
   text: "
         <p>
-          <strong>Olá, sou Laureano!</strong><br>Produtor audiovisual da Paraíba e estudante de Rádio, TV e Web na UFPB. Dedico-me principalmente à produção de peças publicitárias, videoclipes e documentários. Meu trabalho autoral já foi apresentado em festivais como CineCongo, Comunicurtas e Mostra Sesc de Cinema, além de ter meu trabalho voluntário exibido na TV aberta, no Jornal da Band. Comercialmente prestei serviços audiovisuais para o portal Administradores.com, pro setor de Marketing do Armazém Paraíba e fui pós-produtor na Colores Filmes, produtora audiovisual pessoense. Fora da produção audiovisual de ponta a ponta, também sou comunicólogo e ofereço serviços de comunicação estratégica, gestão de operações e game design.
+          <strong>Olá, sou Laureano!</strong><br>Produtor audiovisual da Paraíba e estudante de Rádio, TV e Web na UFPB. Dedico-me principalmente à produção de peças publicitárias, videoclipes e documentários. Minha assinatura autoral já foi apresentado em festivais como CineCongo, Comunicurtas e Mostra Sesc de Cinema, além de ter meu trabalho voluntário exibido na TV aberta, no Jornal da Band. Comercialmente prestei serviços audiovisuais para o portal Administradores.com, pro setor de Marketing do Armazém Paraíba e fui pós-produtor na Colores Filmes, produtora audiovisual pessoense. Fora da produção audiovisual de ponta a ponta, também sou comunicólogo e ofereço serviços de comunicação estratégica, gestão de operações e game design.
         </p>
         "
   list:
     - label: "Nome"
-      value: "Laureano Bezerramos"
+      value: "<br>Laureano Bezerramos"
 
     - label: "Oferece"
-      value: "Conteúdo Criativo"
+      value: "<br>Conteúdo Criativo"
 
     - label: "Especialidade"
-      value: "Audiovisual"
+      value: "<br>Audiovisual"
 
     - label: "Baseado no"
-      value: "Brasil"
+      value: "<br>Brasil"
 
     - label: "Residência"
-      value: "Paraíba"
+      value: "<br>Paraíba"
 
     - label: "E-mail"
-      value: "laureano@bezeramos.cc"
+      value: "<br>laureano@bezeramos.cc"
 
   download:
     text: "Baixar Currículo"
@@ -38,7 +38,7 @@ about:
 ### Resume [ resume ]
 resume:
   experience:
-    title: "Experiência"
+    title: "<strong>EXPERIÊNCIA</strong>"
     items:
       - year: "2017 - 2022"
         name: "Administradores.com | Videomaker"
@@ -53,7 +53,7 @@ resume:
         text: "Logging, montagem, edição, finalização, correção de cor e colorimetria, motion graphics e tudo o que tiver a ver com pós-produção. De quebra, também contribuí com ferramentas de produtividade e gestão de tarefas que foram implementadas em vários fluxos de trabalho na produtora."
         
   education:
-    title: "Educação"
+    title: "<strong>EDUCAÇÃO</strong>"
     items:
       - year: "2012 - 2014"
         name: "LICENCIATURA | TEATRO - UFPB"
@@ -71,7 +71,7 @@ resume:
 skills:
   columns:
     - type: "default" #skills progress type - default, dotted, circles, list
-      title: "FERRAMENTAS"
+      title: "<strong>FERRAMENTAS</strong>"
       items:
         - label: "Adobe Premiere"
           value: "90" #0-100 progress in %
@@ -86,48 +86,48 @@ skills:
           value: "90" #0-100 progress in %
 
     - type: "list" #skills progress type - default, dotted, circles, list
-      title: "FRONTS DE ATUAÇÃO"
+      title: "<strong>FRONTS DE ATUAÇÃO</strong>"
       items:
-        - label: "Audiovisual do roteiro a distribuição"
+        - label: "Produção audiovisual de ponta a ponta"
           value: "" #0-100 progress in %
 
-        - label: "Elaboração e gestão de projetos"
+        - label: "Gestão de projetos e operações"
           value: "" #0-100 progress in %
 
-        - label: "Game Design e documentação"
+        - label: "Game design e documentação (GDD)"
           value: "" #0-100 progress in %
 
-        - label: "Planejamento e programação de mídia"
+        - label: "Planejamento de mídia"
           value: "" #0-100 progress in %
 
-        - label: "Comunicação interna e estratégica"
+        - label: "Endomarketing e Inbound Marketing"
           value: "" #0-100 progress in %
 
-        - label: "Soluções em endomarketing e inbound marketing"
+        - label: "Endomarketing e inbound marketing"
           value: "" #0-100 progress in %
 
-        - label: "Administração e produção para Youtube"
+        - label: "Gestão e produção para YouTube"
           value: "" #0-100 progress in %
 
-        - label: "Gestão de marcas e self-branding"
+        - label: "Gestão de marca e branding pessoal"
           value: "" #0-100 progress in %
 
 ### Clients [ clients ]
 clients:
-  title: "SERVIÇOS PRESTADOS"
+  title: "<strong>SERVIÇOS PRESTADOS</strong>"
   items:
-    - url: "https://lp.administradores.com.br/assine/"
+    - url: "/administradores/"
       image: "assets/img/clients/client_1.jpg"
 
-    - url: "https://www.youtube.com/channel/UCEonmw7XYjPpk9pun00UrZw"
+    - url: "/coloresfilmes/"
       image: "assets/img/clients/client_3.jpg"
 
-    - url: "https://www.instagram.com/laureano.mkp"
+    - url: "/armazempb/"
       image: "assets/img/clients/client_2.jpg"
 
 ### Contact Info [ contacts-info ]
 contacts_info:
-  title: "Bora conversar?"
+  title: "<strong>Bora conversar?</strong>"
   list:
     - label: ""
       icon: ""

@@ -17,14 +17,14 @@ main:
     button: 0
 
   # Portfolio 
- #- title: "?"
- #  url: "?/"
- #  button: 0
+  - title: "Portfólio"
+    url: "portfolio/"
+    button: 0
   
   # Blog
- #- title: "¿"
- #  url: "¿/"
- #  button: 0
+  - title: "Blog"
+    url: "blog/"
+    button: 0
   
   # Contacts
   - title: "Contato"
