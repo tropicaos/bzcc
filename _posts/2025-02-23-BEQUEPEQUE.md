@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BEQUE PEQUE 🎒 - A ORIGEM 
+title: "BEQUE PEQUE \U0001F392 - A ORIGEM"
 image: assets/images/uploads/NOABISMODOPANICOCAPA.jpg
 date: 2025-02-22T17:09:19.000Z
 tags: Games Game-design Diário-de-Bordo Mercado Mídia Indústria
