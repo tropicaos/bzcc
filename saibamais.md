@@ -15,15 +15,15 @@ permalink: /saibamais
             <span class="saibamais-icon ion-social-vimeo"></span>
             <span class="saibamais-text">FILMOGRAFIA<br><span>vimeo</span></span>
         </a>
-        <a href="https://www.youtube.com/@canalpoligonal" target="_blank" class="saibamais-button">
+        <a href="https://www.youtube.com/@poligonalhub" target="_blank" class="saibamais-button">
             <span class="saibamais-icon ion-social-youtube"></span>
             <span class="saibamais-text">POLIGONAL<br>youtube</span>
         </a>
-        <a href="https://www.instagram.com/bezerramos/" target="_blank" class="saibamais-button">
+        <a href="https://www.instagram.com/poligonalhub/" target="_blank" class="saibamais-button">
             <span class="saibamais-icon ion-social-instagram"></span>
-            <span class="saibamais-text">INSTAGRAM<br>@canalpoligonal</span>
+            <span class="saibamais-text">INSTAGRAM<br>@poligonalhub</span>
         </a>    
-        <a href="https://twitch.tv/canalpoligonal" target="_blank" class="saibamais-button">
+        <a href="https://twitch.tv/poligonalhub" target="_blank" class="saibamais-button">
             <span class="saibamais-icon ion-social-twitch"></span>
             <span class="saibamais-text">STREAMING<br>twitch</span>
         </a>
@@ -32,7 +32,7 @@ permalink: /saibamais
                     <span class="saibamais-icon ion-android-playstore"></span>
                     <span class="saibamais-text">itch.io<br>Poligonal</span>
         </a>
-        <a href="https://github.com/poligonaldev" target="_blank" class="saibamais-button">
+        <a href="https://github.com/poligonalhub" target="_blank" class="saibamais-button">
                     <span class="saibamais-icon ion ion-social-github"></span>
                     <span class="saibamais-text">Github<br>ignora a bagunça</span>
         </a>

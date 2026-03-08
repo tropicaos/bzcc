@@ -5,7 +5,7 @@ title: A Madrugada não é para Noobs
 date: 2016-10-18T12:18:09.446Z
 category: Texto
 tags: Conto Suspense Argumento
-permalink: /AMadrugadaNaoEParaNoobs
+permalink: /amadrugadanaoeparanoobs
 theme: madrugada
 published: true
 ---

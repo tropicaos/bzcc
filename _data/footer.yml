@@ -7,10 +7,10 @@ main:
   social:
     - title: "Youtube"
       icon: "social-youtube"
-      url: "https://www.youtube.com/@canalpoligonal"
+      url: "https://www.youtube.com/@poligonalhub"
     - title: "Instagram"
       icon: "social-instagram-outline"
-      url: "https://instagram.com/canalpoligonal"
+      url: "https://instagram.com/poligonalhub"
     - title: "Saiba mais"
       icon: "help-circled"
       url: "/saibamais"

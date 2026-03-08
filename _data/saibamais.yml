@@ -16,13 +16,13 @@ categories:
         secondary_text: "dito e feito"
         target_blank: false
         theme: "alice" 
-      - url: "/Termos&Condicoes"
+      - url: "/termosecondicoes"
         icon: "fa-solid fa-gun"
         main_text: "TERMOS E CONDIÇÕES"
         secondary_text: "um jogo doentio no Tucanistão"
         target_blank: false
         theme: "temas&condicoes" 
-      - url: "/AMadrugadaNaoEParaNoobs"
+      - url: "/amadrugadanaoeparanoobs"
         icon: "fa-solid fa-road"
         main_text: "A MADRUGADA NÃO É PARA NOOBS"
         secondary_text: "medo nas ruas de Jaguaribe"
@@ -45,17 +45,17 @@ categories:
         main_text: "VIDEOGRAFIA"
         secondary_text: "vimeo"
         target_blank: true
-      - url: "https://www.youtube.com/@canalpoligonal"
+      - url: "https://www.youtube.com/@poligonalhub"
         icon: "fa-brands fa-youtube"
         main_text: "POLIGONAL"
         secondary_text: "youtube"
         target_blank: true
-      - url: "https://www.instagram.com/canalpoligonal/"
+      - url: "https://www.instagram.com/poligonalhub/"
         icon: "fa-brands fa-instagram"
         main_text: "INSTAGRAM"
-        secondary_text: "@canalpoligonal"
+        secondary_text: "@poligonalhub"
         target_blank: true
-      - url: "https://twitch.tv/canalpoligonal"
+      - url: "https://twitch.tv/poligonalhub"
         icon: "fa-brands fa-twitch"
         main_text: "STREAMING"
         secondary_text: "twitch"
@@ -68,7 +68,7 @@ categories:
 
   - title: "TECNOLOGIA"
     buttons:
-      - url: "https://github.com/poligonaldev"
+      - url: "https://github.com/poligonalhub"
         icon: "fa-brands fa-github"
         main_text: "Github"
         secondary_text: "ignora a bagunça"
