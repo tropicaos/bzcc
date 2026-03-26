@@ -4,7 +4,7 @@ category: Escrita
 category_slug: f-writing
 type: writing
 image: assets/img/works/TEC.jpg
-button_url: /Termos&Condicoes
+button_url: /termosecondicoes
 ---
 
 Termos e Condições tem uma história de produção tragicômica. É o meu texto mais recente supostamente mais rebuscado, mas nasceu meio Frankenstein por causa do contexto em que foi escrito.

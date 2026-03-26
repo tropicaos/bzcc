@@ -4,7 +4,7 @@ category: Escrita
 category_slug: f-writing
 type: writing
 image: assets/img/works/lsd-roteiro.jpg
-button_url: /LugarSemDirecao-Roteiro
+button_url: /lugarsemdirecaoroteiro
 ---
 
 O roteiro desse clipe era megalomaníaco demais para um projeto universitário. A história de Aristides e Josefa carregava muitas nuances e camadas de informação e, além de Buda Lira, ainda contava com a participação especialíssima de Totonho como dono do inferninho.  

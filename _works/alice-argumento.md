@@ -4,7 +4,7 @@ category: Escrita
 category_slug: f-writing
 type: writing
 image: assets/img/works/alice.jpg
-button_url: /Alice
+button_url: /alice
 ---
 
 **Alice** é fruto da minha inquietação constante de sempre tentar fazer algo diferente — fora da minha zona de conforto e de "gostos".  

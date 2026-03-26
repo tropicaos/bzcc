@@ -4,7 +4,7 @@ category: "Trampos"
 category_slug: "f-work"
 type: content
 image: assets/img/works/armazemparaiba.jpg
-button_url: /ArmazemParaiba
+button_url: /armazemparaiba
 ---
 
 Depois de 3 anos no Administradores.com, trabalhando numa empresa compacta, com 13 funcionários, onde qualquer coisa era só eu esticar o braço que eu alcançava o CEO, fui parar em um dos maiores gigantes do varejo nordestino. Saí de um ambiente ágil, de equipe reduzida, e entrei em uma empresa com mais de 3000 funcionários, onde tudo era maior, mais estruturado e, claro, mais burocrático.  
