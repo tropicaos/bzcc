@@ -116,13 +116,13 @@ skills:
 clients:
   title: "<strong>SERVIÇOS PRESTADOS</strong>"
   items:
-    - url: "/administradores/"
+    - url: "/administradores"
       image: "assets/img/clients/client_1.jpg"
 
-    - url: "/coloresfilmes/"
+    - url: "/coloresfilmes"
       image: "assets/img/clients/client_3.jpg"
 
-    - url: "/armazempb/"
+    - url: "/armazemparaiba"
       image: "assets/img/clients/client_2.jpg"
 
 ### Contact Info [ contacts-info ]
